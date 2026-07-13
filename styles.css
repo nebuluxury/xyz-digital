@@ -28,6 +28,8 @@ header.site .bar{display:flex;align-items:center;gap:14px;height:70px}
 header.site nav{margin-left:auto;display:flex;align-items:center;gap:28px}
 header.site nav a.link{font-size:15px;color:var(--ink2);font-weight:600;transition:.15s}
 header.site nav a.link:hover{color:var(--brand)}
+header.site nav a.earn{color:var(--hot);font-weight:700;background:rgba(255,106,61,.10);border:1px solid rgba(255,106,61,.32);padding:7px 14px;border-radius:100px}
+header.site nav a.earn:hover{background:rgba(255,106,61,.18);color:var(--hot)}
 .btn{display:inline-flex;align-items:center;gap:9px;font-family:Sora;font-weight:700;font-size:15px;border:0;border-radius:100px;padding:12px 22px;cursor:pointer;transition:transform .15s,box-shadow .15s;white-space:nowrap}
 .btn:hover{transform:translateY(-2px)}
 .btn-grad{background:var(--grad);color:#fff;box-shadow:0 10px 26px rgba(59,107,255,.30)}
