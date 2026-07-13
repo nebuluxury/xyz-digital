@@ -92,7 +92,8 @@ section{padding:78px 0}
 .offer .txt h2{font-size:clamp(26px,3.2vw,38px);margin-bottom:10px}
 .offer .txt p{color:var(--ink2);font-size:17px}
 .offer .feats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-.offer .feats span{font-size:13.5px;font-weight:600;color:var(--ink);background:#fff;border:1px solid var(--line);padding:7px 14px;border-radius:100px}
+.offer .feats span{font-size:13.5px;font-weight:600;color:var(--ink);background:#fff;border:1px solid var(--line);padding:7px 14px 7px 30px;border-radius:100px;position:relative}
+.offer .feats span::before{content:"";position:absolute;left:12px;top:50%;width:9px;height:5px;border-left:2.2px solid var(--good);border-bottom:2.2px solid var(--good);transform:translateY(-75%) rotate(-45deg)}
 
 /* ===== BEFORE / AFTER ===== */
 .browser{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow)}
