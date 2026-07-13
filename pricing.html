@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — XYZ Digital</title>
+<meta name="description" content="A fully custom website for a flat $500 — up to 5 pages, no monthly catch. Plus AI automation and full-stack development, custom-quoted.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .plans{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:22px;align-items:stretch}
+  .plan{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column}
+  .plan.feature{border-color:rgba(139,92,246,.5);background:linear-gradient(160deg,#0f1730,#141b30);box-shadow:0 20px 50px rgba(79,124,255,.18);position:relative}
+  .plan.feature .flag{position:absolute;top:-13px;left:30px;background:var(--grad);color:#fff;font-family:Sora;font-weight:700;font-size:12px;letter-spacing:.05em;padding:6px 14px;border-radius:100px}
+  .plan h3{font-size:21px}
+  .plan .p{font-family:Sora;font-weight:800;font-size:52px;margin:12px 0 2px}
+  .plan .p small{font-size:15px;color:var(--muted);font-weight:600}
+  .plan .desc{color:var(--ink2);font-size:15px;margin-bottom:18px}
+  .plan ul{list-style:none;display:grid;gap:11px;margin:0 0 24px}
+  .plan ul li{font-size:14.5px;color:var(--ink2);padding-left:26px;position:relative}
+  .plan ul li:before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:800}
+  .plan .btn{margin-top:auto;justify-content:center}
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .qa{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .qa h4{font-family:Sora;font-size:16.5px;margin-bottom:7px}
+  .qa p{color:var(--ink2);font-size:14.5px}
+  @media(max-width:900px){.plans,.faq{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="site"><div class="wrap bar">
+  <a class="logo" href="index.html">
+    <svg class="mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="13" fill="url(#xg)"/><path d="M16 16 L32 32 M32 16 L16 32" stroke="#fff" stroke-width="5" stroke-linecap="round"/><defs><linearGradient id="xg" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#4f7cff"/><stop offset=".55" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs></svg>
+    <span class="w"><b>XYZ</b><span>Digital</span></span>
+  </a>
+  <nav>
+    <a class="link" href="services.html">Services</a>
+    <a class="link" href="work.html">Work</a>
+    <a class="link" href="about.html">About</a>
+    <a class="link" href="pricing.html">Pricing</a>
+    <a class="btn btn-grad" href="https://calendly.com/xyz-digital/consult">Book a free consult</a>
+  </nav>
+</div></header>
+
+<!-- HERO -->
+<div class="hero" style="padding:80px 0 50px">
+  <div class="glow"></div>
+  <div class="wrap in">
+    <span class="chip"><span class="dot"></span> Simple, honest pricing</span>
+    <h1>A real website for <span class="grad-text">$500.</span> No catch.</h1>
+    <p class="sub">One flat price for a fully custom, up-to-5-page site. Bigger builds and AI automation are custom-quoted — always transparent, always upfront.</p>
+  </div>
+</div>
+
+<!-- PLANS -->
+<section style="padding-top:24px">
+  <div class="wrap">
+    <div class="plans">
+      <div class="plan feature">
+        <span class="flag">Most popular</span>
+        <h3>Custom Website</h3>
+        <div class="p">$500<small> one-time</small></div>
+        <div class="desc">Everything a local business needs to look great and get found.</div>
+        <ul>
+          <li>Up to 5 fully custom pages</li>
+          <li>Designed from scratch — no templates</li>
+          <li>Your logo, colors &amp; brand voice</li>
+          <li>Mobile &amp; tablet responsive</li>
+          <li>SEO foundations built in</li>
+          <li>Contact forms, maps, booking, galleries</li>
+          <li>Fast turnaround — days, not months</li>
+          <li>Yours to keep, no monthly fees</li>
+        </ul>
+        <a class="btn btn-grad" href="https://calendly.com/xyz-digital/consult">Start my $500 site →</a>
+      </div>
+
+      <div class="plan">
+        <h3>Growth &amp; E-commerce</h3>
+        <div class="p">Custom<small> quoted</small></div>
+        <div class="desc">For stores and larger sites that need more firepower.</div>
+        <ul>
+          <li>Full e-commerce / Shopify builds</li>
+          <li>More pages &amp; advanced features</li>
+          <li>Web apps &amp; custom software</li>
+          <li>Integrations &amp; infrastructure</li>
+          <li>SEO / SEM campaigns</li>
+          <li>Ongoing support available</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://calendly.com/xyz-digital/consult">Get a quote →</a>
+      </div>
+
+      <div class="plan">
+        <h3>AI Automation</h3>
+        <div class="p">Custom<small> quoted</small></div>
+        <div class="desc">Put AI to work across your business.</div>
+        <ul>
+          <li>AI chatbots &amp; support agents</li>
+          <li>Multi-agent workflow automation</li>
+          <li>Inbound &amp; outbound voice agents</li>
+          <li>Appointment setting &amp; follow-ups</li>
+          <li>CRM &amp; tool integrations</li>
+          <li>Consulting &amp; AI strategy</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://calendly.com/xyz-digital/consult">Get a quote →</a>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:22px">Also available: digital marketing, consulting, creative services &amp; product photography — bundled or standalone.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="tint">
+  <div class="wrap">
+    <div class="sec-head center"><span class="eyebrow">The fine print (there isn't much)</span><h2>Common questions</h2></div>
+    <div class="faq">
+      <div class="qa"><h4>Is it really $500 with no catch?</h4><p>Yes. $500 one-time for up to five custom pages. No hidden fees, no mandatory monthly plan. Hosting and domain are separate and inexpensive, and we'll set it all up with you.</p></div>
+      <div class="qa"><h4>How is it so affordable?</h4><p>We pair 45 years of senior experience with an AI-accelerated workflow. We work about 5× faster than a traditional agency, so we can charge far less for the same quality.</p></div>
+      <div class="qa"><h4>How fast is it?</h4><p>Most $500 sites are done in days, not months, once we have your content and branding. We'll give you a clear timeline on the consult.</p></div>
+      <div class="qa"><h4>Do I own the website?</h4><p>Completely. The site is yours to keep, host anywhere, and edit. We can also maintain it for you if you'd prefer.</p></div>
+      <div class="qa"><h4>What if I need more than 5 pages?</h4><p>No problem — we'll quote the extra scope transparently. Plenty of our clients start with the $500 site and grow from there.</p></div>
+      <div class="qa"><h4>Can you also do my marketing and AI?</h4><p>Yes. Many clients add SEO/SEM, an AI chatbot, or a voice agent. We're a full studio, so it all lives under one roof.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="wrap">
+    <div class="ctaband">
+      <h2>Ready when you are.</h2>
+      <p>Book a free consult and we'll map out your site — and anything else you need — in about 20 minutes.</p>
+      <a class="btn btn-hot btn-lg" href="https://calendly.com/xyz-digital/consult">Book your free consult →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site"><div class="wrap">
+  <div class="cols">
+    <div>
+      <a class="logo" href="index.html">
+        <svg class="mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="13" fill="url(#xg2)"/><path d="M16 16 L32 32 M32 16 L16 32" stroke="#fff" stroke-width="5" stroke-linecap="round"/><defs><linearGradient id="xg2" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#4f7cff"/><stop offset=".55" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs></svg>
+        <span class="w"><b>XYZ</b><span>Digital</span></span>
+      </a>
+      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow.</p>
+    </div>
+    <div><h5>Services</h5><a class="fl" href="services.html">Custom Websites</a><a class="fl" href="services.html">AI Bots &amp; Agents</a><a class="fl" href="services.html">AI Voice Agents</a><a class="fl" href="services.html">Digital Marketing</a></div>
+    <div><h5>Company</h5><a class="fl" href="about.html">About Us</a><a class="fl" href="work.html">Our Work</a><a class="fl" href="pricing.html">Pricing</a><a class="fl" href="https://calendly.com/xyz-digital/consult">Book a Consult</a></div>
+  </div>
+  <div class="base"><span>© 2026 XYZ Digital. All rights reserved.</span><span>Gustavo Mitchell &amp; Ricardo Quintera</span></div>
+</div></footer>
+
+</body>
+</html>
