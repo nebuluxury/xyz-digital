@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deviateweb.com/sitemap.xml
