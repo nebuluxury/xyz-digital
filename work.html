@@ -15,8 +15,7 @@
 <link rel="stylesheet" href="dv8.css">
 <style>
   .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;}
-  .pillrow a{font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:100px;padding:8px 15px;transition:.2s;}
-  .pillrow a:hover{border-color:var(--orange);background:var(--orange-soft);color:var(--navy);}
+  .pillrow span{font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:100px;padding:8px 15px;}
   .case{scroll-margin-top:96px;}
   .case .desc{font-size:15px;line-height:1.55;color:var(--muted);margin-top:8px;max-width:760px;}
 </style>
@@ -57,23 +56,38 @@
       <h1 class="h1" data-reveal data-reveal-delay="80" style="margin-bottom:24px;">Some of the local businesses <span class="o-text">we've helped.</span></h1>
       <p class="lead" data-reveal data-reveal-delay="160" style="max-width:640px;">Just a sample of the sites we've rebuilt, each designed from scratch around the brand. Left is what they had, right is what we delivered.</p>
       <div class="pillrow" data-reveal data-reveal-delay="220">
-        <a href="#mrgolfcart">Mr Golf Cart</a>
-        <a href="#lighthouse">Lighthouse Cleaners</a>
-        <a href="#drcolorchip">Dr. ColorChip</a>
-        <a href="#bdrr">Big Dog Ranch</a>
-        <a href="#allstar">All Star Auto</a>
-        <a href="#autopros">Auto Repair Pros</a>
-        <a href="#eastcoast">East Coast Automotive</a>
-        <a href="#premiere">Premiere Cleaners</a>
-        <a href="#mann">Mann Family Ortho</a>
-        <a href="#foundation">Frank Verney Foundation</a>
-        <a href="#rotary">Lake Worth Rotary</a>
+        <span>Auto &amp; repair</span>
+        <span>E-commerce</span>
+        <span>Dry cleaning</span>
+        <span>Dental &amp; ortho</span>
+        <span>Fitness &amp; wellness</span>
+        <span>Nonprofits</span>
+        <span>Custom &amp; trades</span>
+        <span>Hospitality</span>
       </div>
     </div>
   </section>
 
   <section class="container section band-top">
     <div style="display:flex;flex-direction:column;gap:24px;">
+
+      <div class="ba-card case" id="palmetto" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Palmetto Precision Strings</h3><div class="desc">A one-man custom compound-bow string shop in the Carolinas - rebuilt into a bold, premium storefront that sells the craft, with a clean shop, gallery, and how-it-works flow.</div></div><span class="ba-tag">E-commerce &middot; Archery</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_palmetto.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_palmetto.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="shanti" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Shanti Yoga Shala</h3><div class="desc">A Palm Beach Gardens yoga studio - reimagined from a dated template into a warm, premium brand with class schedules, offerings, and an easy new-student path to booking.</div></div><span class="ba-tag">Fitness &amp; Wellness</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_shanti-yoga.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_shanti-yoga.png" alt="after"></div></div>
+        </div>
+      </div>
 
       <div class="ba-card case" id="mrgolfcart" data-reveal>
         <div class="ba-head"><div><h3 class="h3">Mr Golf Cart</h3><div class="desc">A local custom-cart dealer - transformed from a dated inventory page into a premium storefront with an interactive "Build Your Cart" configurator that prices and finances in real time.</div></div><span class="ba-tag">Custom Golf Carts</span></div>
@@ -98,7 +112,7 @@
         <div class="ba-row">
           <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_drcolorchip.png" alt="before"></div></div>
           <div class="ba-arrow">&rarr;</div>
-          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_drcolorchip.png" alt="after"></div></div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_drcolorchip_v2.png" alt="after"></div></div>
         </div>
       </div>
 
