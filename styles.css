@@ -168,3 +168,9 @@ footer.site .base{border-top:1px solid rgba(255,255,255,.10);padding-top:22px;co
 .pillrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
 .pillrow a{font-size:13px;font-weight:600;color:#eaf0ff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);padding:8px 15px;border-radius:100px;transition:.15s}
 .pillrow a:hover{background:#fff;color:var(--brand)}
+
+/* DV8 Web brand */
+.logo .brand-mark{height:40px;width:auto;display:block}
+.brand-wm{font-family:Sora,sans-serif;font-weight:800;font-size:21px;letter-spacing:-.02em;color:var(--ink);line-height:1}
+.brand-wm .o{color:var(--hot)}
+.brand-wm.on-dark{color:#fff}
