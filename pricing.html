@@ -7,158 +7,173 @@
 <meta name="description" content="A fully custom website for a flat $500 one-time - up to 5 pages, yours to keep. Then grow on demand with affordable hosting, support &amp; SEO, or our $199/mo Done-For-You plan.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dv8.css">
 <style>
-  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
-  .plan-solo{max-width:600px;margin:0 auto}
-  .plan{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;display:flex;flex-direction:column}
-  .plan.feature{border:2px solid var(--brand);background:linear-gradient(165deg,#ffffff,#f1f5ff);box-shadow:0 24px 55px rgba(59,107,255,.18)}
-  .flag{position:absolute;top:-13px;left:24px;background:var(--grad);color:#fff;font-family:Sora;font-weight:700;font-size:11.5px;letter-spacing:.04em;padding:6px 13px;border-radius:100px}
-  .flag.alt{background:#eef2f9;color:var(--brand)}
-  .plan h3{font-size:20px}
-  .plan .p{font-family:Sora;font-weight:800;font-size:46px;margin:12px 0 2px}
-  .plan .p small{font-size:14.5px;color:var(--muted);font-weight:600}
-  .mini-note{font-size:12.5px;color:var(--muted);margin:-4px 0 18px}
-  .footnote{text-align:center;color:var(--muted);font-size:13.5px;margin:22px auto 0;max-width:880px}
-  .plan .desc{color:var(--ink2);font-size:15px;margin-bottom:18px}
-  .plan ul{list-style:none;display:grid;gap:11px;margin:0 0 24px}
-  .plan ul li{font-size:14.5px;color:var(--ink2);padding-left:26px;position:relative}
-  .plan ul li:before{content:"";position:absolute;left:2px;top:7px;width:9px;height:5px;border-left:2.2px solid var(--good);border-bottom:2.2px solid var(--good);transform:rotate(-45deg)}
-  .plan .btn{margin-top:auto;justify-content:center}
-  .faq{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-  .qa{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
-  .qa h4{font-family:Sora;font-size:16.5px;margin-bottom:7px}
-  .qa p{color:var(--ink2);font-size:14.5px}
-  @media(max-width:900px){.plans,.faq{grid-template-columns:1fr}}
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch;}
+  .plan-solo{max-width:560px;margin:0 auto;}
+  .plan{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px 28px;display:flex;flex-direction:column;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s;}
+  .plan:hover{transform:translateY(-5px);border-color:rgba(255,106,31,.4);box-shadow:var(--shadow);}
+  .plan.feature{border:1.5px solid var(--orange);box-shadow:var(--shadow);}
+  .flag{position:absolute;top:-12px;left:24px;background:var(--orange);color:#fff;font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:6px 13px;border-radius:100px;}
+  .plan h3{font-family:var(--disp);font-weight:600;font-size:20px;color:var(--navy);}
+  .plan .price{font-family:var(--disp);font-weight:700;font-size:46px;letter-spacing:-.02em;color:var(--navy);margin:12px 0 2px;}
+  .plan .price small{font-size:14.5px;color:var(--muted);font-weight:500;}
+  .plan .pdesc{color:var(--text);font-size:15px;margin:12px 0 18px;line-height:1.5;}
+  .plan .checklist{margin-bottom:24px;}
+  .plan .btn{margin-top:auto;}
+  .mini-note{font-size:12.5px;color:var(--muted);margin:-6px 0 18px;}
+  .footnote{text-align:center;color:var(--muted);font-size:13.5px;margin:26px auto 0;max-width:900px;line-height:1.6;}
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .qa{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;}
+  .qa h4{font-family:var(--disp);font-weight:600;font-size:16.5px;color:var(--navy);margin-bottom:8px;}
+  .qa p{color:var(--muted);font-size:14.5px;line-height:1.55;}
+  @media(max-width:940px){.plans{grid-template-columns:1fr;}}
+  @media(max-width:700px){.faq{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
 
-<header class="site"><div class="wrap bar">
-  <a class="logo" href="index.html">
-    <img class="brand-mark" src="img/logo-mark.png" alt="" /><span class="brand-wm">DV8<span class="o">WEB</span></span>
-  </a>
-  <nav>
-    <a class="link" href="services.html">Services</a>
-    <a class="link" href="ai-automation.html">AI Automation</a>
-    <a class="link" href="work.html">Work</a>
-    <a class="link" href="about.html">About</a>
-    <a class="link" href="pricing.html">Pricing</a>
-    <a class="link earn" href="refer.html">Earn $200</a>
-    <a class="btn btn-grad" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
-  </nav>
-  <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
-</div></header>
-
-<!-- HERO -->
-<div class="hero" style="padding:80px 0 50px">
-  <div class="glow"></div>
-  <div class="wrap in">
-    <span class="chip"><span class="dot"></span> Simple, honest pricing</span>
-    <h1>A real website for <span class="grad-text">$500.</span> Then grow, on demand.</h1>
-    <p class="sub">Start with one flat-price custom site that's yours to keep. Then add affordable, cancel-anytime help - hosting, support, SEO, AI - only when you want it.</p>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
+    <nav class="nav">
+      <a href="services.html">Services</a>
+      <a href="ai-automation.html">AI Automation</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a class="active" href="pricing.html">Pricing</a>
+      <a class="earn" href="refer.html">Earn $200</a>
+    </nav>
+    <a class="btn btn-primary btn-sm header-cta" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
+</header>
+<div class="mobile-nav">
+  <a href="services.html">Services</a>
+  <a href="ai-automation.html">AI Automation</a>
+  <a href="work.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="refer.html">Earn $200</a>
+  <a class="btn btn-primary" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
 </div>
 
-<!-- PILLAR 1: ONE-TIME -->
-<section style="padding-top:24px">
-  <div class="wrap">
-    <div class="sec-head center"><span class="eyebrow">Step one - a one-time payment</span><h2>Get your website</h2><p>One flat price for a fully custom, up-to-5-page site. Designed from scratch and yours to keep - no lock-in, no monthly catch.</p></div>
-    <div class="plan-solo">
+<main class="hero-ambient">
+
+  <!-- HERO -->
+  <section class="container" style="padding:84px 28px 50px;">
+    <div style="max-width:860px;">
+      <div class="eyebrow" data-reveal>Simple, honest pricing</div>
+      <h1 class="h1" data-reveal data-reveal-delay="80" style="margin-bottom:24px;">A real website for <span class="o-text">$500.</span> Then grow, on demand.</h1>
+      <p class="lead" data-reveal data-reveal-delay="160" style="max-width:640px;">Start with one flat-price custom site that's yours to keep. Then add affordable, cancel-anytime help - hosting, support, SEO, AI - only when you want it.</p>
+    </div>
+  </section>
+
+  <!-- PILLAR 1: ONE-TIME -->
+  <section class="container section-sm band-top">
+    <div class="section-head">
+      <div class="eyebrow center" data-reveal>Step one - a one-time payment</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80">Get your website</h2>
+      <p class="sub" data-reveal data-reveal-delay="140">One flat price for a fully custom, up-to-5-page site. Designed from scratch and yours to keep - no lock-in, no monthly catch.</p>
+    </div>
+    <div class="plan-solo" data-reveal>
       <div class="plan feature">
         <span class="flag">Yours to keep</span>
         <h3>The Website</h3>
-        <div class="p">$500<small> one-time</small></div>
-        <div class="desc">A fully custom site, designed from scratch. Hosting is optional and inexpensive.<sup>*</sup></div>
-        <ul>
-          <li>Up to 5 fully custom pages</li>
-          <li>Designed from scratch, no templates</li>
-          <li>Your logo, colors &amp; brand voice</li>
-          <li>Mobile &amp; tablet responsive</li>
-          <li>SEO foundations built in</li>
-          <li>We write your copy &amp; source images</li>
-          <li>Fast turnaround, days not months</li>
-          <li>Yours to keep, no lock-in</li>
-        </ul>
-        <a class="btn btn-grad" href="https://calendly.com/deviateweb/consult">Start my site &rarr;</a>
+        <div class="price">$500<small> one-time</small></div>
+        <div class="pdesc">A fully custom site, designed from scratch. Hosting is optional and inexpensive.<sup>*</sup></div>
+        <div class="checklist">
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Up to 5 fully custom pages</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Designed from scratch, no templates</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Your logo, colors &amp; brand voice</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Mobile &amp; tablet responsive</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>SEO foundations built in</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>We write your copy &amp; source images</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Fast turnaround, days not months</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Yours to keep, no lock-in</span></div>
+        </div>
+        <a class="btn btn-primary btn-block" href="https://calendly.com/deviateweb/consult">Start my site <span class="arw">&rarr;</span></a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PILLAR 2: ONGOING, ON DEMAND -->
-<section class="tint">
-  <div class="wrap">
-    <div class="sec-head center"><span class="eyebrow">Step two - ongoing, on demand</span><h2>Grow on your terms</h2><p>Affordable, cancel-anytime help to scale your brand, your site and your processes. Add what you need, when you need it - nothing you don't.</p></div>
-    <div class="plans">
-
-      <div class="plan">
-        <h3>Hosting</h3>
-        <div class="p">$29<small>/mo</small></div>
-        <div class="desc">We host and manage it, so you never touch a server.</div>
-        <ul>
-          <li>Fast, secure managed hosting</li>
-          <li>SSL, backups &amp; uptime handled</li>
-          <li>Domain setup &amp; email routing</li>
-          <li>Small content tweaks included</li>
-          <li>Cancel anytime</li>
-        </ul>
-        <a class="btn btn-ghost" href="https://calendly.com/deviateweb/consult">Add hosting &rarr;</a>
+  <!-- PILLAR 2: ONGOING -->
+  <section class="band">
+    <div class="container section">
+      <div class="section-head">
+        <div class="eyebrow center" data-reveal>Step two - ongoing, on demand</div>
+        <h2 class="h2" data-reveal data-reveal-delay="80">Grow on your terms</h2>
+        <p class="sub" data-reveal data-reveal-delay="140">Affordable, cancel-anytime help to scale your brand, your site and your processes. Add what you need, when you need it - nothing you don't.</p>
       </div>
+      <div class="plans">
+        <div class="plan" data-reveal data-reveal-delay="0">
+          <h3>Hosting</h3>
+          <div class="price">$29<small>/mo</small></div>
+          <div class="pdesc">We host and manage it, so you never touch a server.</div>
+          <div class="checklist">
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Fast, secure managed hosting</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>SSL, backups &amp; uptime handled</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Domain setup &amp; email routing</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Small content tweaks included</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Cancel anytime</span></div>
+          </div>
+          <a class="btn btn-secondary btn-block" href="https://calendly.com/deviateweb/consult">Add hosting <span class="arw">&rarr;</span></a>
+        </div>
 
-      <div class="plan">
-        <h3>Support &amp; SEO</h3>
-        <div class="p">$69<small>/mo</small></div>
-        <div class="desc">Hosting, plus real human support and regular SEO to keep you current and climbing.</div>
-        <ul>
-          <li>Everything in Hosting</li>
-          <li>Email &amp; chat support</li>
-          <li>Regular SEO optimization</li>
-          <li>Priority edits &amp; updates</li>
-          <li>Ongoing content changes handled</li>
-        </ul>
-        <p class="mini-note">Does not include an AI chatbot or voice agents - those live in Done-For-You.</p>
-        <a class="btn btn-ghost" href="https://calendly.com/deviateweb/consult">Get support &rarr;</a>
+        <div class="plan" data-reveal data-reveal-delay="80">
+          <h3>Support &amp; SEO</h3>
+          <div class="price">$69<small>/mo</small></div>
+          <div class="pdesc">Hosting, plus real human support and regular SEO to keep you current and climbing.</div>
+          <div class="checklist">
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Everything in Hosting</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Email &amp; chat support</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Regular SEO optimization</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Priority edits &amp; updates</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Ongoing content changes handled</span></div>
+          </div>
+          <p class="mini-note">Does not include an AI chatbot or voice agents - those live in Done-For-You.</p>
+          <a class="btn btn-secondary btn-block" href="https://calendly.com/deviateweb/consult">Get support <span class="arw">&rarr;</span></a>
+        </div>
+
+        <div class="plan feature" data-reveal data-reveal-delay="160">
+          <span class="flag">Everything handled</span>
+          <h3>Done-For-You</h3>
+          <div class="price">$199<small>/mo</small></div>
+          <div class="pdesc">We build it, run it, and grow it - the whole thing handled for one monthly price. No big upfront build fee.</div>
+          <div class="checklist">
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>We build your website</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Ongoing maintenance &amp; updates</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>AI chatbot on your site</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Appointment setting handled</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Customer inquiries handled</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Ongoing SEO &amp; SEM</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Priority edits</span></div>
+            <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Phone &amp; video call support</span></div>
+          </div>
+          <p class="mini-note">Built for small &amp; mom-and-pop businesses - larger projects quoted separately.</p>
+          <a class="btn btn-primary btn-block" href="https://calendly.com/deviateweb/consult">Get everything handled <span class="arw">&rarr;</span></a>
+        </div>
       </div>
+      <p class="footnote"><sup>*</sup> Hosting isn't included in the one-time $500 - set your site up on your own hosting for free, or let us host it for $29/mo. Everything ongoing is cancel-anytime, with no lock-in. Need something bigger down the road - branding, a store, marketing campaigns, or custom automation? We help on demand and quote it transparently.</p>
 
-      <div class="plan feature">
-        <span class="flag">Everything handled</span>
-        <h3>Done-For-You</h3>
-        <div class="p">$199<small>/mo</small></div>
-        <div class="desc">We build it, run it, and grow it - the whole thing handled for one monthly price. No big upfront build fee.</div>
-        <ul>
-          <li>We build your website</li>
-          <li>Ongoing maintenance &amp; updates</li>
-          <li>AI chatbot on your site</li>
-          <li>Appointment setting handled</li>
-          <li>Customer inquiries handled</li>
-          <li>Ongoing SEO &amp; SEM</li>
-          <li>Priority edits</li>
-          <li>Phone &amp; video call support</li>
-        </ul>
-        <p class="mini-note">Built for small &amp; mom-and-pop businesses - larger projects quoted separately.</p>
-        <a class="btn btn-grad" href="https://calendly.com/deviateweb/consult">Get everything handled &rarr;</a>
+      <div class="grid-2" style="margin-top:34px;">
+        <div class="card card-hover" data-reveal><h3 class="h3" style="font-size:19px;margin-bottom:10px;">Growth &amp; E-commerce</h3><p style="color:var(--muted);margin-bottom:16px;">Full Shopify and e-commerce builds, web apps, custom software, integrations and infrastructure. Custom-quoted, on demand.</p><a class="btn btn-secondary" href="https://calendly.com/deviateweb/consult">Get a quote <span class="arw">&rarr;</span></a></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="80" style="border-color:rgba(255,106,31,.35);"><h3 class="h3" style="font-size:19px;margin-bottom:10px;">AI Automation &amp; Integration</h3><p style="color:var(--muted);margin-bottom:16px;">Connect all your business tools and APIs into one place, then let AI agents run customer service, scheduling and more. Starter setups from $750.</p><a class="btn btn-primary" href="ai-automation.html">Explore this <span class="arw">&rarr;</span></a></div>
       </div>
-
+      <p class="center sub" style="font-size:14px;margin-top:22px;">Also available on demand: digital marketing, consulting, creative services &amp; product photography - bundled or standalone.</p>
     </div>
-    <p class="footnote"><sup>*</sup> Hosting isn't included in the one-time $500 - set your site up on your own hosting for free, or let us host it for $29/mo. Everything ongoing is cancel-anytime, with no lock-in. Need something bigger down the road - branding, a store, marketing campaigns, or custom automation? We help on demand and quote it transparently.</p>
+  </section>
 
-    <div class="grid g2" style="margin-top:34px">
-      <div class="card"><h3 style="font-size:19px">Growth &amp; E-commerce</h3><p>Full Shopify and e-commerce builds, web apps, custom software, integrations and infrastructure. Custom-quoted, on demand.</p><div style="margin-top:14px"><a class="btn btn-ghost" href="https://calendly.com/deviateweb/consult">Get a quote &rarr;</a></div></div>
-      <div class="card" style="border-color:rgba(59,107,255,.4)"><h3 style="font-size:19px">AI Automation &amp; Integration</h3><p>Connect all your business tools and APIs into one place, then let AI agents run customer service, scheduling and more. Starter setups from $750.</p><div style="margin-top:14px"><a class="btn btn-grad" href="ai-automation.html">Explore this &rarr;</a></div></div>
+  <!-- FAQ -->
+  <section class="container section">
+    <div class="section-head">
+      <div class="eyebrow center" data-reveal>The fine print (there isn't much)</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80">Common questions</h2>
     </div>
-    <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:22px">Also available on demand: digital marketing, consulting, creative services &amp; product photography - bundled or standalone.</p>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="tint">
-  <div class="wrap">
-    <div class="sec-head center"><span class="eyebrow">The fine print (there isn't much)</span><h2>Common questions</h2></div>
-    <div class="faq">
+    <div class="faq" data-reveal>
       <div class="qa"><h4>Is it really $500 with no catch?</h4><p>Yes. $500 one-time for up to five custom pages. No hidden fees and no mandatory monthly plan. Hosting and your domain are the only separate costs, and they're inexpensive. We'll set everything up with you.</p></div>
-      <div class="qa"><h4>How is it so affordable?</h4><p>We pair 60 years of senior experience with an AI-accelerated workflow, so we work about 5× faster than a traditional agency. We pass that speed on to you as a lower price, not a lower-quality result.</p></div>
+      <div class="qa"><h4>How is it so affordable?</h4><p>We pair 60 years of senior experience with an AI-accelerated workflow, so we work about 5x faster than a traditional agency. We pass that speed on to you as a lower price, not a lower-quality result.</p></div>
       <div class="qa"><h4>How fast will my site be ready?</h4><p>Most $500 sites are done in a matter of days once we have your content and branding, rather than the weeks or months agencies usually take. You'll get a clear timeline on the consult.</p></div>
       <div class="qa"><h4>What do you need from me to start?</h4><p>Your logo (or we can make one), any photos you'd like used, your services and hours, and a sense of the look you want. Don't have it all polished? We'll help pull it together, including writing your copy.</p></div>
       <div class="qa"><h4>Do you write the content and copy?</h4><p>Yes. We'll write clear, persuasive copy for every page and refine it with you. If you already have text, we'll happily use and polish it.</p></div>
@@ -175,34 +190,52 @@
       <div class="qa"><h4>Do you require a long contract?</h4><p>No. The website is a one-time project, and monthly plans (hosting and support) can be cancelled anytime. No lock-in.</p></div>
       <div class="qa"><h4>What industries do you work with?</h4><p>All of them. We've built for auto shops, dry cleaners, dentists, restaurants, nonprofits, e-commerce, and more. If you serve customers, we can help.</p></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section>
-  <div class="wrap">
-    <div class="ctaband">
-      <h2>Ready when you are.</h2>
-      <p>Book a free consult and we'll map out your site - and anything else you need - in about 20 minutes.</p>
-      <a class="btn btn-hot btn-lg" href="https://calendly.com/deviateweb/consult">Book your free consult →</a>
+  <!-- CTA -->
+  <section class="container section">
+    <div class="dark-band" data-reveal style="padding:clamp(52px,7vw,90px) 40px;text-align:center;">
+      <div class="grid-tex"></div>
+      <div class="glow-b"></div>
+      <div class="inner">
+        <h2 style="font-family:var(--disp);font-weight:700;font-size:clamp(30px,4vw,52px);line-height:1.04;letter-spacing:-.03em;color:#fff;margin:0 auto 20px;max-width:680px;">Ready when <span class="o-text">you are.</span></h2>
+        <p style="font-size:17px;line-height:1.55;color:rgba(255,255,255,.7);max-width:560px;margin:0 auto 36px;">Book a free consult and we'll map out your site - and anything else you need - in about 20 minutes.</p>
+        <a class="btn btn-primary btn-lg" href="https://calendly.com/deviateweb/consult">Book your free consult <span class="arw">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
+      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow. Senior expertise, AI speed, honest pricing.</p>
+      <p class="tag">Deviate. Grow.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <div class="links">
+        <a href="services.html">Custom Websites</a>
+        <a href="services.html">AI Bots &amp; Agents</a>
+        <a href="services.html">AI Voice Agents</a>
+        <a href="services.html">Digital Marketing</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <div class="links">
+        <a href="about.html">About Us</a>
+        <a href="work.html">Our Work</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="refer.html">Earn $200</a>
+      </div>
     </div>
   </div>
-</section>
+  <p class="footer-legal">&copy; 2026 DV8 Web. All rights reserved.</p>
+</footer>
 
-<footer class="site"><div class="wrap">
-  <div class="cols">
-    <div>
-      <a class="logo" href="index.html">
-        <img class="brand-mark" src="img/logo-mark.png" alt="" /><span class="brand-wm on-dark">DV8<span class="o">WEB</span></span>
-      </a>
-      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow.</p>
-    </div>
-    <div><h5>Services</h5><a class="fl" href="services.html">Custom Websites</a><a class="fl" href="services.html">AI Bots &amp; Agents</a><a class="fl" href="services.html">AI Voice Agents</a><a class="fl" href="services.html">Digital Marketing</a></div>
-    <div><h5>Company</h5><a class="fl" href="about.html">About Us</a><a class="fl" href="work.html">Our Work</a><a class="fl" href="pricing.html">Pricing</a><a class="fl" href="refer.html">Earn $200</a><a class="fl" href="https://calendly.com/deviateweb/consult">Book a Consult</a></div>
-  </div>
-  <div class="base"><span>© 2026 DV8 Web. All rights reserved.</span></div>
-</div></footer>
-
-<script src="app.js"></script>
+<script src="dv8.js"></script>
 </body>
 </html>

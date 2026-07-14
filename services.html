@@ -7,138 +7,171 @@
 <meta name="description" content="Custom websites, full-stack development, AI bots & agents, AI voice agents, digital marketing, consulting, creative and product photography.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dv8.css">
 </head>
 <body>
 
-<header class="site"><div class="wrap bar">
-  <a class="logo" href="index.html">
-    <img class="brand-mark" src="img/logo-mark.png" alt="" /><span class="brand-wm">DV8<span class="o">WEB</span></span>
-  </a>
-  <nav>
-    <a class="link" href="services.html">Services</a>
-    <a class="link" href="ai-automation.html">AI Automation</a>
-    <a class="link" href="work.html">Work</a>
-    <a class="link" href="about.html">About</a>
-    <a class="link" href="pricing.html">Pricing</a>
-    <a class="link earn" href="refer.html">Earn $200</a>
-    <a class="btn btn-grad" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
-  </nav>
-  <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
-</div></header>
-
-<!-- HERO -->
-<div class="hero" style="padding:78px 0 60px">
-  <div class="glow"></div>
-  <div class="wrap in">
-    <span class="chip"><span class="dot"></span> One team, end-to-end</span>
-    <h1>Everything you need to <span class="grad-text">launch, automate, and grow.</span></h1>
-    <p class="sub">From a $500 website to AI agents that answer your phones, we cover the whole stack - marketing, engineering, and AI - under one roof.</p>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
+    <nav class="nav">
+      <a class="active" href="services.html">Services</a>
+      <a href="ai-automation.html">AI Automation</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a class="earn" href="refer.html">Earn $200</a>
+    </nav>
+    <a class="btn btn-primary btn-sm header-cta" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
+</header>
+<div class="mobile-nav">
+  <a href="services.html">Services</a>
+  <a href="ai-automation.html">AI Automation</a>
+  <a href="work.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="refer.html">Earn $200</a>
+  <a class="btn btn-primary" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
 </div>
 
-<!-- WEBSITES -->
-<section>
-  <div class="wrap">
-    <div class="grid g2" style="align-items:center;gap:40px">
+<main class="hero-ambient">
+
+  <!-- HERO -->
+  <section class="container" style="padding:88px 28px 64px;">
+    <div style="max-width:860px;">
+      <div class="eyebrow" data-reveal>One team, end-to-end</div>
+      <h1 class="h1" data-reveal data-reveal-delay="80" style="margin-bottom:24px;">Everything you need to <span class="o-text">launch, automate, and grow.</span></h1>
+      <p class="lead" data-reveal data-reveal-delay="160" style="max-width:620px;">From a $500 website to AI agents that answer your phones, we cover the whole stack - marketing, engineering, and AI - under one roof.</p>
+    </div>
+  </section>
+
+  <!-- WEBSITES -->
+  <section class="container section band-top">
+    <div class="grid-2" style="grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
       <div>
-        <span class="tag">Websites · from $500</span>
-        <h2 style="font-size:34px;margin:14px 0 12px">Custom websites that convert</h2>
-        <p style="color:var(--ink2);font-size:17px">Designed from scratch around your brand - never a template. Fast, mobile-perfect, SEO-ready, and built to turn visitors into customers. Our signature $500 offer covers up to five fully custom pages.</p>
+        <div class="eyebrow" data-reveal>Websites &middot; from $500</div>
+        <h2 class="h2" data-reveal data-reveal-delay="80" style="margin-bottom:14px;">Custom websites that convert</h2>
+        <p class="sub" data-reveal data-reveal-delay="140" style="font-size:17px;">Designed from scratch around your brand - never a template. Fast, mobile-perfect, SEO-ready, and built to turn visitors into customers. Our signature $500 offer covers up to five fully custom pages.</p>
       </div>
-      <div class="card">
-        <h3 style="margin-bottom:12px">What's included</h3>
-        <ul>
-          <li>Up to 5 fully custom pages</li>
-          <li>Your logo, colors &amp; brand voice</li>
-          <li>Mobile &amp; tablet responsive</li>
-          <li>SEO foundations &amp; fast load times</li>
-          <li>Contact forms, maps, booking &amp; more</li>
-          <li>Yours to keep - no monthly lock-in</li>
-        </ul>
+      <div class="card" data-reveal data-reveal-delay="120">
+        <h3 class="h3" style="margin-bottom:16px;">What's included</h3>
+        <div class="checklist">
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Up to 5 fully custom pages</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Your logo, colors &amp; brand voice</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Mobile &amp; tablet responsive</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>SEO foundations &amp; fast load times</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Contact forms, maps, booking &amp; more</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Yours to keep - no monthly lock-in</span></div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- AI AGENTS -->
-<section class="tint">
-  <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">AI Automation</span><h2>AI bots, agents &amp; sub-agents</h2><p>We build custom AI systems that take repetitive, expensive work off your team's plate - running quietly in the background, around the clock.</p></div>
-    <div class="grid g3">
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H12l-5 4v-4H7a3 3 0 0 1-3-3z"/></svg></div><h3>Support &amp; sales chatbots</h3><p>Trained on your business, embedded on your site, answering questions, qualifying leads, and booking jobs while you sleep.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="14" r="2.6"/><circle cx="21" cy="7" r="2.6"/><circle cx="21" cy="21" r="2.6"/><path d="M8.4 12.7L18.6 8M8.4 15.3l10.2 4.7"/></svg></div><h3>Multi-agent workflows</h3><p>Orchestrated agents and sub-agents that handle multi-step tasks: research, data entry, quoting, reporting, follow-ups, and more.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3v5M18 3v5"/><path d="M7 8h14v3a7 7 0 0 1-14 0z"/><path d="M14 18v6"/></svg></div><h3>Deep integrations</h3><p>Connected to your CRM, calendar, inbox, spreadsheets and tools so the automation actually fits how you already work.</p></div>
+  <!-- AI AGENTS -->
+  <section class="band">
+    <div class="container section">
+      <div class="section-head">
+        <div class="eyebrow center" data-reveal>AI Automation</div>
+        <h2 class="h2" data-reveal data-reveal-delay="80">AI bots, agents &amp; sub-agents</h2>
+        <p class="sub" data-reveal data-reveal-delay="140">We build custom AI systems that take repetitive, expensive work off your team's plate - running quietly in the background, around the clock.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card card-hover" data-reveal data-reveal-delay="0"><div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H12l-5 4v-4H7a3 3 0 0 1-3-3z"/></svg></div><h3 class="h3">Support &amp; sales chatbots</h3><p>Trained on your business, embedded on your site, answering questions, qualifying leads, and booking jobs while you sleep.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="80"><div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="14" r="2.6"/><circle cx="21" cy="7" r="2.6"/><circle cx="21" cy="21" r="2.6"/><path d="M8.4 12.7L18.6 8M8.4 15.3l10.2 4.7"/></svg></div><h3 class="h3">Multi-agent workflows</h3><p>Orchestrated agents and sub-agents that handle multi-step tasks: research, data entry, quoting, reporting, follow-ups, and more.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="160"><div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3v5M18 3v5"/><path d="M7 8h14v3a7 7 0 0 1-14 0z"/><path d="M14 18v6"/></svg></div><h3 class="h3">Deep integrations</h3><p>Connected to your CRM, calendar, inbox, spreadsheets and tools so the automation actually fits how you already work.</p></div>
+      </div>
+      <div class="center" data-reveal style="margin-top:40px;"><a class="text-link" href="ai-automation.html">Explore AI automation &rarr;</a></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- VOICE AGENTS -->
-<section>
-  <div class="wrap">
-    <div class="grid g2" style="align-items:center;gap:40px">
-      <div class="card">
-        <div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="10.5" y="3" width="7" height="12.5" rx="3.5"/><path d="M6 12.5a8 8 0 0 0 16 0"/><path d="M14 20.5V24"/><path d="M10 24h8"/></svg></div>
-        <h3 style="font-size:22px">Never miss another call</h3>
-        <p>Inbound and outbound AI voice agents that sound natural, work 24/7, and never put a customer on hold.</p>
-        <ul>
-          <li><b style="color:var(--ink)">Inbound:</b> answer calls, handle FAQs, route or book</li>
-          <li><b style="color:var(--ink)">Outbound:</b> follow-ups, reminders, reactivation calls</li>
-          <li><b style="color:var(--ink)">Appointment setting</b> straight into your calendar</li>
-          <li><b style="color:var(--ink)">Sales &amp; customer service</b> that scales instantly</li>
-        </ul>
+  <!-- VOICE AGENTS -->
+  <section class="container section">
+    <div class="grid-2" style="grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+      <div class="card" data-reveal>
+        <div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="10.5" y="3" width="7" height="12.5" rx="3.5"/><path d="M6 12.5a8 8 0 0 0 16 0"/><path d="M14 20.5V24"/><path d="M10 24h8"/></svg></div>
+        <h3 class="h3" style="font-size:22px;margin-bottom:10px;">Never miss another call</h3>
+        <p style="font-size:15px;color:var(--muted);margin-bottom:18px;">Inbound and outbound AI voice agents that sound natural, work 24/7, and never put a customer on hold.</p>
+        <div class="checklist">
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span><b style="color:var(--navy);">Inbound:</b> answer calls, handle FAQs, route or book</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span><b style="color:var(--navy);">Outbound:</b> follow-ups, reminders, reactivation calls</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span><b style="color:var(--navy);">Appointment setting</b> straight into your calendar</span></div>
+          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span><b style="color:var(--navy);">Sales &amp; customer service</b> that scales instantly</span></div>
+        </div>
       </div>
       <div>
-        <span class="tag">AI Voice Agents</span>
-        <h2 style="font-size:34px;margin:14px 0 12px">Your phone lines, handled by AI</h2>
-        <p style="color:var(--ink2);font-size:17px">Every missed call is a missed customer. Our AI voice agents pick up on the first ring, answer questions in your brand's voice, set appointments, and even make outbound sales and follow-up calls - for a fraction of the cost of a call center.</p>
-        <div style="margin-top:22px"><a class="btn btn-grad" href="https://calendly.com/deviateweb/consult">Hear what's possible →</a></div>
+        <div class="eyebrow" data-reveal>AI Voice Agents</div>
+        <h2 class="h2" data-reveal data-reveal-delay="80" style="margin-bottom:14px;">Your phone lines, handled by AI</h2>
+        <p class="sub" data-reveal data-reveal-delay="140" style="font-size:17px;margin-bottom:22px;">Every missed call is a missed customer. Our AI voice agents pick up on the first ring, answer questions in your brand's voice, set appointments, and even make outbound sales and follow-up calls - for a fraction of the cost of a call center.</p>
+        <a class="btn btn-primary" data-reveal data-reveal-delay="200" href="https://calendly.com/deviateweb/consult">Hear what's possible <span class="arw">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEV + MARKETING + CREATIVE -->
+  <section class="band">
+    <div class="container section">
+      <div class="section-head">
+        <div class="eyebrow center" data-reveal>The full stack</div>
+        <h2 class="h2" data-reveal data-reveal-delay="80">Beyond the website</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card card-hover" data-reveal data-reveal-delay="0"><div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 8L4 14l5.5 6"/><path d="M18.5 8L24 14l-5.5 6"/><path d="M15.6 6l-3.2 16"/></svg></div><h3 class="h3">Full-Stack Development</h3><p>Web &amp; mobile apps, custom software, APIs, dashboards, and cloud infrastructure, architected to scale by a 20-year engineering veteran.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="80"><div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5v18a1 1 0 0 0 1 1h19"/><path d="M8 18l5-5 3.5 3L23 9"/><path d="M23 13.5V9h-4.5"/></svg></div><h3 class="h3">Digital Marketing</h3><p>SEO, SEM, paid social, email, funnels and content strategy, led by a 25-year CMO who has grown multimillion-dollar brands.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="160"><div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="10"/><path d="M18.5 9.5l-2.2 5.8-5.8 2.2 2.2-5.8z"/></svg></div><h3 class="h3">Consulting</h3><p>Growth strategy, brand positioning, and practical AI adoption, a clear roadmap for where to invest and what to automate first.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="0"><div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4C8 4 3.5 8.3 3.5 13.6c0 3.4 2.8 5.4 6 5.4 1.8 0 2.4 1.2 2.4 2.3 0 1.6 1.3 2.7 3 2.4C20 22.9 24.5 19 24.5 13.6 24.5 8 20 4 14 4z"/><circle cx="8.6" cy="12" r="1.2" fill="currentColor" stroke="none"/><circle cx="12.5" cy="8.6" r="1.2" fill="currentColor" stroke="none"/><circle cx="17.6" cy="9" r="1.2" fill="currentColor" stroke="none"/></svg></div><h3 class="h3">Creative Services</h3><p>Logos, brand identity, graphics, and marketing collateral that make you look established and trustworthy.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="80"><div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="22" height="15" rx="3"/><circle cx="14" cy="15.5" r="4.3"/><path d="M9.5 8l1.8-3h5.4l1.8 3"/></svg></div><h3 class="h3">Product Photography</h3><p>Clean, professional product and business photography that lifts every listing, ad, and page.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="160"><div class="icon-chip"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3c3.5 2.5 5.5 6 5.5 10.5L17 17h-6l-2.5-3.5C8.5 9 10.5 5.5 14 3z"/><circle cx="14" cy="11" r="2"/><path d="M8.5 18.5C7 20 6.5 23 6.5 23s3-.5 4.5-2M19.5 18.5c1.5 1.5 2 4.5 2 4.5s-3-.5-4.5-2"/></svg></div><h3 class="h3">AI Integration</h3><p>We weave AI into your existing business, from content and support to operations, so you get the upside without the learning curve.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container section">
+    <div class="dark-band" data-reveal style="padding:clamp(52px,7vw,90px) 40px;text-align:center;">
+      <div class="grid-tex"></div>
+      <div class="glow-b"></div>
+      <div class="inner">
+        <h2 style="font-family:var(--disp);font-weight:700;font-size:clamp(30px,4vw,52px);line-height:1.04;letter-spacing:-.03em;color:#fff;margin:0 auto 20px;max-width:680px;">Not sure where to <span class="o-text">start?</span></h2>
+        <p style="font-size:17px;line-height:1.55;color:rgba(255,255,255,.7);max-width:560px;margin:0 auto 36px;">Tell us about your business in a free consult. We'll recommend the highest-impact move first - even if it's a small one.</p>
+        <a class="btn btn-primary btn-lg" href="https://calendly.com/deviateweb/consult">Book your free consult <span class="arw">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
+      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow. Senior expertise, AI speed, honest pricing.</p>
+      <p class="tag">Deviate. Grow.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <div class="links">
+        <a href="services.html">Custom Websites</a>
+        <a href="services.html">AI Bots &amp; Agents</a>
+        <a href="services.html">AI Voice Agents</a>
+        <a href="services.html">Digital Marketing</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <div class="links">
+        <a href="about.html">About Us</a>
+        <a href="work.html">Our Work</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="refer.html">Earn $200</a>
       </div>
     </div>
   </div>
-</section>
+  <p class="footer-legal">&copy; 2026 DV8 Web. All rights reserved.</p>
+</footer>
 
-<!-- DEV + MARKETING + CREATIVE -->
-<section class="tint">
-  <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">The full stack</span><h2>Beyond the website</h2></div>
-    <div class="grid g3">
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 8L4 14l5.5 6"/><path d="M18.5 8L24 14l-5.5 6"/><path d="M15.6 6l-3.2 16"/></svg></div><h3>Full-Stack Development</h3><p>Web &amp; mobile apps, custom software, APIs, dashboards, and cloud infrastructure, architected to scale by a 20-year engineering veteran.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5v18a1 1 0 0 0 1 1h19"/><path d="M8 18l5-5 3.5 3L23 9"/><path d="M23 13.5V9h-4.5"/></svg></div><h3>Digital Marketing</h3><p>SEO, SEM, paid social, email, funnels and content strategy, led by a 25-year CMO who has grown multimillion-dollar brands.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="10"/><path d="M18.5 9.5l-2.2 5.8-5.8 2.2 2.2-5.8z"/></svg></div><h3>Consulting</h3><p>Growth strategy, brand positioning, and practical AI adoption, a clear roadmap for where to invest and what to automate first.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4C8 4 3.5 8.3 3.5 13.6c0 3.4 2.8 5.4 6 5.4 1.8 0 2.4 1.2 2.4 2.3 0 1.6 1.3 2.7 3 2.4C20 22.9 24.5 19 24.5 13.6 24.5 8 20 4 14 4z"/><circle cx="8.6" cy="12" r="1.2" fill="#fff" stroke="none"/><circle cx="12.5" cy="8.6" r="1.2" fill="#fff" stroke="none"/><circle cx="17.6" cy="9" r="1.2" fill="#fff" stroke="none"/></svg></div><h3>Creative Services</h3><p>Logos, brand identity, graphics, and marketing collateral that make you look established and trustworthy.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="22" height="15" rx="3"/><circle cx="14" cy="15.5" r="4.3"/><path d="M9.5 8l1.8-3h5.4l1.8 3"/></svg></div><h3>Product Photography</h3><p>Clean, professional product and business photography that lifts every listing, ad, and page.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3c3.5 2.5 5.5 6 5.5 10.5L17 17h-6l-2.5-3.5C8.5 9 10.5 5.5 14 3z"/><circle cx="14" cy="11" r="2"/><path d="M8.5 18.5C7 20 6.5 23 6.5 23s3-.5 4.5-2M19.5 18.5c1.5 1.5 2 4.5 2 4.5s-3-.5-4.5-2"/></svg></div><h3>AI Integration</h3><p>We weave AI into your existing business, from content and support to operations, so you get the upside without the learning curve.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section>
-  <div class="wrap">
-    <div class="ctaband">
-      <h2>Not sure where to start?</h2>
-      <p>Tell us about your business in a free consult. We'll recommend the highest-impact move first - even if it's a small one.</p>
-      <a class="btn btn-hot btn-lg" href="https://calendly.com/deviateweb/consult">Book your free consult →</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site"><div class="wrap">
-  <div class="cols">
-    <div>
-      <a class="logo" href="index.html">
-        <img class="brand-mark" src="img/logo-mark.png" alt="" /><span class="brand-wm on-dark">DV8<span class="o">WEB</span></span>
-      </a>
-      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow.</p>
-    </div>
-    <div><h5>Services</h5><a class="fl" href="services.html">Custom Websites</a><a class="fl" href="services.html">AI Bots &amp; Agents</a><a class="fl" href="services.html">AI Voice Agents</a><a class="fl" href="services.html">Digital Marketing</a></div>
-    <div><h5>Company</h5><a class="fl" href="about.html">About Us</a><a class="fl" href="work.html">Our Work</a><a class="fl" href="pricing.html">Pricing</a><a class="fl" href="refer.html">Earn $200</a><a class="fl" href="https://calendly.com/deviateweb/consult">Book a Consult</a></div>
-  </div>
-  <div class="base"><span>© 2026 DV8 Web. All rights reserved.</span></div>
-</div></footer>
-
-<script src="app.js"></script>
+<script src="dv8.js"></script>
 </body>
 </html>

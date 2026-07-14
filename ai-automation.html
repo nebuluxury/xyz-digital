@@ -3,255 +3,308 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Automation & Integration - DV8 Web</title>
-<meta name="description" content="We connect all your business tools and APIs into one place, then put AI to work: 24/7 phone, chat and email support, scenario modeling, and automation for any business. Starter setups from $750.">
+<title>AI Automation &amp; Integration - DV8 Web</title>
+<meta name="description" content="Connect your whole business, then let AI run it. We plug all your tools and APIs into one hub, then put AI to work answering calls, running scenarios, and handling the busywork 24/7.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dv8.css">
 <style>
-  .idea{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
-  .hub{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
-  .hub .center{text-align:center;font-family:Sora;font-weight:800;color:#fff;background:var(--grad);border-radius:14px;padding:16px;margin-bottom:14px}
-  .hub .nodes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .hub .nodes span{font-size:13.5px;font-weight:600;color:var(--ink2);background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-align:center}
-  .deep{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  .deep .col h3{font-size:21px;margin-bottom:6px}
-  .steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
-  .step4{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow);position:relative}
-  .step4:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--grad);color:#fff;font-family:Sora;font-weight:800;margin-bottom:12px}
-  .step4 h4{font-family:Sora;font-size:16px;margin-bottom:5px}
-  .step4 p{color:var(--ink2);font-size:14px}
-  .mlist{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .mlist .m{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
-  .mlist .m .k{flex:none;width:30px;height:30px;border-radius:9px;background:var(--grad);display:grid;place-items:center}
-  .mlist .m .k svg{width:16px;height:16px}
-  .mlist .m span{font-size:14.5px;color:var(--ink);font-weight:500}
-  @media(max-width:900px){.idea,.deep,.mlist{grid-template-columns:1fr}.steps4{grid-template-columns:1fr 1fr}}
+  .hub{position:relative;aspect-ratio:1/1;width:100%;max-width:520px;margin:0 auto;}
+  .marquee-row{display:flex;gap:16px;width:max-content;animation:dv8-marquee 40s linear infinite;}
+  .marquee-row.rev{animation-duration:46s;animation-direction:reverse;}
+  .mchip{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:100px;padding:14px 22px;white-space:nowrap;box-shadow:var(--shadow-sm);}
+  .mchip .dot{width:6px;height:6px;border-radius:50%;flex:none;}
+  .step-col{position:relative;padding:0 24px;border-left:1px solid var(--line);}
+  @media(max-width:940px){.step-col{border-left:0;padding:0;}}
 </style>
 </head>
 <body>
 
-<header class="site"><div class="wrap bar">
-  <a class="logo" href="index.html">
-    <img class="brand-mark" src="img/logo-mark.png" alt="" /><span class="brand-wm">DV8<span class="o">WEB</span></span>
-  </a>
-  <nav>
-    <a class="link" href="services.html">Services</a>
-    <a class="link" href="ai-automation.html">AI Automation</a>
-    <a class="link" href="work.html">Work</a>
-    <a class="link" href="about.html">About</a>
-    <a class="link" href="pricing.html">Pricing</a>
-    <a class="link earn" href="refer.html">Earn $200</a>
-    <a class="btn btn-grad" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
-  </nav>
-  <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
-</div></header>
-
-<!-- HERO -->
-<div class="hero">
-  <div class="glow"></div>
-  <div class="wrap in">
-    <span class="chip"><span class="dot"></span> AI Automation &amp; Integration</span>
-    <h1>Connect your whole business. <span class="grad-text">Then let AI run it.</span></h1>
-    <p class="sub">Almost every tool you use has an API. We plug them all into one place so your business can finally talk to itself, and we put AI to work answering calls, running scenarios, and handling the busywork 24/7.</p>
-    <div class="cta">
-      <a class="btn btn-hot btn-lg" href="https://calendly.com/deviateweb/consult">Book a free consult →</a>
-      <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
-    </div>
-    <p class="micro">You don't need to be technical. You hand us the logins, we wire it all together.</p>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
+    <nav class="nav">
+      <a href="services.html">Services</a>
+      <a class="active" href="ai-automation.html">AI Automation</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a class="earn" href="refer.html">Earn $200</a>
+    </nav>
+    <a class="btn btn-primary btn-sm header-cta" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
+</header>
+<div class="mobile-nav">
+  <a href="services.html">Services</a>
+  <a href="ai-automation.html">AI Automation</a>
+  <a href="work.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="refer.html">Earn $200</a>
+  <a class="btn btn-primary" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
 </div>
 
-<!-- BIG IDEA -->
-<section>
-  <div class="wrap">
-    <div class="idea">
+<main class="hero-ambient">
+
+  <!-- HERO -->
+  <section class="container" style="padding:90px 28px 76px;">
+    <div style="max-width:920px;">
+      <div class="eyebrow" data-reveal>AI Automation &amp; Integration</div>
+      <h1 class="h1" data-reveal data-reveal-delay="80" style="margin-bottom:26px;">Connect your whole business.<br>Then let <span class="o-text">AI run it.</span></h1>
+      <p class="lead" data-reveal data-reveal-delay="160" style="max-width:640px;margin-bottom:38px;">Almost every tool you use has an API. We plug them all into one place so your business can finally talk to itself - then put AI to work answering calls, running scenarios, and handling the busywork <strong style="color:var(--navy);">24/7</strong>.</p>
+      <div data-reveal data-reveal-delay="240" style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px;">
+        <a class="btn btn-primary" href="https://calendly.com/deviateweb/consult">Book a free consult <span class="arw">&rarr;</span></a>
+        <a class="btn btn-secondary" href="#how">See how it works</a>
+      </div>
+      <p class="meta" data-reveal data-reveal-delay="320">You don't need to be technical. You hand us the logins - we wire it all together.</p>
+    </div>
+  </section>
+
+  <!-- BIG IDEA + HUB -->
+  <section class="container section band-top">
+    <div class="grid-2" style="grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;">
       <div>
-        <span class="eyebrow">The big idea</span>
-        <h2 style="font-size:clamp(28px,3.6vw,40px);margin:12px 0 14px">Your tools already speak API. We make them speak to each other.</h2>
-        <p style="color:var(--ink2);font-size:18px">Your POS, your online ordering, your delivery apps, your marketing, your accounting - each one holds a piece of your business locked behind an API. Most owners never connect them, because it's technical and takes time.</p>
-        <p style="color:var(--ink2);font-size:18px;margin-top:14px">That's exactly what we do. We connect everything into one cloud hub, so you can see the whole picture, ask plain questions, run what-if scenarios, and automate the work that used to eat your day.</p>
+        <div class="eyebrow" data-reveal>The big idea</div>
+        <h2 class="h2" data-reveal data-reveal-delay="80" style="margin-bottom:24px;">Your tools already speak API. We make them <span class="o-text">speak to each other.</span></h2>
+        <p class="sub" data-reveal data-reveal-delay="140" style="font-size:17px;margin-bottom:18px;">Your POS, your online ordering, your delivery apps, your marketing, your accounting - each one holds a piece of your business locked behind an API. Most owners never connect them, because it's technical and takes time.</p>
+        <p class="sub" data-reveal data-reveal-delay="200" style="font-size:17px;">That's exactly what we do. We connect everything into one cloud hub - so you can see the whole picture, ask plain questions, run what-if scenarios, and automate the work that used to eat your day.</p>
       </div>
-      <div class="hub">
-        <div class="center">Your Business Hub</div>
-        <div class="nodes">
-          <span>POS &amp; Payments</span><span>Online Ordering</span>
-          <span>Delivery Apps</span><span>Marketing &amp; Ads</span>
-          <span>Accounting</span><span>Bookings &amp; CRM</span>
-          <span>Email &amp; Chat</span><span>Phone &amp; SMS</span>
+      <!-- HUB DIAGRAM -->
+      <div class="orbit hub" data-reveal data-reveal-delay="120">
+        <div class="halo"></div>
+        <div class="ring-dash"></div>
+        <div class="ring-solid"></div>
+        <svg class="lines" viewBox="0 0 100 100">
+          <line x1="50" y1="50" x2="50" y2="8"></line>
+          <line x1="50" y1="50" x2="79.7" y2="20.3"></line>
+          <line x1="50" y1="50" x2="92" y2="50"></line>
+          <line x1="50" y1="50" x2="79.7" y2="79.7"></line>
+          <line x1="50" y1="50" x2="50" y2="92"></line>
+          <line x1="50" y1="50" x2="20.3" y2="79.7"></line>
+          <line x1="50" y1="50" x2="8" y2="50"></line>
+          <line x1="50" y1="50" x2="20.3" y2="20.3"></line>
+        </svg>
+        <div class="core"><img src="img/dv8-mark.png" alt=""></div>
+        <div class="chip" style="left:50%;top:8%;"><div class="pill"><span>POS &amp; Payments</span></div></div>
+        <div class="chip" style="left:79.7%;top:20.3%;"><div class="pill"><span>Online Ordering</span></div></div>
+        <div class="chip" style="left:92%;top:50%;"><div class="pill"><span>Delivery Apps</span></div></div>
+        <div class="chip" style="left:79.7%;top:79.7%;"><div class="pill"><span>Marketing &amp; Ads</span></div></div>
+        <div class="chip" style="left:50%;top:92%;"><div class="pill"><span>Accounting</span></div></div>
+        <div class="chip" style="left:20.3%;top:79.7%;"><div class="pill"><span>Bookings &amp; CRM</span></div></div>
+        <div class="chip" style="left:8%;top:50%;"><div class="pill"><span>Email &amp; Chat</span></div></div>
+        <div class="chip" style="left:20.3%;top:20.3%;"><div class="pill"><span>Phone &amp; SMS</span></div></div>
+      </div>
+    </div>
+    <p class="center" style="font-family:var(--mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin-top:52px;">All connected &middot; all talking &middot; one place</p>
+  </section>
+
+  <!-- RESTAURANT EXAMPLE -->
+  <section class="band">
+    <div class="container section">
+      <div class="eyebrow" data-reveal>Example: a restaurant</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80" style="max-width:820px;margin-bottom:44px;">You wouldn't think a restaurant has many APIs. <span class="o-text">It does.</span></h2>
+      <div class="grid-2">
+        <div class="card" data-reveal data-reveal-delay="120" style="padding:34px;">
+          <div style="font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;">The tools they already use</div>
+          <div style="display:flex;flex-direction:column;">
+            <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line2);"><span style="width:6px;height:6px;border-radius:50%;background:var(--navy2);flex:none;"></span><span style="font-size:15.5px;color:var(--navy);">Online ordering software</span></div>
+            <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line2);"><span style="width:6px;height:6px;border-radius:50%;background:var(--navy2);flex:none;"></span><span style="font-size:15.5px;color:var(--navy);">Third-party delivery (DoorDash, Uber Eats)</span></div>
+            <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line2);"><span style="width:6px;height:6px;border-radius:50%;background:var(--navy2);flex:none;"></span><span style="font-size:15.5px;color:var(--navy);">Their own mobile / app orders</span></div>
+            <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line2);"><span style="width:6px;height:6px;border-radius:50%;background:var(--navy2);flex:none;"></span><span style="font-size:15.5px;color:var(--navy);">The POS system at the counter</span></div>
+            <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line2);"><span style="width:6px;height:6px;border-radius:50%;background:var(--navy2);flex:none;"></span><span style="font-size:15.5px;color:var(--navy);">Marketing &amp; ad platforms</span></div>
+            <div style="display:flex;align-items:center;gap:14px;padding:13px 0;"><span style="width:6px;height:6px;border-radius:50%;background:var(--navy2);flex:none;"></span><span style="font-size:15.5px;color:var(--navy);">Reservations, reviews &amp; loyalty</span></div>
+          </div>
         </div>
-        <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:14px">All connected. All talking. One place.</p>
+        <div data-reveal data-reveal-delay="200" style="background:linear-gradient(165deg,rgba(255,106,31,.08),#fff);border:1px solid rgba(255,106,31,.28);border-radius:16px;padding:34px;">
+          <div style="font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:20px;">What we do once they're connected</div>
+          <div style="display:flex;flex-direction:column;">
+            <div class="check" style="padding:13px 0;border-bottom:1px solid var(--line2);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>See which marketing actually brings diners in</span></div>
+            <div class="check" style="padding:13px 0;border-bottom:1px solid var(--line2);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Compare true margins across delivery channels</span></div>
+            <div class="check" style="padding:13px 0;border-bottom:1px solid var(--line2);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Spot best-sellers by day and daypart</span></div>
+            <div class="check" style="padding:13px 0;border-bottom:1px solid var(--line2);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Forecast busy nights and staff for them</span></div>
+            <div class="check" style="padding:13px 0;border-bottom:1px solid var(--line2);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Flag when a channel's fees eat the profit</span></div>
+            <div class="check" style="padding:13px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Put every order on one screen</span></div>
+          </div>
+        </div>
+      </div>
+      <h3 data-reveal style="font-family:var(--disp);font-weight:500;font-size:clamp(22px,2.4vw,32px);letter-spacing:-.01em;color:var(--muted);margin:52px 0 0;text-align:center;">And that's just <span style="color:var(--navy);">one</span> type of business. Every industry has its own stack.</h3>
+    </div>
+  </section>
+
+  <!-- TRADES EXAMPLE -->
+  <section class="container section band-top">
+    <div class="grid-2" style="gap:56px;align-items:center;">
+      <div class="navy-panel" data-reveal style="padding:44px 40px;">
+        <div class="glow"></div>
+        <div class="inner">
+          <div style="font-family:var(--disp);font-size:64px;font-weight:700;color:var(--orange);line-height:1;">24/7</div>
+          <div style="font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:10px;">Always answering</div>
+          <div style="height:1px;background:rgba(255,255,255,.12);margin:28px 0;"></div>
+          <p style="font-size:16px;line-height:1.6;color:rgba(255,255,255,.72);margin:0;">Modern AI voice is good enough that most callers won't know - or won't mind. So the phone never goes to voicemail again.</p>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow" data-reveal>Example: trades &amp; blue-collar</div>
+        <h2 class="h2" data-reveal data-reveal-delay="80" style="margin-bottom:28px;">You can't be under a truck and on the phone at the <span class="o-text">same time.</span></h2>
+        <div class="checklist" data-reveal data-reveal-delay="120" style="gap:0;">
+          <div class="check" style="padding:11px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-size:16px;">Every call gets answered, day or night</span></div>
+          <div class="check" style="padding:11px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-size:16px;">Callers get real answers, not just voicemail</span></div>
+          <div class="check" style="padding:11px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-size:16px;">Jobs get booked straight into your calendar</span></div>
+          <div class="check" style="padding:11px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-size:16px;">Quotes and reminders go out by text and email</span></div>
+          <div class="check" style="padding:11px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-size:16px;">If someone's on call, we ring, text, or message them</span></div>
+          <div class="check" style="padding:11px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-size:16px;">When AI can't handle it, it hands off to a human, cleanly</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="band">
+    <div class="container section">
+      <div class="section-head">
+        <div class="eyebrow center" data-reveal>Who it's for</div>
+        <h2 class="h2" data-reveal data-reveal-delay="80">If your business runs on software, <span class="o-text">this is for you.</span></h2>
+      </div>
+      <div class="grid-3">
+        <div class="card card-hover" data-reveal data-reveal-delay="0"><div style="font-family:var(--mono);font-size:13px;color:var(--orange);margin-bottom:16px;">01</div><h3 class="h3" style="font-size:19px;">Accountants &amp; offices</h3><p>Connect client software, automate data pulls, and generate reports and reconciliations on a schedule.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="80"><div style="font-family:var(--mono);font-size:13px;color:var(--orange);margin-bottom:16px;">02</div><h3 class="h3" style="font-size:19px;">Retail &amp; e-commerce</h3><p>Sync inventory, ads, and marketplaces so stock, pricing, and campaigns stay in step everywhere.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="160"><div style="font-family:var(--mono);font-size:13px;color:var(--orange);margin-bottom:16px;">03</div><h3 class="h3" style="font-size:19px;">Clinics &amp; salons</h3><p>Automate bookings and reminders, recover no-shows, and keep your calendar full without the phone tag.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="0"><div style="font-family:var(--mono);font-size:13px;color:var(--orange);margin-bottom:16px;">04</div><h3 class="h3" style="font-size:19px;">Any service business</h3><p>Let AI handle email, chat, and phone 24/7, so no lead or customer ever goes unanswered again.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="80"><div style="font-family:var(--mono);font-size:13px;color:var(--orange);margin-bottom:16px;">05</div><h3 class="h3" style="font-size:19px;">Multi-location brands</h3><p>Roll every location's data into one view and compare performance side by side in real time.</p></div>
+        <div class="card card-hover" data-reveal data-reveal-delay="160"><div style="font-family:var(--mono);font-size:13px;color:var(--orange);margin-bottom:16px;">06</div><h3 class="h3" style="font-size:19px;">Too much manual work</h3><p>If your team copies data between tools or answers the same questions all day, we can automate it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A MILLION THINGS (marquee) -->
+  <section class="section band-top" style="overflow:hidden;">
+    <div class="container" style="text-align:center;margin-bottom:40px;">
+      <div class="eyebrow center" data-reveal>A million things</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80" style="max-width:760px;margin:0 auto 12px;">Just a few of the things we can set up</h2>
+      <p class="sub" data-reveal data-reveal-delay="140" style="max-width:600px;margin:0 auto;">Every business is different - we start with the handful that matter most to you, then keep going.</p>
+    </div>
+    <div data-reveal style="display:flex;flex-direction:column;gap:16px;">
+      <div class="marquee-row">
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>Unify every order and channel into one dashboard</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>Ask your data plain questions</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>Auto-reorder stock before you run out</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>24/7 AI phone, chat, and email support</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>Book appointments into your calendar</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>Unify every order and channel into one dashboard</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>Ask your data plain questions</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>Auto-reorder stock before you run out</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>24/7 AI phone, chat, and email support</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--orange);"></span><span>Book appointments into your calendar</span></div>
+      </div>
+      <div class="marquee-row rev">
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>Compare vendor and channel margins instantly</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>Follow up on every lead automatically</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>Nightly reports delivered to your inbox</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>On-call routing: call, text, or message your team</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>Escalate to a human the moment it's needed</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>Compare vendor and channel margins instantly</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>Follow up on every lead automatically</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>Nightly reports delivered to your inbox</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>On-call routing: call, text, or message your team</span></div>
+        <div class="mchip"><span class="dot" style="background:var(--navy2);"></span><span>Escalate to a human the moment it's needed</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW THE AI HANDLES IT -->
+  <section id="how" class="container section band-top">
+    <div class="section-head">
+      <div class="eyebrow center" data-reveal>How the AI handles it</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80" style="margin-bottom:14px;">AI first. <span class="o-text">Human when it matters.</span></h2>
+      <p class="sub" data-reveal data-reveal-delay="140">Natural-sounding agents take on the repetitive 90%, and hand off cleanly when a real person is needed.</p>
+    </div>
+    <div class="grid-4">
+      <div class="step-col" data-reveal data-reveal-delay="0"><div class="card-num">01</div><h3 class="h3" style="font-size:18px;">Answers instantly</h3><p style="font-size:14.5px;line-height:1.55;color:var(--muted);">Phone, chat, email, or text - picked up 24/7 in your brand's voice.</p></div>
+      <div class="step-col" data-reveal data-reveal-delay="90"><div class="card-num">02</div><h3 class="h3" style="font-size:18px;">Takes real action</h3><p style="font-size:14.5px;line-height:1.55;color:var(--muted);">Answers the question, books the job, sends the quote, or routes the request.</p></div>
+      <div class="step-col" data-reveal data-reveal-delay="180"><div class="card-num">03</div><h3 class="h3" style="font-size:18px;">Follows up</h3><p style="font-size:14.5px;line-height:1.55;color:var(--muted);">Confirms, reminds, and nudges across every channel automatically.</p></div>
+      <div class="step-col" data-reveal data-reveal-delay="270"><div class="card-num">04</div><h3 class="h3" style="font-size:18px;">Hands off to a human</h3><p style="font-size:14.5px;line-height:1.55;color:var(--muted);">If needed, it escalates to your team with full context attached.</p></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="container section band-top">
+    <div class="section-head">
+      <div class="eyebrow center" data-reveal>How to start</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80">Small, fast first step - <span class="o-text">then scale.</span></h2>
+    </div>
+    <div class="grid-2" style="max-width:980px;margin:0 auto;">
+      <div class="card" data-reveal data-reveal-delay="120" style="padding:38px;">
+        <div style="font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;">Starter setup</div>
+        <div style="font-family:var(--disp);font-weight:700;font-size:44px;letter-spacing:-.02em;color:var(--navy);margin-bottom:6px;">$750&ndash;$1,000</div>
+        <p style="font-size:15px;color:var(--muted);margin-bottom:26px;">A fast, done-for-you first step - usually live in about a day.</p>
+        <div class="check" style="padding:9px 0;border-top:1px solid var(--line2);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>We connect your key tools and APIs</span></div>
+        <div class="check" style="padding:9px 0;border-top:1px solid var(--line2);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Set up your first 2-3 automations or tools</span></div>
+        <div class="check" style="padding:9px 0;border-top:1px solid var(--line2);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Build you a live, easy-to-read dashboard</span></div>
+        <div class="check" style="padding:9px 0;border-top:1px solid var(--line2);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Walk you through how to use it</span></div>
+        <a class="btn btn-secondary btn-block" href="https://calendly.com/deviateweb/consult" style="margin-top:28px;">Start here <span class="arw">&rarr;</span></a>
+      </div>
+      <div class="navy-panel" data-reveal data-reveal-delay="200" style="padding:38px;">
+        <div class="glow"></div>
+        <div class="inner">
+          <div style="font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange2);margin-bottom:16px;">Autonomous &amp; agents</div>
+          <div style="font-family:var(--disp);font-weight:700;font-size:44px;letter-spacing:-.02em;color:#fff;margin-bottom:6px;">Custom-quoted</div>
+          <p style="font-size:15px;color:rgba(255,255,255,.7);margin-bottom:26px;">The full build for businesses ready to let AI run day-to-day.</p>
+          <div class="check" style="padding:9px 0;border-top:1px solid rgba(255,255,255,.1);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="color:#fff;">Dedicated server running agents &amp; sub-agents</span></div>
+          <div class="check" style="padding:9px 0;border-top:1px solid rgba(255,255,255,.1);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="color:#fff;">Customer service across email, chat &amp; phone</span></div>
+          <div class="check" style="padding:9px 0;border-top:1px solid rgba(255,255,255,.1);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="color:#fff;">Natural-sounding voice with human handoff</span></div>
+          <div class="check" style="padding:9px 0;border-top:1px solid rgba(255,255,255,.1);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="color:#fff;">Scenario modeling across your whole stack</span></div>
+          <a class="btn btn-primary btn-block" href="https://calendly.com/deviateweb/consult" style="margin-top:28px;">Get a quote <span class="arw">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="container section">
+    <div class="dark-band" data-reveal style="padding:clamp(48px,7vw,96px) 40px;text-align:center;">
+      <div class="grid-tex"></div>
+      <div class="glow-b"></div>
+      <div class="inner">
+        <h2 style="font-family:var(--disp);font-weight:700;font-size:clamp(32px,4.4vw,60px);line-height:1.02;letter-spacing:-.03em;color:#fff;margin:0 auto 22px;max-width:760px;">Let's connect <span class="o-text">your business.</span></h2>
+        <p style="font-size:17px;line-height:1.55;color:rgba(255,255,255,.7);max-width:560px;margin:0 auto 36px;">Book a free consult and we'll map out the tools you already have - and the quickest wins we can automate first.</p>
+        <a class="btn btn-primary btn-lg" href="https://calendly.com/deviateweb/consult">Book your free consult <span class="arw">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
+      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow. Senior expertise, AI speed, honest pricing.</p>
+      <p class="tag">Deviate. Grow.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <div class="links">
+        <a href="services.html">Custom Websites</a>
+        <a href="ai-automation.html">AI Automation &amp; Integration</a>
+        <a href="services.html">AI Voice Agents</a>
+        <a href="services.html">Digital Marketing</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <div class="links">
+        <a href="about.html">About Us</a>
+        <a href="work.html">Our Work</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="refer.html">Earn $200</a>
       </div>
     </div>
   </div>
-</section>
+  <p class="footer-legal">&copy; 2026 DV8 Web. All rights reserved.</p>
+</footer>
 
-<!-- RESTAURANT DEEP DIVE -->
-<section class="tint">
-  <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">Example: a restaurant</span><h2>You wouldn't think a restaurant has many APIs. It does.</h2><p>Most businesses are sitting on more connected data than they realize. Here's what a single restaurant is usually running:</p></div>
-    <div class="deep">
-      <div class="col card">
-        <h3>The tools they already use</h3>
-        <ul>
-          <li>Online ordering software</li>
-          <li>Third-party delivery (DoorDash, Uber Eats)</li>
-          <li>Their own mobile / app orders</li>
-          <li>The POS system at the counter</li>
-          <li>Marketing &amp; ad platforms</li>
-          <li>Reservations, reviews &amp; loyalty</li>
-        </ul>
-      </div>
-      <div class="col card">
-        <h3>What we do once they're connected</h3>
-        <ul>
-          <li>See which marketing actually brings diners in</li>
-          <li>Compare true margins across delivery channels</li>
-          <li>Spot best-sellers by day and daypart</li>
-          <li>Forecast busy nights and staff for them</li>
-          <li>Flag when a channel's fees eat the profit</li>
-          <li>Put every order on one screen</li>
-        </ul>
-      </div>
-    </div>
-    <div class="offer" style="margin-top:24px"><div class="in">
-      <div class="txt" style="min-width:auto">
-        <h2 style="font-size:24px;margin-bottom:8px">And that's just one type of business.</h2>
-        <p>Every industry has its own stack of tools. The job is figuring out the handful of connections and automations that move the needle for your business, and we've done this across many of them.</p>
-      </div>
-    </div></div>
-  </div>
-</section>
-
-<!-- BLUE COLLAR DEEP DIVE -->
-<section>
-  <div class="wrap">
-    <div class="deep" style="align-items:center">
-      <div class="col">
-        <span class="eyebrow">Example: trades &amp; blue-collar</span>
-        <h2 style="font-size:clamp(26px,3.2vw,36px);margin:12px 0 12px">You can't be under a truck and on the phone at the same time.</h2>
-        <p style="color:var(--ink2);font-size:17.5px">For a mechanic, a plumber, or any trade, the hardest part is answering the call. Modern AI voice is good enough that most callers won't know, or won't mind. So now, 24 hours a day:</p>
-      </div>
-      <div class="col card">
-        <ul>
-          <li>Every call gets answered, day or night</li>
-          <li>Callers get real answers, not just voicemail</li>
-          <li>Jobs get booked straight into your calendar</li>
-          <li>Quotes and reminders go out by text and email</li>
-          <li>If someone's on call, we ring, text, or message them</li>
-          <li>When AI can't handle it, it hands off to a human, cleanly</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OTHER TYPES -->
-<section class="tint">
-  <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">Who it's for</span><h2>If your business runs on software, this is for you</h2></div>
-    <div class="grid g3">
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5v18a1 1 0 0 0 1 1h19"/><path d="M8 18l5-5 3.5 3L23 9"/><path d="M23 13.5V9h-4.5"/></svg></div><h3>Accountants &amp; offices</h3><p>Connect client software, automate data pulls, and generate reports and reconciliations on a schedule.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h16l-1.5 12a2 2 0 0 1-2 1.8H9.5a2 2 0 0 1-2-1.8z"/><path d="M10 8V6a4 4 0 0 1 8 0v2"/></svg></div><h3>Retail &amp; e-commerce</h3><p>Sync inventory, ads, and marketplaces so stock, pricing, and campaigns stay in step everywhere.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="20" height="18" rx="3"/><path d="M4 10h20M9 3v4M19 3v4"/></svg></div><h3>Clinics &amp; salons</h3><p>Automate bookings and reminders, recover no-shows, and keep your calendar full without the phone tag.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="10.5" y="3" width="7" height="12.5" rx="3.5"/><path d="M6 12.5a8 8 0 0 0 16 0"/><path d="M14 20.5V24"/><path d="M10 24h8"/></svg></div><h3>Any service business</h3><p>Let AI handle email, chat, and phone 24/7, so no lead or customer ever goes unanswered again.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="14" r="2.6"/><circle cx="21" cy="7" r="2.6"/><circle cx="21" cy="21" r="2.6"/><path d="M8.4 12.7L18.6 8M8.4 15.3l10.2 4.7"/></svg></div><h3>Multi-location brands</h3><p>Roll every location's data into one view and compare performance side by side in real time.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 8L4 14l5.5 6"/><path d="M18.5 8L24 14l-5.5 6"/><path d="M15.6 6l-3.2 16"/></svg></div><h3>Anyone with too much manual work</h3><p>If your team copies data between tools or answers the same questions all day, we can automate it.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- A MILLION THINGS -->
-<section>
-  <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">A million things</span><h2>Just a few of the things we can set up</h2><p>Every business is different, so we start with the handful that matter most to you, then keep going.</p></div>
-    <div class="mlist">
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>Unify every order and channel into one dashboard</span></div>
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>Ask your data plain questions, like "which promo made money?"</span></div>
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>Auto-reorder stock before you run out</span></div>
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>24/7 AI phone, chat, and email support</span></div>
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>Book appointments straight into your calendar</span></div>
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>Compare vendor and channel margins instantly</span></div>
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>Follow up on every lead automatically</span></div>
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>Nightly reports delivered to your inbox</span></div>
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>On-call routing: call, text, or message your team</span></div>
-      <div class="m"><span class="k"><svg viewBox="0 0 28 28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l6 6L23 7"/></svg></span><span>Escalate to a human the moment it's needed</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- THE FLOW -->
-<section class="tint" id="how">
-  <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">How the AI handles it</span><h2>AI first. Human when it matters.</h2><p>Natural-sounding agents take on the repetitive 90%, and hand off cleanly when a real person is needed.</p></div>
-    <div class="steps4">
-      <div class="step4"><h4>Answers instantly</h4><p>Phone, chat, email, or text, picked up 24/7 in your brand's voice.</p></div>
-      <div class="step4"><h4>Takes real action</h4><p>Answers the question, books the job, sends the quote, or routes the request.</p></div>
-      <div class="step4"><h4>Follows up</h4><p>Confirms, reminds, and nudges across every channel automatically.</p></div>
-      <div class="step4"><h4>Hands off to a human</h4><p>If all else fails, it escalates to your team with full context attached.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- PACKAGES -->
-<section>
-  <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">How to start</span><h2>Small, fast first step, then scale</h2></div>
-    <div class="grid g2">
-      <div class="card" style="border:2px solid var(--brand)">
-        <span class="tag">Starter setup</span>
-        <h3 style="font-size:26px;margin:12px 0 4px">$750 - $1,000</h3>
-        <p style="margin-bottom:6px">A fast, done-for-you first step, usually live in about a day.</p>
-        <ul>
-          <li>We connect your key tools and APIs</li>
-          <li>Set up your first 2-3 automations or tools</li>
-          <li>Build you a live, easy-to-read dashboard</li>
-          <li>Walk you through how to use it</li>
-        </ul>
-        <div style="margin-top:20px"><a class="btn btn-grad" href="https://calendly.com/deviateweb/consult">Start here →</a></div>
-      </div>
-      <div class="card">
-        <span class="tag">Autonomous &amp; agents</span>
-        <h3 style="font-size:26px;margin:12px 0 4px">Custom-quoted</h3>
-        <p style="margin-bottom:6px">The full build for businesses ready to let AI run day-to-day.</p>
-        <ul>
-          <li>Dedicated server running agents &amp; sub-agents</li>
-          <li>Customer service across email, chat &amp; phone</li>
-          <li>Natural-sounding voice with human handoff</li>
-          <li>Scenario modeling and automation across your whole stack</li>
-        </ul>
-        <div style="margin-top:20px"><a class="btn btn-ghost" href="https://calendly.com/deviateweb/consult">Get a quote →</a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section>
-  <div class="wrap">
-    <div class="ctaband">
-      <h2>Let's connect your business.</h2>
-      <p>Book a free consult and we'll map out the tools you already have and the quickest wins we can automate first.</p>
-      <a class="btn btn-hot btn-lg" href="https://calendly.com/deviateweb/consult">Book your free consult →</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site"><div class="wrap">
-  <div class="cols">
-    <div>
-      <a class="logo" href="index.html">
-        <img class="brand-mark" src="img/logo-mark.png" alt="" /><span class="brand-wm on-dark">DV8<span class="o">WEB</span></span>
-      </a>
-      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow.</p>
-    </div>
-    <div><h5>Services</h5><a class="fl" href="services.html">Custom Websites</a><a class="fl" href="ai-automation.html">AI Automation &amp; Integration</a><a class="fl" href="services.html">AI Voice Agents</a><a class="fl" href="services.html">Digital Marketing</a></div>
-    <div><h5>Company</h5><a class="fl" href="about.html">About Us</a><a class="fl" href="work.html">Our Work</a><a class="fl" href="pricing.html">Pricing</a><a class="fl" href="refer.html">Earn $200</a><a class="fl" href="https://calendly.com/deviateweb/consult">Book a Consult</a></div>
-  </div>
-  <div class="base"><span>© 2026 DV8 Web. All rights reserved.</span></div>
-</div></footer>
-
-<script src="app.js"></script>
+<script src="dv8.js"></script>
 </body>
 </html>

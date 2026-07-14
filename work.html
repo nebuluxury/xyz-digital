@@ -3,205 +3,220 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Work - Before & After - DV8 Web</title>
+<title>Our Work - Before &amp; After - DV8 Web</title>
 <meta name="description" content="Real local businesses we've transformed. See the before and after of every website we've rebuilt.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dv8.css">
+<style>
+  .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;}
+  .pillrow a{font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:100px;padding:8px 15px;transition:.2s;}
+  .pillrow a:hover{border-color:var(--orange);background:var(--orange-soft);color:var(--navy);}
+  .case{scroll-margin-top:96px;}
+  .case .desc{font-size:15px;line-height:1.55;color:var(--muted);margin-top:8px;max-width:760px;}
+</style>
 </head>
 <body>
 
-<header class="site"><div class="wrap bar">
-  <a class="logo" href="index.html">
-    <img class="brand-mark" src="img/logo-mark.png" alt="" /><span class="brand-wm">DV8<span class="o">WEB</span></span>
-  </a>
-  <nav>
-    <a class="link" href="services.html">Services</a>
-    <a class="link" href="ai-automation.html">AI Automation</a>
-    <a class="link" href="work.html">Work</a>
-    <a class="link" href="about.html">About</a>
-    <a class="link" href="pricing.html">Pricing</a>
-    <a class="link earn" href="refer.html">Earn $200</a>
-    <a class="btn btn-grad" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
-  </nav>
-  <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
-</div></header>
-
-<!-- HERO -->
-<div class="hero" style="padding:80px 0 56px">
-  <div class="glow"></div>
-  <div class="wrap in">
-    <span class="chip"><span class="dot"></span> Real businesses · Real redesigns</span>
-    <h1>Some of the local businesses <span class="grad-text">we've helped.</span></h1>
-    <p class="sub">Just a sample of the sites we've rebuilt, each designed from scratch around the brand. Left is what they had, right is what we delivered.</p>
-    <div class="pillrow">
-      <a href="#lighthouse">Lighthouse Cleaners</a>
-      <a href="#drcolorchip">Dr. ColorChip</a>
-      <a href="#bdrr">Big Dog Ranch</a>
-      <a href="#allstar">All Star Auto</a>
-      <a href="#autopros">Auto Repair Pros</a>
-      <a href="#eastcoast">East Coast Automotive</a>
-      <a href="#premiere">Premiere Cleaners</a>
-      <a href="#mann">Mann Family Ortho</a>
-      <a href="#foundation">Frank Verney Foundation</a>
-      <a href="#rotary">Lake Worth Rotary</a>
-    </div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
+    <nav class="nav">
+      <a href="services.html">Services</a>
+      <a href="ai-automation.html">AI Automation</a>
+      <a class="active" href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a class="earn" href="refer.html">Earn $200</a>
+    </nav>
+    <a class="btn btn-primary btn-sm header-cta" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
+</header>
+<div class="mobile-nav">
+  <a href="services.html">Services</a>
+  <a href="ai-automation.html">AI Automation</a>
+  <a href="work.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="refer.html">Earn $200</a>
+  <a class="btn btn-primary" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
 </div>
 
-<section style="padding-top:26px">
-  <div class="wrap">
+<main class="hero-ambient">
 
-    <!-- MR GOLF CART -->
-    <div class="case" id="mrgolfcart">
-      <div class="ctop"><h3>Mr Golf Cart</h3><span class="cat">Custom Golf Carts</span>
-        <div class="desc">A local custom-cart dealer - transformed from a dated inventory page into a premium storefront with an interactive "Build Your Cart" configurator that prices and finances in real time.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_mrgolfcart.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_mrgolfcart.png" alt="after"></div></div>
+  <!-- HERO -->
+  <section class="container" style="padding:88px 28px 56px;">
+    <div style="max-width:900px;">
+      <div class="eyebrow" data-reveal>Real businesses &middot; Real redesigns</div>
+      <h1 class="h1" data-reveal data-reveal-delay="80" style="margin-bottom:24px;">Some of the local businesses <span class="o-text">we've helped.</span></h1>
+      <p class="lead" data-reveal data-reveal-delay="160" style="max-width:640px;">Just a sample of the sites we've rebuilt, each designed from scratch around the brand. Left is what they had, right is what we delivered.</p>
+      <div class="pillrow" data-reveal data-reveal-delay="220">
+        <a href="#mrgolfcart">Mr Golf Cart</a>
+        <a href="#lighthouse">Lighthouse Cleaners</a>
+        <a href="#drcolorchip">Dr. ColorChip</a>
+        <a href="#bdrr">Big Dog Ranch</a>
+        <a href="#allstar">All Star Auto</a>
+        <a href="#autopros">Auto Repair Pros</a>
+        <a href="#eastcoast">East Coast Automotive</a>
+        <a href="#premiere">Premiere Cleaners</a>
+        <a href="#mann">Mann Family Ortho</a>
+        <a href="#foundation">Frank Verney Foundation</a>
+        <a href="#rotary">Lake Worth Rotary</a>
       </div>
     </div>
+  </section>
 
-    <!-- LIGHTHOUSE -->
-    <div class="case" id="lighthouse">
-      <div class="ctop"><h3>Lighthouse Cleaners</h3><span class="cat">Dry Cleaning</span>
-        <div class="desc">Family-owned dry cleaner - from a dated brochure page to a premium next-day-service brand.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_lighthouse-cleaners.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_lighthouse-cleaners.png" alt="after"></div></div>
+  <section class="container section band-top">
+    <div style="display:flex;flex-direction:column;gap:24px;">
+
+      <div class="ba-card case" id="mrgolfcart" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Mr Golf Cart</h3><div class="desc">A local custom-cart dealer - transformed from a dated inventory page into a premium storefront with an interactive "Build Your Cart" configurator that prices and finances in real time.</div></div><span class="ba-tag">Custom Golf Carts</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_mrgolfcart.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_mrgolfcart.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="lighthouse" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Lighthouse Cleaners</h3><div class="desc">Family-owned dry cleaner - from a dated brochure page to a premium next-day-service brand.</div></div><span class="ba-tag">Dry Cleaning</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_lighthouse-cleaners.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_lighthouse-cleaners.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="drcolorchip" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Dr. ColorChip</h3><div class="desc">A trusted automotive touch-up brand - reimagined with a clean, modern storefront and an industry-first visual color finder.</div></div><span class="ba-tag">Automotive E-commerce</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_drcolorchip.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_drcolorchip.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="bdrr" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Big Dog Ranch Rescue</h3><div class="desc">The largest cage-free, no-kill dog rescue in the U.S. - a 7-page rebuild focused on donations and adoptions.</div></div><span class="ba-tag">Nonprofit &middot; Animal Rescue</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_bdrr-rescue.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_bdrr-rescue.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="allstar" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">All Star Auto Service</h3><div class="desc">Neighborhood auto shop in Lake Park &amp; Palm Beach Gardens - rebuilt around their real logo, reviews, and booked jobs.</div></div><span class="ba-tag">Auto Repair</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_allstar-auto.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_allstar-auto.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="autopros" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Auto Repair Pros</h3><div class="desc">A 6-location South Florida repair group - unified under one modern, conversion-focused brand site.</div></div><span class="ba-tag">Auto Repair &middot; Multi-location</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_autorepairpros.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_autorepairpros.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="eastcoast" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">East Coast Automotive</h3><div class="desc">Jupiter, FL repair shop - a clean, credible rebuild that puts services, reviews, and scheduling front and center.</div></div><span class="ba-tag">Auto Repair</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_eastcoast-auto.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_eastcoast-auto.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="premiere" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Premiere Cleaners</h3><div class="desc">Dry cleaning, alterations &amp; free pickup - rebuilt to look as premium as the service, with their real branding.</div></div><span class="ba-tag">Dry Cleaning</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_premiere-cleaners.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_premiere-cleaners.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="mann" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Mann Family Orthodontics</h3><div class="desc">Braces &amp; Invisalign in Palm Beach Gardens - a warm, modern site built to convert consultations.</div></div><span class="ba-tag">Dental &middot; Orthodontics</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_mann-ortho.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_mann-ortho.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="foundation" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">The Frank Verney Foundation</h3><div class="desc">A wildlife, conservation &amp; education foundation - rebuilt from a basic template into a branded, mission-driven site.</div></div><span class="ba-tag">Nonprofit &middot; Wildlife &amp; Conservation</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_fvfoundation.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_fvfoundation.png" alt="after"></div></div>
+        </div>
+      </div>
+
+      <div class="ba-card case" id="rotary" data-reveal>
+        <div class="ba-head"><div><h3 class="h3">Rotary Club of Lake Worth Beach</h3><div class="desc">An 8-page community-organization site - events, newsletters, scholarships and volunteering, fully modernized.</div></div><span class="ba-tag">Nonprofit &middot; Civic</span></div>
+        <div class="ba-row">
+          <div><div class="ba-lab">Before</div><div class="ba-shot before"><img src="img/before_lakeworth-rotary.png" alt="before"></div></div>
+          <div class="ba-arrow">&rarr;</div>
+          <div><div class="ba-lab after">After</div><div class="ba-shot after"><img src="img/after_lakeworth-rotary.png" alt="after"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container section">
+    <div class="dark-band" data-reveal style="padding:clamp(52px,7vw,90px) 40px;text-align:center;">
+      <div class="grid-tex"></div>
+      <div class="glow-b"></div>
+      <div class="inner">
+        <h2 style="font-family:var(--disp);font-weight:700;font-size:clamp(30px,4vw,52px);line-height:1.04;letter-spacing:-.03em;color:#fff;margin:0 auto 20px;max-width:680px;">Your business could be <span class="o-text">next.</span></h2>
+        <p style="font-size:17px;line-height:1.55;color:rgba(255,255,255,.7);max-width:560px;margin:0 auto 36px;">A custom site like these starts at just $500. Book a free consult and we'll show you exactly what yours could look like.</p>
+        <a class="btn btn-primary btn-lg" href="https://calendly.com/deviateweb/consult">Book your free consult <span class="arw">&rarr;</span></a>
       </div>
     </div>
+  </section>
 
-    <!-- DR COLORCHIP (before/after only) -->
-    <div class="case" id="drcolorchip">
-      <div class="ctop"><h3>Dr. ColorChip</h3><span class="cat">Automotive E-commerce</span>
-        <div class="desc">A trusted automotive touch-up brand - reimagined with a clean, modern storefront and an industry-first visual color finder.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_drcolorchip.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_drcolorchip.png" alt="after"></div></div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
+      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow. Senior expertise, AI speed, honest pricing.</p>
+      <p class="tag">Deviate. Grow.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <div class="links">
+        <a href="services.html">Custom Websites</a>
+        <a href="services.html">AI Bots &amp; Agents</a>
+        <a href="services.html">AI Voice Agents</a>
+        <a href="services.html">Digital Marketing</a>
       </div>
     </div>
-
-    <!-- BIG DOG RANCH -->
-    <div class="case" id="bdrr">
-      <div class="ctop"><h3>Big Dog Ranch Rescue</h3><span class="cat">Nonprofit · Animal Rescue</span>
-        <div class="desc">The largest cage-free, no-kill dog rescue in the U.S. - a 7-page rebuild focused on donations and adoptions.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_bdrr-rescue.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_bdrr-rescue.png" alt="after"></div></div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <div class="links">
+        <a href="about.html">About Us</a>
+        <a href="work.html">Our Work</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="refer.html">Earn $200</a>
       </div>
     </div>
-
-    <!-- ALL STAR -->
-    <div class="case" id="allstar">
-      <div class="ctop"><h3>All Star Auto Service</h3><span class="cat">Auto Repair</span>
-        <div class="desc">Neighborhood auto shop in Lake Park &amp; Palm Beach Gardens - rebuilt around their real logo, reviews, and booked jobs.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_allstar-auto.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_allstar-auto.png" alt="after"></div></div>
-      </div>
-    </div>
-
-    <!-- AUTO REPAIR PROS -->
-    <div class="case" id="autopros">
-      <div class="ctop"><h3>Auto Repair Pros</h3><span class="cat">Auto Repair · Multi-location</span>
-        <div class="desc">A 6-location South Florida repair group - unified under one modern, conversion-focused brand site.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_autorepairpros.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_autorepairpros.png" alt="after"></div></div>
-      </div>
-    </div>
-
-    <!-- EAST COAST -->
-    <div class="case" id="eastcoast">
-      <div class="ctop"><h3>East Coast Automotive</h3><span class="cat">Auto Repair</span>
-        <div class="desc">Jupiter, FL repair shop - a clean, credible rebuild that puts services, reviews, and scheduling front and center.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_eastcoast-auto.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_eastcoast-auto.png" alt="after"></div></div>
-      </div>
-    </div>
-
-    <!-- PREMIERE -->
-    <div class="case" id="premiere">
-      <div class="ctop"><h3>Premiere Cleaners</h3><span class="cat">Dry Cleaning</span>
-        <div class="desc">Dry cleaning, alterations &amp; free pickup - rebuilt to look as premium as the service, with their real branding.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_premiere-cleaners.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_premiere-cleaners.png" alt="after"></div></div>
-      </div>
-    </div>
-
-    <!-- MANN ORTHO -->
-    <div class="case" id="mann">
-      <div class="ctop"><h3>Mann Family Orthodontics</h3><span class="cat">Dental · Orthodontics</span>
-        <div class="desc">Braces &amp; Invisalign in Palm Beach Gardens - a warm, modern site built to convert consultations.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_mann-ortho.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_mann-ortho.png" alt="after"></div></div>
-      </div>
-    </div>
-
-    <!-- FRANK VERNEY FOUNDATION -->
-    <div class="case" id="foundation">
-      <div class="ctop"><h3>The Frank Verney Foundation</h3><span class="cat">Nonprofit · Wildlife &amp; Conservation</span>
-        <div class="desc">A wildlife, conservation &amp; education foundation - rebuilt from a basic template into a branded, mission-driven site.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_fvfoundation.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_fvfoundation.png" alt="after"></div></div>
-      </div>
-    </div>
-
-    <!-- LAKE WORTH ROTARY -->
-    <div class="case" id="rotary">
-      <div class="ctop"><h3>Rotary Club of Lake Worth Beach</h3><span class="cat">Nonprofit · Civic</span>
-        <div class="desc">An 8-page community-organization site - events, newsletters, scholarships and volunteering, fully modernized.</div></div>
-      <div class="ba">
-        <div class="before"><span class="lab">Before</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/before_lakeworth-rotary.png" alt="before"></div></div>
-        <div class="mid">→</div>
-        <div class="after"><span class="lab">After</span><div class="browser"><div class="bbar"><i class="r"></i><i class="y"></i><i class="g"></i></div><img src="img/after_lakeworth-rotary.png" alt="after"></div></div>
-      </div>
-    </div>
-
   </div>
-</section>
+  <p class="footer-legal">&copy; 2026 DV8 Web. All rights reserved.</p>
+</footer>
 
-<!-- CTA -->
-<section>
-  <div class="wrap">
-    <div class="ctaband">
-      <h2>Your business could be <span class="hot-text">next.</span></h2>
-      <p>A custom site like these starts at just $500. Book a free consult and we'll show you exactly what yours could look like.</p>
-      <a class="btn btn-hot btn-lg" href="https://calendly.com/deviateweb/consult">Book your free consult →</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site"><div class="wrap">
-  <div class="cols">
-    <div>
-      <a class="logo" href="index.html">
-        <img class="brand-mark" src="img/logo-mark.png" alt="" /><span class="brand-wm on-dark">DV8<span class="o">WEB</span></span>
-      </a>
-      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow.</p>
-    </div>
-    <div><h5>Services</h5><a class="fl" href="services.html">Custom Websites</a><a class="fl" href="services.html">AI Bots &amp; Agents</a><a class="fl" href="services.html">AI Voice Agents</a><a class="fl" href="services.html">Digital Marketing</a></div>
-    <div><h5>Company</h5><a class="fl" href="about.html">About Us</a><a class="fl" href="work.html">Our Work</a><a class="fl" href="pricing.html">Pricing</a><a class="fl" href="refer.html">Earn $200</a><a class="fl" href="https://calendly.com/deviateweb/consult">Book a Consult</a></div>
-  </div>
-  <div class="base"><span>© 2026 DV8 Web. All rights reserved.</span></div>
-</div></footer>
-
-<script src="app.js"></script>
+<script src="dv8.js"></script>
 </body>
 </html>
