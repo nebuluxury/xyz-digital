@@ -12,15 +12,15 @@ GitHub Pages includes:
 
 There is no monthly hosting cost.
 
-## Going live on deviateweb.com
+## Going live on dv8web.com
 
 ### Step 1 - you: register the domain (if not already)
-Register **deviateweb.com** at any registrar (Namecheap, Cloudflare, Google/Squarespace, GoDaddy...).
+Register **dv8web.com** at any registrar (Namecheap, Cloudflare, Google/Squarespace, GoDaddy...).
 
 ### Step 2 - you: add these DNS records
 At whoever manages the domain's DNS, add:
 
-**Apex (deviateweb.com) - four A records:**
+**Apex (dv8web.com) - four A records:**
 ```
 A   @   185.199.108.153
 A   @   185.199.109.153
@@ -29,7 +29,7 @@ A   @   185.199.111.153
 ```
 (Optional IPv6 - AAAA records: 2606:50c0:8000::153, 2606:50c0:8001::153, 2606:50c0:8002::153, 2606:50c0:8003::153)
 
-**www (www.deviateweb.com) - one CNAME record:**
+**www (www.dv8web.com) - one CNAME record:**
 ```
 CNAME   www   nebuluxury.github.io
 ```

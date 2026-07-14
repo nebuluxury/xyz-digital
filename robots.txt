@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://deviateweb.com/sitemap.xml
+Sitemap: https://dv8web.com/sitemap.xml
