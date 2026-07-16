@@ -296,6 +296,28 @@
   .adgrid figure:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
   .adgrid img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}
   @media(max-width:900px){.ways,.steps.four,.earn-nums{grid-template-columns:1fr}.adgrid{grid-template-columns:1fr 1fr}}
+  .funnel{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:44px}
+  .fstep{background:rgba(255,255,255,.05);border:1px solid var(--line-2);border-radius:14px;padding:16px 20px;text-align:center;min-width:118px}
+  .fstep b{font-family:var(--disp);font-weight:800;font-size:30px;color:#fff;display:block;line-height:1}
+  .fstep span{font-size:11.5px;color:#a6d8bd;margin-top:6px;display:block}
+  .fstep.hit{background:var(--accent);border-color:var(--accent)}
+  .fstep.hit b{color:#0c2417}
+  .fstep.hit span{color:rgba(12,36,23,.8)}
+  .farrow{color:var(--accent);font-size:20px;font-weight:700}
+  .calc{max-width:720px;margin:0 auto;background:rgba(255,255,255,.045);border:1px solid var(--line-2);border-radius:20px;padding:clamp(24px,4vw,34px)}
+  .calc-top label{display:block;text-align:center;font-size:18px;color:#eceadf;margin-bottom:20px}
+  .calc-top label b{color:var(--accent)}
+  #slider{width:100%;accent-color:var(--accent);height:6px;cursor:pointer}
+  .ticks{display:flex;justify-content:space-between;margin-top:10px;font-size:11px;color:#9fa295;text-align:center;line-height:1.3}
+  .calc-nums{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:14px;margin-top:30px;text-align:center}
+  .calc-nums>div{background:rgba(0,0,0,.22);border-radius:14px;padding:18px 12px;display:flex;flex-direction:column;justify-content:center}
+  .calc-nums span{font-size:11px;color:#a6d8bd;text-transform:uppercase;letter-spacing:.07em}
+  .calc-nums b{font-family:var(--disp);font-weight:800;font-size:30px;color:#fff;display:block;margin-top:6px}
+  .calc-nums .big{background:var(--accent)}
+  .calc-nums .big b{font-size:clamp(36px,5.2vw,56px);color:#0c2417}
+  .calc-nums .big span{color:rgba(12,36,23,.78)}
+  .calc-fine{text-align:center;font-size:12.5px;color:#9fa295;margin-top:22px}
+  @media(max-width:640px){.calc-nums{grid-template-columns:1fr}.funnel .farrow{transform:rotate(90deg)}}
 </style>
 </head>
 <body>
@@ -378,15 +400,31 @@
     </div>
   </section>
 
-  <section class="sec earn">
+  <section class="sec earn" id="math">
     <div class="wrap">
-      <div class="sec-head center" data-rev><span class="eyebrow light" style="justify-content:center">Do the math</span><h2 class="big">One "yes" a day adds up fast.</h2></div>
-      <div class="earn-nums">
-        <div data-rev><b>$200</b><span>one customer</span></div>
-        <div data-rev><b>$1,000</b><span>five in a week</span></div>
-        <div data-rev><b>$4,000+</b><span>a busy month</span></div>
+      <div class="sec-head center" data-rev><span class="eyebrow light" style="justify-content:center">Do the math</span><h2 class="big">This isn't beer money. It's a six-figure business.</h2><p class="lead" style="color:#a6d8bd">Every customer you send us is $200. A slow day is one. A good day is five. Now run the whole year.</p></div>
+      <div class="funnel" data-rev>
+        <div class="fstep"><b>30</b><span>doors you knock on</span></div>
+        <div class="farrow">&rarr;</div>
+        <div class="fstep"><b>3</b><span>say "blow me away"</span></div>
+        <div class="farrow">&rarr;</div>
+        <div class="fstep"><b>2</b><span>become customers</span></div>
+        <div class="farrow">&rarr;</div>
+        <div class="fstep hit"><b>$400</b><span>you made today</span></div>
       </div>
-      <p class="center" style="color:#a6d8bd;margin-top:22px;font-size:15px">Hustlers hit the streets. Customers tell their friends. Everybody wins.</p>
+      <div class="calc" data-rev>
+        <div class="calc-top">
+          <label>If you land <b><span id="perDay">3</span> customer<span id="pdS">s</span> a day</b>...</label>
+          <input type="range" id="slider" min="1" max="5" value="3" step="1" aria-label="Customers per day">
+          <div class="ticks"><span>1<br>slow</span><span>2</span><span>3</span><span>4</span><span>5<br>good</span></div>
+        </div>
+        <div class="calc-nums">
+          <div><span>A day</span><b id="cDay">$600</b></div>
+          <div><span>A week</span><b id="cWeek">$3,000</b></div>
+          <div class="big"><span>A year</span><b id="cYear">$150,000</b></div>
+        </div>
+        <p class="calc-fine">Based on $200 per customer, 5 days a week, 50 weeks a year. The streets are full of businesses with tired websites. This is real money.</p>
+      </div>
     </div>
   </section>
 
@@ -437,6 +475,16 @@
 <script>
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
   document.querySelectorAll('[data-rev]').forEach((el,i)=>{el.style.transitionDelay=(i%3*60)+'ms';io.observe(el)});
+  const S=document.getElementById('slider');
+  function calc(){
+    const n=+S.value, day=n*200, week=day*5, year=day*250;
+    document.getElementById('perDay').textContent=n;
+    document.getElementById('pdS').textContent=n>1?'s':'';
+    document.getElementById('cDay').textContent='$'+day.toLocaleString();
+    document.getElementById('cWeek').textContent='$'+week.toLocaleString();
+    document.getElementById('cYear').textContent='$'+year.toLocaleString();
+  }
+  if(S){S.addEventListener('input',calc);calc();}
 </script>
 </body>
 </html>
