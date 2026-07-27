@@ -3,16 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DV8 Web - Custom websites, built by pros, now 5x faster with AI</title>
+<title>Gustavo Mitchell - DV8 Web | Helping local businesses grow</title>
 <link rel="icon" href="img/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<meta name="description" content="A fully custom, up-to-5-page website for a flat $500 - no monthly catch. Plus full-stack development and AI automation for businesses ready to scale. Deviate. Grow.">
+<meta name="description" content="I'm Gustavo Mitchell - 25 years growing brands in e-commerce, Shopify, SEO, ads, and AI automation. Let's grab coffee, look at your business, and I'll show you what's possible. No packages, no pressure.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="dv8.css">
+<style>
+  :root{--navy:#12224a;--orange:#ff6a1f;--ink:#2a2c22}
+  .gm-cta-note{font-family:var(--mono);font-size:12px;letter-spacing:.02em;color:var(--faint);margin-top:16px}
+  /* story */
+  .gm-story{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+  .gm-photo{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 34px 70px -34px rgba(18,34,74,.5);border:1px solid var(--line);aspect-ratio:3/3.5;background:#0d1730}
+  .gm-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .gm-photo .gm-badge{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-radius:12px;padding:11px 15px;box-shadow:0 10px 30px -12px rgba(18,34,74,.5)}
+  .gm-photo .gm-badge b{display:block;font-family:var(--disp);font-weight:700;font-size:15px;color:var(--navy)}
+  .gm-photo .gm-badge span{font-size:12px;color:var(--muted)}
+  .gm-story p{font-size:16.5px;line-height:1.7;color:var(--text);margin-bottom:16px}
+  .gm-story p strong{color:var(--navy)}
+  .gm-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+  .gm-chips span{font-family:var(--mono);font-size:12px;color:var(--navy);background:#eef1f7;border:1px solid var(--line);border-radius:100px;padding:7px 13px}
+  /* steps */
+  .gm-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .gm-step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;position:relative;overflow:hidden}
+  .gm-step .n{font-family:var(--disp);font-weight:700;font-size:60px;color:#eef1f7;line-height:.7;position:absolute;top:16px;right:18px}
+  .gm-step h3{font-family:var(--disp);font-size:21px;color:var(--navy);margin:0 0 10px;position:relative}
+  .gm-step p{font-size:15px;color:var(--muted);position:relative}
+  /* capabilities */
+  .gm-caps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gm-cap{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;transition:.25s cubic-bezier(.2,.8,.2,1)}
+  .gm-cap:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(18,34,74,.4);border-color:rgba(255,106,31,.4)}
+  .gm-cap .ic{width:44px;height:44px;border-radius:12px;background:var(--orange-soft,#fff2ea);color:var(--orange);display:grid;place-items:center;margin-bottom:14px}
+  .gm-cap h3{font-family:var(--disp);font-size:17px;color:var(--navy);margin:0 0 7px}
+  .gm-cap p{font-size:14px;color:var(--muted);line-height:1.55}
+  /* AI band */
+  .gm-ai{background:var(--navy);border-radius:24px;padding:clamp(36px,5vw,60px);color:#fff;position:relative;overflow:hidden}
+  .gm-ai .glow{position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(255,106,31,.25),transparent 66%);top:-160px;right:-120px}
+  .gm-ai-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .gm-ai h2{font-family:var(--disp);font-weight:700;font-size:clamp(26px,3.4vw,40px);color:#fff;line-height:1.08;letter-spacing:-.02em}
+  .gm-ai h2 span{color:var(--orange)}
+  .gm-ai p{color:rgba(255,255,255,.74);font-size:16px;line-height:1.7;margin-top:16px}
+  .gm-split{display:flex;gap:14px}
+  .gm-split .b{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:22px}
+  .gm-split .pct{font-family:var(--disp);font-weight:700;font-size:38px;line-height:1}
+  .gm-split .b.ai .pct{color:#7aa7ff}.gm-split .b.hu .pct{color:var(--orange)}
+  .gm-split .b h4{font-family:var(--disp);font-size:15px;margin:10px 0 5px;color:#fff}
+  .gm-split .b p{font-size:13px;color:rgba(255,255,255,.6);margin:0;line-height:1.5}
+  /* how I work / arrangement */
+  .gm-work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .gm-mode{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;display:flex;flex-direction:column}
+  .gm-mode.feature{border:1.5px solid var(--orange);box-shadow:0 24px 50px -28px rgba(255,106,31,.5)}
+  .gm-mode .tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+  .gm-mode.feature .tag{color:var(--orange)}
+  .gm-mode h3{font-family:var(--disp);font-size:21px;color:var(--navy);margin:0 0 10px;letter-spacing:-.01em}
+  .gm-mode p{font-size:14.5px;color:var(--muted);line-height:1.6;margin:0}
+  .gm-mode p b{color:var(--navy)}
+  .gm-work-note{text-align:center;color:var(--muted);font-size:14px;margin-top:26px;max-width:640px;margin-inline:auto}
+  @media(max-width:900px){.gm-story{grid-template-columns:1fr;gap:32px}.gm-steps,.gm-caps,.gm-work{grid-template-columns:1fr}.gm-ai-grid{grid-template-columns:1fr;gap:26px}}
+</style>
 </head>
 <body>
 
@@ -20,41 +71,37 @@
   <div class="header-inner">
     <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
     <nav class="nav">
-      <a href="services.html">Services</a>
-      <a href="ai-automation.html">AI Automation</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="pricing.html">Pricing</a>
-      <a class="earn" href="refer.html">Earn $200</a>
+      <a href="#story">My Story</a>
+      <a href="#work">How I Work</a>
+      <a href="#possible">What's Possible</a>
+      <a href="#proof">Proof</a>
     </nav>
-    <a class="btn btn-primary btn-sm header-cta" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
+    <a class="btn btn-primary btn-sm header-cta" href="https://calendly.com/gustavomitchell/coffee">Book a coffee</a>
     <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 <div class="mobile-nav">
-  <a href="services.html">Services</a>
-  <a href="ai-automation.html">AI Automation</a>
-  <a href="work.html">Work</a>
-  <a href="about.html">About</a>
-  <a href="pricing.html">Pricing</a>
-  <a href="refer.html">Earn $200</a>
-  <a class="btn btn-primary" href="https://calendly.com/deviateweb/consult">Book a free consult</a>
+  <a href="#story">My Story</a>
+  <a href="#work">How I Work</a>
+  <a href="#possible">What's Possible</a>
+  <a href="#proof">Proof</a>
+  <a class="btn btn-primary" href="https://calendly.com/gustavomitchell/coffee">Book a coffee</a>
 </div>
 
 <main class="hero-ambient">
 
   <!-- HERO -->
-  <section class="container" style="padding:80px 28px 76px;">
-    <div class="hero-2col" style="display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center;">
+  <section class="container" style="padding:80px 28px 70px;">
+    <div class="hero-2col" style="display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;">
       <div>
-        <div class="eyebrow" data-reveal>Senior marketing + engineering, supercharged by AI</div>
-        <h1 class="h-display" data-reveal data-reveal-delay="80" style="margin-bottom:24px;">Custom websites, built by pros - now <span class="grad-text">5x faster</span> with AI.</h1>
-        <p class="lead" data-reveal data-reveal-delay="160" style="max-width:560px;margin-bottom:34px;">A fully custom, up-to-5-page website for a flat <strong style="color:var(--navy);">$500</strong>. No monthly catch - plus full-stack development and AI automation for businesses ready to scale.</p>
-        <div data-reveal data-reveal-delay="240" style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px;">
-          <a class="btn btn-primary" href="pricing.html">Get your $500 website <span class="arw">&rarr;</span></a>
-          <a class="btn btn-secondary" href="work.html">See our work</a>
+        <div class="eyebrow" data-reveal>Hi, I'm Gustavo Mitchell</div>
+        <h1 class="h-display" data-reveal data-reveal-delay="80" style="margin-bottom:22px;">25 years growing brands. Now I'd like to <span class="grad-text">grow yours.</span></h1>
+        <p class="lead" data-reveal data-reveal-delay="160" style="max-width:560px;margin-bottom:32px;">I'm not here to sell you a website. I'm here to sit down, look at your business, and show you what's actually possible - faster, cheaper, and easier than you think. Let's start with a cup of coffee.</p>
+        <div data-reveal data-reveal-delay="240" style="display:flex;flex-wrap:wrap;gap:14px;">
+          <a class="btn btn-primary" href="https://calendly.com/gustavomitchell/coffee">Book a coffee with me <span class="arw">&rarr;</span></a>
+          <a class="btn btn-secondary" href="#possible">See what's possible</a>
         </div>
-        <p class="meta" data-reveal data-reveal-delay="320">25-yr CMO &middot; 20-yr engineer &middot; a full creative &amp; dev team &nbsp;/&nbsp; turnaround in days, not months.</p>
+        <p class="meta" data-reveal data-reveal-delay="320" style="margin-top:26px;">25-year CMO &middot; Shopify &amp; e-commerce &middot; AI automation &middot; South Florida &amp; beyond</p>
       </div>
 
       <!-- orbit visual -->
@@ -70,83 +117,121 @@
           <line x1="50" y1="50" x2="9.1" y2="36.7"></line>
         </svg>
         <div class="core"><img src="img/dv8-mark.png" alt=""></div>
-        <div class="chip" style="left:50%;top:7%;"><div class="pill"><span>Custom Sites</span></div></div>
-        <div class="chip" style="left:90.9%;top:36.7%;"><div class="pill"><span>AI Agents</span></div></div>
-        <div class="chip" style="left:75.3%;top:84.8%;"><div class="pill"><span>Voice AI</span></div></div>
-        <div class="chip" style="left:24.7%;top:84.8%;"><div class="pill"><span>SEO</span></div></div>
-        <div class="chip" style="left:9.1%;top:36.7%;"><div class="pill"><span>Full-Stack</span></div></div>
+        <div class="chip" style="left:50%;top:7%;"><div class="pill"><span>Shopify &amp; E-com</span></div></div>
+        <div class="chip" style="left:90.9%;top:36.7%;"><div class="pill"><span>AI Automation</span></div></div>
+        <div class="chip" style="left:75.3%;top:84.8%;"><div class="pill"><span>Reviews &amp; SEO</span></div></div>
+        <div class="chip" style="left:24.7%;top:84.8%;"><div class="pill"><span>Email &amp; SMS</span></div></div>
+        <div class="chip" style="left:9.1%;top:36.7%;"><div class="pill"><span>Paid Ads</span></div></div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="container" style="padding:0 28px 20px;">
-    <div class="stat-band" data-reveal>
-      <div class="stat"><div class="big">45 yrs</div><div class="label">Combined marketing + dev experience</div></div>
-      <div class="stat"><div class="big">$500</div><div class="label">Flat price, up to 5 custom pages</div></div>
-      <div class="stat"><div class="big">5x</div><div class="label">Faster delivery with our AI workflow</div></div>
-      <div class="stat"><div class="big">200k+</div><div class="label">Businesses in our network</div></div>
-    </div>
-  </section>
-
-  <!-- $500 OFFER -->
-  <section class="container section">
-    <div class="grid-2" style="grid-template-columns:1fr 1.05fr;gap:56px;align-items:center;">
-      <div class="mockup" data-reveal>
-        <div class="glow"></div>
-        <div class="frame">
-          <div class="bar"><i></i><i></i><i></i><span class="addr">yourbusiness.com</span></div>
-          <div class="shot"><img src="img/after_mrgolfcart.png" alt="A custom website we designed and built"></div>
-        </div>
-        <div class="badge"><span class="amt">$500</span><span class="lb">one-time</span></div>
+  <!-- WHO I AM -->
+  <section class="container section" id="story">
+    <div class="gm-story">
+      <div class="gm-photo" data-reveal>
+        <img src="img/gustavo-placeholder.svg" alt="Gustavo Mitchell">
+        <div class="gm-badge"><b>Gustavo Mitchell</b><span>Founder &middot; 25-year marketer</span></div>
       </div>
       <div>
-        <div class="eyebrow" data-reveal>Our signature offer</div>
-        <h2 class="h2" data-reveal data-reveal-delay="80" style="margin-bottom:20px;">A custom website, done right, for <span class="o-text">$500.</span></h2>
-        <p class="sub" data-reveal data-reveal-delay="140" style="font-size:16.5px;margin-bottom:28px;">Up to five pages, designed from scratch around your brand - not a template. Mobile-perfect, fast, SEO-ready, and yours to keep. We build this fast by pairing 45 years of senior expertise with a full creative &amp; dev team and a modern AI workflow.</p>
-        <div class="checklist two" data-reveal data-reveal-delay="200" style="margin-bottom:30px;">
-          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Fully custom design</span></div>
-          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Up to 5 pages</span></div>
-          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Mobile &amp; SEO ready</span></div>
-          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Your branding &amp; logo</span></div>
-          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Fast turnaround</span></div>
-          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>No monthly fees</span></div>
-          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Contact form built-in</span></div>
-          <div class="check"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Free revisions</span></div>
+        <div class="eyebrow" data-reveal>The person behind the plan</div>
+        <h2 class="h2" data-reveal data-reveal-delay="80" style="margin-bottom:18px;">A quarter-century doing this - for real.</h2>
+        <p data-reveal data-reveal-delay="140">For almost 25 years, e-commerce and marketing have been my entire world. I've been a <strong>CMO for multimillion-dollar brands</strong>, built and scaled my own Shopify business, and <strong>sourced and imported products from China</strong> from the ground up.</p>
+        <p data-reveal data-reveal-delay="200">I've run the SEO, the email and SMS, the paid ads, the reputation management, and the automation that actually moves the needle - not theory, but the real, in-the-trenches work. I've made the expensive mistakes so you don't have to.</p>
+        <p data-reveal data-reveal-delay="260">Now I bring all of that - <strong>plus a full team of developers, creatives, and video</strong> - to small and medium businesses that are ready to grow.</p>
+        <div class="gm-chips" data-reveal data-reveal-delay="320">
+          <span>Shopify</span><span>Klaviyo</span><span>SEO / SEM</span><span>Paid Media</span><span>Sourcing / China</span><span>AI Automation</span><span>Reputation</span><span>Creative &amp; Video</span>
         </div>
-        <a class="btn btn-navy" data-reveal data-reveal-delay="260" href="pricing.html">See our packages <span class="arw">&rarr;</span></a>
       </div>
     </div>
   </section>
 
-  <!-- WHAT WE DO -->
-  <section class="band">
-    <div class="container section">
-      <div class="section-head">
-        <div class="eyebrow center" data-reveal>What we do</div>
-        <h2 class="h2" data-reveal data-reveal-delay="80">Full-stack studio, <span class="o-text">AI-native</span> from day one</h2>
-        <p class="sub" data-reveal data-reveal-delay="140">Senior developers and marketers who now build with AI - agency-quality work, faster and far more affordably.</p>
-      </div>
-      <div class="grid-3">
-        <div class="card card-hover" data-reveal data-reveal-delay="0"><div class="card-num">01</div><h3 class="h3">Custom Websites</h3><p>Beautiful, fast, conversion-focused sites built around your brand. From the $500 starter to full e-commerce.</p></div>
-        <div class="card card-hover" data-reveal data-reveal-delay="80"><div class="card-num">02</div><h3 class="h3">AI Bots &amp; Agents</h3><p>Custom AI assistants, agents and sub-agents that automate support, operations, data entry, and repetitive workflows.</p></div>
-        <div class="card card-hover" data-reveal data-reveal-delay="160"><div class="card-num">03</div><h3 class="h3">AI Voice Agents</h3><p>Inbound and outbound voice agents that handle customer service, sales, and appointment setting, 24/7, with no hold times.</p></div>
-        <div class="card card-hover" data-reveal data-reveal-delay="0"><div class="card-num">04</div><h3 class="h3">Full-Stack Development</h3><p>Web apps, custom software, integrations, and infrastructure, built to scale by a 20-year engineering veteran.</p></div>
-        <div class="card card-hover" data-reveal data-reveal-delay="80"><div class="card-num">05</div><h3 class="h3">Digital Marketing</h3><p>SEO, SEM, paid media, funnels and content led by a 25-year CMO who has grown multimillion-dollar brands.</p></div>
-        <div class="card card-hover" data-reveal data-reveal-delay="160"><div class="card-num">06</div><h3 class="h3">Creative &amp; Photography</h3><p>Branding, design, product photography, and creative services that make your business look the part.</p></div>
-      </div>
-      <div class="center" data-reveal style="margin-top:40px;">
-        <a class="text-link" href="services.html">Explore all services &rarr;</a>
-      </div>
+  <!-- HOW IT WORKS -->
+  <section class="container section" style="padding-top:20px;">
+    <div class="section-head" style="text-align:center;max-width:640px;margin:0 auto 44px;">
+      <div class="eyebrow center" data-reveal>It starts with a conversation</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80">No pitch. No pressure. Just coffee and a real look at your business.</h2>
+    </div>
+    <div class="gm-steps">
+      <div class="gm-step" data-reveal><div class="n">1</div><h3>We grab coffee</h3><p>In person or on a call. You tell me about your business, your goals, and where it hurts most. That's it - no slides, no sales pitch.</p></div>
+      <div class="gm-step" data-reveal data-reveal-delay="80"><div class="n">2</div><h3>I dig in</h3><p>I look at your website, your market, and your competitors, and find exactly where you're leaving money on the table - and where the fastest wins are.</p></div>
+      <div class="gm-step" data-reveal data-reveal-delay="160"><div class="n">3</div><h3>I show you what's possible</h3><p>A clear, honest picture of what we could do together. If we're a fit, great. If not, you still walk away with a plan worth having.</p></div>
+    </div>
+    <div class="center" data-reveal style="margin-top:40px;">
+      <a class="btn btn-primary btn-lg" href="https://calendly.com/gustavomitchell/coffee">Book a time with me <span class="arw">&rarr;</span></a>
     </div>
   </section>
 
-  <!-- PROOF / WORK -->
+  <!-- WHAT'S POSSIBLE -->
+  <section class="container section" id="possible">
+    <div class="section-head" style="text-align:center;max-width:660px;margin:0 auto 44px;">
+      <div class="eyebrow center" data-reveal>What I can help you with</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80">Everything it takes to grow - <span class="o-text">under one roof.</span></h2>
+      <p class="sub" data-reveal data-reveal-delay="140">Whatever your business needs, I've either done it myself or built the team that does it every day.</p>
+    </div>
+    <div class="gm-caps">
+      <div class="gm-cap" data-reveal><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></div><h3>A website that sells</h3><p>Custom, fast, and built to convert - not a template. Designed around your brand and ready for Google.</p></div>
+      <div class="gm-cap" data-reveal data-reveal-delay="60"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg></div><h3>AI automation</h3><p>Put the busywork on autopilot. A plumber's jobs, for example, tied into scheduling and SMS that keeps every customer in the loop.</p></div>
+      <div class="gm-cap" data-reveal data-reveal-delay="120"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 16.9 5.8 20.6l1.6-6.7L2.2 8.9l6.9-.6z"/></svg></div><h3>Reviews &amp; reputation</h3><p>Turn happy customers into 5-star reviews on autopilot, climb the map, and win the trust that wins the sale.</p></div>
+      <div class="gm-cap" data-reveal><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><h3>Email &amp; SMS that bring people back</h3><p>Klaviyo flows and campaigns that turn one-time buyers into repeat customers - the highest-ROI thing most businesses ignore.</p></div>
+      <div class="gm-cap" data-reveal data-reveal-delay="60"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><h3>Content &amp; SEO</h3><p>Rank above your competitors with content that keeps working while you sleep. This is what I've done for 25 years.</p></div>
+      <div class="gm-cap" data-reveal data-reveal-delay="120"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 5-7"/></svg></div><h3>Ads that actually pay off</h3><p>Meta and Google campaigns run by someone who has spent real money and knows the difference between spending and investing.</p></div>
+      <div class="gm-cap" data-reveal><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-1.5 12.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg></div><h3>Product &amp; sourcing</h3><p>Selling products? I've sourced, bought, and imported from China for years. I'll help you build the catalog and the margins.</p></div>
+      <div class="gm-cap" data-reveal data-reveal-delay="60"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><h3>A full creative team</h3><p>Designers, video editors, and a full-stack developer on hand - so anything we dream up, we can actually build.</p></div>
+      <div class="gm-cap" data-reveal data-reveal-delay="120"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>A strategy, not a to-do list</h3><p>Everything above only matters if it fits together. I build the plan that turns pieces into growth.</p></div>
+    </div>
+  </section>
+
+  <!-- AI + HUMAN -->
   <section class="container section">
-    <div class="section-head">
-      <div class="eyebrow center" data-reveal>Proof, not promises</div>
-      <h2 class="h2" data-reveal data-reveal-delay="80">A few of the businesses we've <span class="o-text">transformed</span></h2>
-      <p class="sub" data-reveal data-reveal-delay="140">Real sites we've rebuilt, each designed from scratch around the brand - just a taste of many more.</p>
+    <div class="gm-ai" data-reveal>
+      <div class="glow"></div>
+      <div class="gm-ai-grid">
+        <div>
+          <div class="eyebrow light" style="color:var(--orange);margin-bottom:14px;">Why it's faster and cheaper now</div>
+          <h2>AI does the first 80%. <span>My team perfects the last 20%.</span></h2>
+          <p>The game has changed. AI now handles the heavy lifting - the scaffolding, the boilerplate, the first draft of everything. That frees my developers and creatives to spend their time where it actually matters: security, speed, optimization, and SEO. You get enterprise-grade work in a fraction of the time, at a fraction of the cost.</p>
+        </div>
+        <div class="gm-split">
+          <div class="b ai"><div class="pct">80%</div><h4>Done by AI</h4><p>The groundwork, structure, and first drafts - built in hours, not weeks.</p></div>
+          <div class="b hu"><div class="pct">20%</div><h4>Perfected by humans</h4><p>Security, speed, optimization, SEO, and the craft that makes it premium.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I WORK / THE ARRANGEMENT -->
+  <section class="container section" id="work">
+    <div class="section-head" style="text-align:center;max-width:680px;margin:0 auto 44px;">
+      <div class="eyebrow center" data-reveal>Let's talk about money (or not)</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80">I don't sell packages. I <span class="o-text">partner</span> with businesses ready to grow.</h2>
+    </div>
+    <div class="gm-work">
+      <div class="gm-mode" data-reveal>
+        <div class="tag">Just need the basics?</div>
+        <h3>I'll point you to great people.</h3>
+        <p>If you just need a solid website or basic monthly service, I know excellent teams who'll take fantastic care of you for a few hundred a month. No games, no cut for me. Real advice, honestly given.</p>
+      </div>
+      <div class="gm-mode feature" data-reveal data-reveal-delay="80">
+        <div class="tag">Ready for the next level?</div>
+        <h3>That's exactly what I do.</h3>
+        <p>This is my zone. <b>Twenty-five years</b> of building brands - my own and others' - pointed straight at your growth. Strategy, execution, and a full team behind it. This is the difference between a website and a business that scales.</p>
+      </div>
+      <div class="gm-mode" data-reveal data-reveal-delay="160">
+        <div class="tag">See real upside together?</div>
+        <h3>Sometimes there's no fee at all.</h3>
+        <p>When I look at a business and see real room to grow, I'll put my own skin in the game. <b>I tie my reward to your growth</b> - a share of what we build together. If I win, it's because you did first.</p>
+      </div>
+    </div>
+    <p class="gm-work-note" data-reveal>I'm selective, on purpose. I take on the businesses I genuinely believe I can help take to the next level - and then I treat your growth like my own.</p>
+  </section>
+
+  <!-- PROOF -->
+  <section class="container section" id="proof">
+    <div class="section-head" style="text-align:center;max-width:640px;margin:0 auto 40px;">
+      <div class="eyebrow center" data-reveal>Real businesses, real transformations</div>
+      <h2 class="h2" data-reveal data-reveal-delay="80">A few I've helped.</h2>
+      <p class="sub" data-reveal data-reveal-delay="140">Just a taste - every one rebuilt from scratch around the business behind it.</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;">
       <div class="ba-card" data-reveal>
@@ -174,36 +259,18 @@
         </div>
       </div>
     </div>
-    <div class="center" data-reveal style="margin-top:40px;">
-      <a class="text-link" href="work.html">See lots more examples &rarr;</a>
-      <p class="sub" style="font-size:14px;color:var(--faint);margin-top:14px;">Auto shops, dry cleaners, dentists, nonprofits, e-commerce and more.</p>
-    </div>
-  </section>
-
-  <!-- WHY DV8 -->
-  <section class="band">
-    <div class="container section">
-      <div class="section-head" style="max-width:760px;">
-        <div class="eyebrow center" data-reveal>Why DV8 Web</div>
-        <h2 class="h2" data-reveal data-reveal-delay="80">Agency quality. Freelance speed. <span class="o-text">Startup pricing.</span></h2>
-      </div>
-      <div class="grid-3">
-        <div class="card" data-reveal data-reveal-delay="0"><div class="card-numeral">01</div><h3 class="h3">Senior brains, not juniors</h3><p>You work directly with a 25-year CMO and a 20-year full-stack engineer - not an account manager and an intern.</p></div>
-        <div class="card" data-reveal data-reveal-delay="90"><div class="card-numeral">02</div><h3 class="h3">AI-accelerated</h3><p>We use AI the way it's meant to be used, to move 5x faster without cutting quality. That speed is why our prices dropped, not our standards.</p></div>
-        <div class="card" data-reveal data-reveal-delay="180"><div class="card-numeral">03</div><h3 class="h3">Built for local business</h3><p>We put enterprise-grade marketing and engineering within reach of the shop down the street. Real help, real results.</p></div>
-      </div>
-    </div>
   </section>
 
   <!-- FINAL CTA -->
   <section class="container section">
-    <div class="dark-band" data-reveal style="padding:clamp(52px,7vw,96px) 40px;text-align:center;">
+    <div class="dark-band" data-reveal style="padding:clamp(52px,7vw,92px) 40px;text-align:center;">
       <div class="grid-tex"></div>
       <div class="glow-b"></div>
       <div class="inner">
-        <h2 style="font-family:var(--disp);font-weight:700;font-size:clamp(32px,4.4vw,58px);line-height:1.02;letter-spacing:-.03em;color:#fff;margin:0 auto 20px;max-width:720px;">Let's build something that <span class="o-text">actually works.</span></h2>
-        <p style="font-size:17px;line-height:1.55;color:rgba(255,255,255,.7);max-width:560px;margin:0 auto 36px;">Book a free 20-minute consult. We'll tell you exactly what we'd do and what it costs - no pressure, no jargon.</p>
-        <a class="btn btn-primary btn-lg" href="https://calendly.com/deviateweb/consult">Book your free consult <span class="arw">&rarr;</span></a>
+        <h2 style="font-family:var(--disp);font-weight:700;font-size:clamp(32px,4.5vw,56px);line-height:1.04;letter-spacing:-.03em;color:#fff;margin:0 auto 20px;max-width:720px;">Let's have that <span class="o-text">coffee.</span></h2>
+        <p style="font-size:17px;line-height:1.55;color:rgba(255,255,255,.72);max-width:560px;margin:0 auto 36px;">Tell me about your business. I'll show you what's possible. Twenty minutes could change how you grow - and it costs you nothing but the coffee.</p>
+        <a class="btn btn-primary btn-lg" href="https://calendly.com/gustavomitchell/coffee">Book a time with me <span class="arw">&rarr;</span></a>
+        <p class="gm-cta-note">Prefer email? gm@nebuluxury.com</p>
       </div>
     </div>
   </section>
@@ -214,29 +281,27 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <a class="brand" href="index.html"><img src="img/dv8-mark.png" alt="DV8 Web"><span class="brand-name">DV8<span class="o">WEB</span></span></a>
-      <p>Custom websites, full-stack development, and AI automation for businesses ready to grow. Senior expertise, AI speed, honest pricing.</p>
-      <p class="tag">Deviate. Grow.</p>
+      <p>Gustavo Mitchell - 25 years growing brands in e-commerce, marketing, and AI. Now helping small and medium businesses do the same.</p>
+      <p class="tag">Dare to deviate.</p>
     </div>
     <div class="footer-col">
-      <h4>Services</h4>
+      <h4>The site</h4>
       <div class="links">
-        <a href="services.html">Custom Websites</a>
-        <a href="services.html">AI Bots &amp; Agents</a>
-        <a href="services.html">AI Voice Agents</a>
-        <a href="services.html">Digital Marketing</a>
+        <a href="#story">My Story</a>
+        <a href="#work">How I Work</a>
+        <a href="#possible">What's Possible</a>
+        <a href="#proof">Proof</a>
       </div>
     </div>
     <div class="footer-col">
-      <h4>Company</h4>
+      <h4>Let's talk</h4>
       <div class="links">
-        <a href="about.html">About Us</a>
-        <a href="work.html">Our Work</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="refer.html">Earn $200</a>
+        <a href="https://calendly.com/gustavomitchell/coffee">Book a coffee</a>
+        <a href="mailto:gm@nebuluxury.com">gm@nebuluxury.com</a>
       </div>
     </div>
   </div>
-  <p class="footer-legal">&copy; 2026 DV8 Web. All rights reserved.</p>
+  <p class="footer-legal">&copy; 2026 DV8 Web &middot; Gustavo Mitchell. All rights reserved.</p>
 </footer>
 
 <script src="dv8.js"></script>
