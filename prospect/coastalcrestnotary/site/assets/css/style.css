@@ -77,9 +77,12 @@ section{position:relative}
   backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:76px}
-.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--font-head);font-weight:600;color:var(--teal-deep);font-size:1.16rem}
-.brand img{height:50px;width:auto;display:block}
-.brand span small{display:block;font-family:var(--font-body);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--font-head);font-weight:600;color:var(--teal-deep);position:relative;z-index:4}
+.brand img{height:46px;width:auto;display:block}
+/* homepage lockup: oversized crest hangs below the header bar, wordmark stays inside */
+.brand-lockup{gap:13px}
+.brand-lockup .brand-crest{height:104px;margin:-6px 0 -36px;filter:drop-shadow(0 7px 11px rgba(8,61,70,.20))}
+.brand-lockup .brand-word{height:40px}
 .nav-links{display:flex;align-items:center;gap:1.7rem;list-style:none;margin:0;padding:0}
 .nav-links a{color:var(--teal-deep);font-weight:600;font-size:.98rem}
 .nav-links a:hover{color:var(--gold-deep)}
@@ -252,7 +255,7 @@ section{position:relative}
 /* ---------- footer ---------- */
 .site-footer{background:var(--teal-900);color:rgba(255,255,255,.8);padding:4rem 0 2rem;font-size:.95rem}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.4rem;margin-bottom:2.5rem}
-.footer-brand img{height:58px;width:auto;margin-bottom:1.1rem}
+.footer-brand img{width:220px;max-width:72%;height:auto;margin-bottom:1.1rem}
 .footer-brand p{color:rgba(255,255,255,.7);font-size:.92rem;max-width:34ch}
 .site-footer h4{color:#fff;font-family:var(--font-body);font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 1.1rem}
 .site-footer ul{list-style:none;margin:0;padding:0}
@@ -385,6 +388,9 @@ section{position:relative}
 }
 @media (max-width:760px){
   body{font-size:16px}
+  /* scale the hang-off crest down on phones so it stays tidy */
+  .brand-lockup .brand-crest{height:74px;margin:-4px 0 -22px}
+  .brand-lockup .brand-word{height:31px}
   .hero h1{font-size:2rem}
   .hero p{font-size:1.06rem;max-width:none}
   .hero-cta .btn{width:100%}
