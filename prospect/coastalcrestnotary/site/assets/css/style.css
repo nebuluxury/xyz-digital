@@ -80,9 +80,9 @@ section{position:relative}
 .brand{display:flex;align-items:center;gap:.7rem;font-family:var(--font-head);font-weight:600;color:var(--teal-deep);position:relative;z-index:4}
 .brand img{height:46px;width:auto;display:block}
 /* homepage lockup: oversized crest hangs below the header bar, wordmark stays inside */
-.brand-lockup{gap:13px}
-.brand-lockup .brand-crest{height:104px;margin:-6px 0 -36px;filter:drop-shadow(0 7px 11px rgba(8,61,70,.20))}
-.brand-lockup .brand-word{height:40px}
+.brand-lockup{gap:24px}
+.brand-lockup .brand-crest{height:150px;align-self:flex-start;margin-top:-1px;filter:drop-shadow(0 8px 13px rgba(8,61,70,.22))}
+.brand-lockup .brand-word{height:44px}
 .nav-links{display:flex;align-items:center;gap:1.7rem;list-style:none;margin:0;padding:0}
 .nav-links a{color:var(--teal-deep);font-weight:600;font-size:.98rem}
 .nav-links a:hover{color:var(--gold-deep)}
@@ -389,8 +389,9 @@ section{position:relative}
 @media (max-width:760px){
   body{font-size:16px}
   /* scale the hang-off crest down on phones so it stays tidy */
-  .brand-lockup .brand-crest{height:74px;margin:-4px 0 -22px}
-  .brand-lockup .brand-word{height:31px}
+  .brand-lockup{gap:14px}
+  .brand-lockup .brand-crest{height:96px;margin-top:0}
+  .brand-lockup .brand-word{height:32px}
   .hero h1{font-size:2rem}
   .hero p{font-size:1.06rem;max-width:none}
   .hero-cta .btn{width:100%}
