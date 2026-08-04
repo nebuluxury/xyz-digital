@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+<title>Coastal Crest Notary - Market Analysis & Growth Blueprint</title>
+<style>
+  :root{
+    --navy:#0c2033; --navy2:#12314c; --ink:#0a1826; --paper:#f7f5f0; --card:#ffffff;
+    --gold:#c9a227; --gold2:#e6c760; --teal:#1f8a8a; --coral:#d1603d; --green:#2e8b57;
+    --line:#e4ddce; --muted:#5f6b78; --muted2:#8a93a0; --shadow:0 10px 30px rgba(12,32,51,.09);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Georgia',serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,.sans{font-family:'Helvetica Neue',Arial,sans-serif}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  a{color:var(--teal);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* NAV */
+  nav.top{position:sticky;top:0;z-index:50;background:rgba(10,24,38,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,162,39,.35)}
+  nav.top .wrap{display:flex;align-items:center;gap:18px;height:58px}
+  nav.top .brand{font-family:'Helvetica Neue',Arial,sans-serif;color:#fff;font-weight:700;letter-spacing:.5px;font-size:15px;white-space:nowrap}
+  nav.top .brand span{color:var(--gold2)}
+  nav.top .links{display:flex;gap:2px;margin-left:auto;overflow-x:auto}
+  nav.top .links a{color:#c8d2dd;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12.5px;padding:7px 11px;border-radius:6px;white-space:nowrap}
+  nav.top .links a:hover{background:rgba(255,255,255,.08);color:#fff;text-decoration:none}
+  nav.top .links a.active{color:var(--gold2)}
+
+  /* HERO */
+  header.hero{background:linear-gradient(160deg,#0c2033 0%,#123a52 55%,#0e2c40 100%);color:#eaf1f7;padding:66px 0 54px;position:relative;overflow:hidden}
+  header.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(201,162,39,.22),transparent 70%);border-radius:50%}
+  .kicker{font-family:'Helvetica Neue',Arial,sans-serif;text-transform:uppercase;letter-spacing:3px;font-size:12px;color:var(--gold2);font-weight:700;margin-bottom:16px}
+  header.hero h1{font-size:clamp(30px,5vw,50px);line-height:1.1;margin:0 0 18px;color:#fff;font-weight:800;letter-spacing:-.5px}
+  header.hero .sub{font-size:clamp(17px,2.4vw,21px);max-width:760px;color:#d6e2ee;font-family:'Georgia',serif}
+  header.hero .thesis{margin-top:26px;padding:18px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06);max-width:820px;border-radius:0 10px 10px 0;font-size:16px}
+  header.hero .thesis b{color:var(--gold2)}
+  .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .chip{background:rgba(255,255,255,.07);border:1px solid rgba(201,162,39,.3);border-radius:10px;padding:12px 16px;min-width:135px}
+  .chip .n{font-family:'Helvetica Neue',Arial,sans-serif;font-size:24px;font-weight:800;color:var(--gold2);display:block;line-height:1.1}
+  .chip .l{font-size:12.5px;color:#c3d0dd;font-family:'Helvetica Neue',Arial,sans-serif;margin-top:3px;display:block}
+  .meta-line{margin-top:30px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12.5px;color:#9fb1c2;letter-spacing:.3px}
+
+  /* SECTIONS */
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  section:nth-of-type(even){background:#fbfaf6}
+  .sec-tag{font-family:'Helvetica Neue',Arial,sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-size:11.5px;font-weight:700;color:var(--gold);margin-bottom:10px}
+  h2.sec{font-size:clamp(24px,3.4vw,34px);margin:0 0 8px;color:var(--navy);font-weight:800;letter-spacing:-.3px}
+  .sec-lede{font-size:17px;color:var(--muted);max-width:820px;margin:0 0 30px}
+  h3.blk{font-family:'Helvetica Neue',Arial,sans-serif;font-size:18px;color:var(--navy);margin:34px 0 14px;font-weight:700}
+
+  /* GRIDS + CARDS */
+  .grid{display:grid;gap:18px}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:820px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow);border-top:3px solid var(--teal)}
+  .stat .big{font-family:'Helvetica Neue',Arial,sans-serif;font-size:30px;font-weight:800;color:var(--navy);line-height:1.05}
+  .stat .lab{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:var(--muted);margin-top:6px;font-weight:600}
+  .stat .note{font-size:13px;color:var(--muted2);margin-top:8px;line-height:1.45}
+  .stat.gold{border-top-color:var(--gold)}
+  .stat.coral{border-top-color:var(--coral)}
+  .stat.green{border-top-color:var(--green)}
+
+  /* BAR CHART */
+  .bars{margin-top:10px}
+  .barrow{display:grid;grid-template-columns:190px 1fr;gap:14px;align-items:center;margin:11px 0}
+  @media(max-width:600px){.barrow{grid-template-columns:1fr}}
+  .barrow .name{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13.5px;color:var(--navy);font-weight:600}
+  .barrow .name small{display:block;color:var(--muted2);font-weight:400;font-size:12px}
+  .track{background:#ece7db;border-radius:8px;height:30px;position:relative;overflow:hidden}
+  .fill{height:100%;border-radius:8px;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12.5px;font-weight:700;width:0;transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+
+  /* TABLE */
+  .tbl{width:100%;border-collapse:collapse;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+  .tbl th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-size:12.5px;letter-spacing:.4px;text-transform:uppercase;font-weight:700}
+  .tbl td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+  .tbl tr:last-child td{border-bottom:none}
+  .tbl tr:nth-child(even) td{background:#faf8f2}
+  .tbl .svc{font-weight:700;color:var(--navy)}
+  .badge{display:inline-block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:.3px}
+  .b-low{background:#e3f3ea;color:#1c6b40}
+  .b-mid{background:#fdf0dc;color:#9a6b13}
+  .b-high{background:#fbe4dc;color:#a83f22}
+
+  /* COMPETITOR CARDS */
+  .comp{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow);position:relative}
+  .comp .tier{position:absolute;top:16px;right:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:3px 9px;border-radius:20px}
+  .t-leader{background:#0c2033;color:var(--gold2)}
+  .t-strong{background:#e9eff5;color:var(--navy)}
+  .t-mid{background:#f0ede4;color:var(--muted)}
+  .comp h4{font-family:'Helvetica Neue',Arial,sans-serif;margin:0 0 3px;font-size:16px;color:var(--navy);max-width:76%}
+  .comp .site{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:var(--muted2);margin-bottom:12px}
+  .comp .stars{color:var(--gold);font-size:14px;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:700;margin-bottom:8px}
+  .comp ul{margin:8px 0 0;padding-left:18px;font-size:13.5px;color:#33414f}
+  .comp ul li{margin:4px 0}
+  .comp .gap{margin-top:10px;font-size:12.5px;color:var(--coral);font-family:'Helvetica Neue',Arial,sans-serif;font-weight:600}
+
+  /* GAP / OPP LIST */
+  .oplist{counter-reset:op;margin-top:12px}
+  .op{display:grid;grid-template-columns:44px 1fr auto;gap:16px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px;box-shadow:var(--shadow)}
+  @media(max-width:600px){.op{grid-template-columns:44px 1fr}}
+  .op .rank{counter-increment:op;font-family:'Helvetica Neue',Arial,sans-serif;font-size:22px;font-weight:800;color:var(--gold);width:44px;height:44px;border-radius:50%;background:#fbf4e0;display:flex;align-items:center;justify-content:center}
+  .op .rank:before{content:counter(op)}
+  .op .body h4{font-family:'Helvetica Neue',Arial,sans-serif;margin:0 0 3px;font-size:15.5px;color:var(--navy)}
+  .op .body p{margin:0;font-size:14px;color:var(--muted)}
+  .op .tags{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+  @media(max-width:600px){.op .tags{grid-column:1/-1;flex-direction:row;margin-top:4px}}
+  .tg{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;font-weight:700;padding:4px 9px;border-radius:6px;white-space:nowrap}
+  .tg-impact{background:#e3f0ff;color:#1a5aa8}
+  .tg-effort-l{background:#e3f3ea;color:#1c6b40}
+  .tg-effort-m{background:#fdf0dc;color:#9a6b13}
+  .tg-effort-h{background:#fbe4dc;color:#a83f22}
+
+  /* GAP CHECKLIST */
+  .gaps{columns:2;column-gap:22px}
+  @media(max-width:700px){.gaps{columns:1}}
+  .gaps .gi{break-inside:avoid;display:flex;gap:10px;align-items:flex-start;margin-bottom:12px;font-size:14px}
+  .gaps .x{color:var(--coral);font-weight:800;font-family:'Helvetica Neue',Arial,sans-serif;flex:0 0 auto}
+  .gaps .gi b{color:var(--navy);font-family:'Helvetica Neue',Arial,sans-serif}
+
+  /* PILLARS */
+  .pillar{background:linear-gradient(160deg,#12314c,#0c2033);color:#e7eef5;border-radius:14px;padding:22px;border:1px solid rgba(201,162,39,.3)}
+  .pillar .num{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--gold2);font-weight:800;font-size:13px;letter-spacing:1px}
+  .pillar h4{font-family:'Helvetica Neue',Arial,sans-serif;color:#fff;margin:8px 0 8px;font-size:16px}
+  .pillar p{margin:0;font-size:14px;color:#c3d2e0}
+
+  .angle-box{background:linear-gradient(135deg,#c9a227,#e6c760);color:#2a2205;border-radius:16px;padding:28px 30px;box-shadow:var(--shadow);margin-bottom:24px}
+  .angle-box .q{font-family:'Georgia',serif;font-size:clamp(19px,2.6vw,25px);font-style:italic;line-height:1.4;font-weight:600}
+  .angle-box .cap{font-family:'Helvetica Neue',Arial,sans-serif;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700;margin-bottom:12px;color:#5f4d06}
+
+  /* BLUEPRINT PAGES */
+  .page{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:var(--shadow);border-left:3px solid var(--teal)}
+  .page h4{font-family:'Helvetica Neue',Arial,sans-serif;margin:0 0 8px;font-size:15px;color:var(--navy);display:flex;align-items:center;gap:8px}
+  .page .pd{font-size:13.5px;color:var(--muted);margin:0}
+  .page .el{margin:10px 0 0;padding-left:0;list-style:none;font-size:12.5px;color:#3a4652;font-family:'Helvetica Neue',Arial,sans-serif}
+  .page .el li{padding:3px 0 3px 16px;position:relative}
+  .page .el li:before{content:"▸";position:absolute;left:0;color:var(--gold)}
+
+  .feat{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:13px 15px;box-shadow:var(--shadow)}
+  .feat .ck{color:var(--green);font-weight:800;font-family:'Helvetica Neue',Arial,sans-serif}
+  .feat span.t{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13.5px;color:var(--navy);font-weight:600}
+  .feat small{display:block;color:var(--muted);font-family:'Georgia',serif;font-weight:400;font-size:12.5px;margin-top:2px}
+
+  /* MARKETING ENGINE */
+  .eng{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+  .eng h4{font-family:'Helvetica Neue',Arial,sans-serif;margin:0 0 4px;font-size:16px;color:var(--navy);display:flex;align-items:center;gap:10px}
+  .eng .ic{width:30px;height:30px;border-radius:8px;background:#fbf4e0;color:var(--gold);display:inline-flex;align-items:center;justify-content:center;font-size:15px}
+  .eng ul{margin:12px 0 0;padding-left:18px;font-size:13.5px;color:#33414f}
+  .eng ul li{margin:6px 0}
+  .eng .tagline{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:var(--muted2);margin-top:2px}
+
+  /* TIMELINE */
+  .phase{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .phase:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px}
+  .phase.p1:before{background:var(--teal)}
+  .phase.p2:before{background:var(--gold)}
+  .phase.p3:before{background:var(--coral)}
+  .phase .ph{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--muted)}
+  .phase h4{font-family:'Helvetica Neue',Arial,sans-serif;margin:6px 0 3px;font-size:18px;color:var(--navy)}
+  .phase .days{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:var(--gold);font-weight:700;margin-bottom:8px}
+  .phase .goal{font-size:13.5px;color:var(--muted);font-style:italic;margin-bottom:12px}
+  .phase ul{margin:0;padding-left:18px;font-size:13.5px;color:#33414f}
+  .phase ul li{margin:6px 0}
+
+  .callout{background:#fbf4e0;border:1px solid #e8d59a;border-radius:12px;padding:16px 20px;font-size:14.5px;color:#5a4a12;margin:22px 0}
+  .callout b{color:#3f3305}
+
+  footer{background:var(--ink);color:#9fb1c2;padding:40px 0;font-family:'Helvetica Neue',Arial,sans-serif}
+  footer .wrap{font-size:13px;line-height:1.7}
+  footer h4{color:#fff;font-size:14px;margin:0 0 8px}
+  footer a{color:#8fb8c9}
+  .src{font-size:11.5px;color:#7a8a99;word-break:break-word}
+  .disclaimer{font-size:11.5px;color:#6c7a88;margin-top:20px;border-top:1px solid #24384a;padding-top:16px;font-style:italic}
+</style>
+
+<style>
+/* ===== Coastal Crest brand skin (DV8) ===== */
+:root{
+  --navy:#052e35;--navy2:#0b5c68;--ink:#0c2a2e;--paper:#fbf8f1;--card:#ffffff;
+  --gold:#b8862f;--gold2:#d9b676;--teal:#0f8a86;--coral:#c0483f;--green:#2f8f6b;
+  --line:#ece3d2;--muted:#4c6163;--muted2:#8a9698;
+}
+body{font-family:"Source Sans 3",system-ui,sans-serif}
+h1,h2,h3,h4,h2.sec,header.hero h1,.stat .big,.chip .n,.op .rank{font-family:"Fraunces",Georgia,serif !important;letter-spacing:-.01em}
+.kicker,.sec-tag,.badge,.tg,.tbl th,nav.top .links a,.stat .lab,.chip .l,.comp .tier,.meta-line,.b-low,.b-mid,.b-high{font-family:"Source Sans 3",system-ui,sans-serif !important}
+nav.top{background:rgba(5,46,53,.97) !important;border-bottom:1px solid rgba(198,154,76,.4) !important}
+header.hero{background:linear-gradient(160deg,#052e35 0%,#0b5c68 58%,#0f8a86 130%) !important}
+.tbl th{background:#052e35 !important}
+.t-leader{background:#052e35 !important;color:var(--gold2) !important}
+nav.top .brand{display:flex;align-items:center;gap:11px}
+nav.top .brand img{height:30px;width:auto;display:block}
+.hero-crest{height:70px;width:auto;display:block;margin-bottom:20px;filter:drop-shadow(0 8px 16px rgba(0,0,0,.32))}
+.dv8-credit{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-family:"Source Sans 3",system-ui,sans-serif;font-weight:600;font-size:13px;color:#9db3b6;margin-top:24px;transition:color .3s}
+.dv8-credit strong{font-weight:800;color:#eaf3f4;transition:color .3s}
+.dv8-credit:hover{color:#eaf3f4}.dv8-credit:hover strong{color:#ff6a1f}
+.dv8-orbit{position:relative;width:18px;height:18px;flex:0 0 auto}
+.dv8-orbit .r{position:absolute;inset:0;border-radius:50%;border:1px dashed rgba(255,255,255,.3)}
+.dv8-orbit .c{position:absolute;inset:4px;border-radius:50%;background:#cfe0e2}
+.dv8-orbit .s{position:absolute;top:50%;left:50%;width:18px;height:18px;margin:-9px 0 0 -9px;animation:dv8spin 3.6s linear infinite}
+.dv8-orbit .s i{position:absolute;top:-1px;left:50%;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:#ff6a1f;box-shadow:0 0 7px rgba(255,106,31,.75)}
+@keyframes dv8spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.dv8-orbit .s{animation:none}}
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="#overview" style="text-decoration:none"><img src="logo-white.png" alt="Coastal Crest Notary"><span>Growth Blueprint</span></a>
+    <div class="links">
+      <a href="#overview">Overview</a>
+      <a href="#market">Market</a>
+      <a href="#money">The Money</a>
+      <a href="#field">Competitors</a>
+      <a href="#beatable">Openings</a>
+      <a href="#today">You Today</a>
+      <a href="#opps">Opportunities</a>
+      <a href="#angle">The Angle</a>
+      <a href="#website">Website</a>
+      <a href="#engine">Marketing</a>
+      <a href="#rollout">90 Days</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="hero-crest" src="crest.png" alt=""><div class="kicker">Market Analysis &amp; Marketing Blueprint · Palm Beach County, FL</div>
+    <h1>The market is crowded but shallow.<br>There's a clear #2 seat open - and it's winnable.</h1>
+    <div class="sub">A ground-level read of the Palm Beach County mobile-notary market: where the demand is, how the leaders got their edge, where they're exposed, and the exact website + marketing engine that lets Coastal Crest Notary take a real piece of it.</div>
+    <div class="thesis">One competitor has an unbeatable review lead. <b>Almost everyone else has none.</b> Reaching just 50-100 genuine 5-star reviews would vault Coastal Crest past nearly the entire field - while a demand base of retirees, immigrants, and $1M closings keeps the phone ringing regardless of interest rates.</div>
+    <div class="chips">
+      <div class="chip"><span class="n">~1.58M</span><span class="l">County residents</span></div>
+      <div class="chip"><span class="n">26.1%</span><span class="l">Age 65+ (~410K)</span></div>
+      <div class="chip"><span class="n">34.2%</span><span class="l">Speak non-English at home</span></div>
+      <div class="chip"><span class="n">~24,000</span><span class="l">Home closings / year</span></div>
+      <div class="chip"><span class="n">$643K</span><span class="l">Median single-family price</span></div>
+    </div>
+    <div class="meta-line">Prepared by DV8 Web · Client: Coastal Crest Notary (coastalcrestnotary.com) · Benchmark: PB Notary Services &amp; the wider PBC field · August 4, 2026</div>
+  </div>
+</header>
+
+<!-- OVERVIEW -->
+<section id="overview">
+  <div class="wrap">
+    <div class="sec-tag">The Opportunity in 60 Seconds</div>
+    <h2 class="sec">What the market is telling us</h2>
+    <p class="sec-lede">Palm Beach County is one of the richest notary markets in the country - old, wealthy, foreign-born, and transacting constantly. Dozens of solo notaries compete, but nearly none have built a review moat or a website designed to convert. That combination - durable demand plus weak execution - is the whole opportunity.</p>
+    <div class="grid g3">
+      <div class="card">
+        <h3 class="blk" style="margin-top:0">🎯 The demand is structural</h3>
+        <p style="font-size:14px;margin:0;color:#33414f">Three tailwinds converge here and none are cyclical: an unusually <b>old population</b> (constant wills, POAs, healthcare directives - often signed at home or bedside), a heavily <b>foreign-born, non-English base</b> (apostille, translation, immigration docs), and a high-value <b>real-estate market</b> (~24,000 closings a year, many $1M+). Even when refinancing slows, estate and immigration work doesn't.</p>
+      </div>
+      <div class="card">
+        <h3 class="blk" style="margin-top:0">🥇 The leaders are beatable</h3>
+        <p style="font-size:14px;margin:0;color:#33414f">One player owns the reviews (428+). But the "strong" competitor you flagged runs a Wix site whose every page title still reads <b>"| Mysite,"</b> has <b>zero city pages</b>, hides its pricing, and offers Spanish only through a text line. The bar - outside the one leader - is low.</p>
+      </div>
+      <div class="card">
+        <h3 class="blk" style="margin-top:0">📉 Coastal Crest is invisible</h3>
+        <p style="font-size:14px;margin:0;color:#33414f">Today the site is a digital business card: four generic services, one phone number, no reviews, no Google Business Profile, no pricing, no money services, and a meta description that literally says "Coastal Crest Notary Website." <b>Starting from zero is an advantage</b> - every move is high-ROI and nothing needs undoing.</p>
+      </div>
+    </div>
+    <div class="callout">💡 <b>The core play:</b> Don't compete on the $10 seal or on "24/7" - both are commodities. Win on <b>trust, proof, specialization, and clarity</b>: a named, credentialed, bilingual human with visible 5-star reviews and a transparent concierge menu, engineered to rank in the Google Map Pack.</div>
+  </div>
+</section>
+
+<!-- MARKET -->
+<section id="market">
+  <div class="wrap">
+    <div class="sec-tag">Market Size &amp; Demand</div>
+    <h2 class="sec">A demographically notary-rich county</h2>
+    <p class="sec-lede">Florida's 4th-largest county, growing toward ~1.77M by 2050 and aging as it grows. These are the numbers worth putting on the website, in the About page, and in any B2B pitch deck.</p>
+    <div class="grid g4">
+      <div class="stat green"><div class="big">~410K</div><div class="lab">Seniors (65+)</div><div class="note">26.1% of residents vs. 17% nationally. Wills, POAs &amp; healthcare directives - much of it mobile/bedside.</div></div>
+      <div class="stat gold"><div class="big">~540K</div><div class="lab">Speak non-English at home</div><div class="note">34.2% of the county. Bilingual service national apps can't match.</div></div>
+      <div class="stat"><div class="big">~437K</div><div class="lab">Foreign-born (27.7%)</div><div class="note">Nearly double the U.S. average - steady apostille &amp; immigration-doc demand.</div></div>
+      <div class="stat coral"><div class="big">380+</div><div class="lab">$1M+ home sales / month</div><div class="note">Up 23% YoY. High-touch, high-fee luxury signings.</div></div>
+    </div>
+
+    <h3 class="blk">Palm Beach County vs. the U.S. - why this market skews notary-heavy</h3>
+    <div class="card">
+      <div class="bars" id="demoBars">
+        <div class="barrow"><div class="name">Age 65+ <small>estate / POA demand</small></div><div class="track"><div class="fill" data-w="87" style="background:linear-gradient(90deg,#2e8b57,#3fae6c)">26.1% &nbsp;·&nbsp; U.S. 17%</div></div></div>
+        <div class="barrow"><div class="name">Foreign-born <small>apostille / immigration</small></div><div class="track"><div class="fill" data-w="92" style="background:linear-gradient(90deg,#1f8a8a,#38b0b0)">27.7% &nbsp;·&nbsp; U.S. 14%</div></div></div>
+        <div class="barrow"><div class="name">Non-English at home <small>bilingual opportunity</small></div><div class="track"><div class="fill" data-w="100" style="background:linear-gradient(90deg,#c9a227,#e6c760)">34.2%</div></div></div>
+        <div class="barrow"><div class="name">Hispanic / Latino <small>Spanish-first segment</small></div><div class="track"><div class="fill" data-w="78" style="background:linear-gradient(90deg,#12314c,#26557d)">26.1% &nbsp;(~412K)</div></div></div>
+        <div class="barrow"><div class="name">Homeownership <small>deeds, HELOC, estate</small></div><div class="track"><div class="fill" data-w="70" style="background:linear-gradient(90deg,#8a6d1a,#c9a227)">70.1% &nbsp;(605K households)</div></div></div>
+      </div>
+    </div>
+
+    <div class="grid g3" style="margin-top:22px">
+      <div class="stat"><div class="big">~24,000</div><div class="lab">Real-estate closings / year</div><div class="note">2,021 in October 2025 alone (+12.7% YoY). Every one needs notarized deeds/mortgage packages.</div></div>
+      <div class="stat"><div class="big">~300K</div><div class="lab">Business entities</div><div class="note">55,803 employers + 243,731 solo businesses - recurring I-9, corporate &amp; contract notarization.</div></div>
+      <div class="stat"><div class="big">46.5%</div><div class="lab">Cash home sales</div><div class="note">Why demand is counter-cyclical: even when refis slow, deeds, estates &amp; immigration keep signing.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MONEY -->
+<section id="money">
+  <div class="wrap">
+    <div class="sec-tag">Where the Money Actually Is</div>
+    <h2 class="sec">The $10 seal is a loss leader. Profit lives on top of it.</h2>
+    <p class="sec-lede">Florida caps a notarial act at <b>$10</b> (RON $25), so plain notarization is a race to zero. The money is in the <b>uncapped travel fee</b> and the specialized lines stacked around it. Here's the full menu, ranked by opportunity for a newcomer - the services Coastal Crest's site is missing entirely.</p>
+    <table class="tbl">
+      <thead><tr><th>Revenue line</th><th>Typical revenue</th><th>Startup barrier</th><th>Why it matters here</th></tr></thead>
+      <tbody>
+        <tr><td class="svc">1 · Loan signing (NSA)</td><td>$75-$200 / closing</td><td><span class="badge b-low">Low</span></td><td>Highest $/hour for a newcomer into a ~24,000-closing/yr market. Just a background screen + E&amp;O + a course.</td></tr>
+        <tr><td class="svc">2 · Apostille concierge</td><td>$150-$200+ <small>(state fee only $10-$20)</small></td><td><span class="badge b-low">Low</span></td><td>27.7% foreign-born guarantees demand. FL routes all apostilles through one Tallahassee office - courier convenience sells itself.</td></tr>
+        <tr><td class="svc">3 · Mobile travel fee</td><td>$35-$75+ / trip <small>(uncapped)</small></td><td><span class="badge b-low">None</span></td><td>The real profit on every mobile job. Add after-hours &amp; rush premiums so no trip is unprofitable.</td></tr>
+        <tr><td class="svc">4 · Remote Online Notary (RON)</td><td>$25 / act, zero travel</td><td><span class="badge b-low">Low setup</span></td><td>2.5× the in-person cap, scales statewide to snowbirds &amp; out-of-state family of local seniors. ~$155 one-time setup.</td></tr>
+        <tr><td class="svc">5 · Wedding officiant</td><td>$150-$350 / ceremony</td><td><span class="badge b-low">Low</span></td><td>FL notaries can legally marry people. High-margin weekend upsell in an affluent county (statutory fee is only $30).</td></tr>
+        <tr><td class="svc">6 · I-9 verification</td><td>$75-$125 mobile</td><td><span class="badge b-low">Very low</span></td><td>Recurring B2B/HR demand from remote hires; seeds ongoing corporate relationships.</td></tr>
+        <tr><td class="svc">7 · Specialty (jail / hospital / hospice)</td><td>$75-$150+ premium trips</td><td><span class="badge b-mid">Access</span></td><td>Monetizes urgency &amp; access, not the seal. PBC's older base makes bedside estate signings durable.</td></tr>
+        <tr><td class="svc">8 · Live Scan fingerprinting</td><td>Per-transaction, recurring</td><td><span class="badge b-high">High</span></td><td><b>Phase 2.</b> Real compliance demand, but needs an FDLE vendor agreement + certified device. Build after cash flow exists.</td></tr>
+      </tbody>
+    </table>
+    <div class="callout">🧩 <b>Cross-sell the trip:</b> one mobile visit can bundle notarization + witnesses ($25 ea.) + I-9 + VIN ($125 mobile) + apostille intake - multiplying revenue per drive. Position the brand around the uncapped, high-margin services, never the $10 stamp.</div>
+  </div>
+</section>
+
+<!-- FIELD -->
+<section id="field">
+  <div class="wrap">
+    <div class="sec-tag">The Competitive Field</div>
+    <h2 class="sec">Who's out there - and how they're winning</h2>
+    <p class="sec-lede">We mapped the mobile-notary field across West Palm Beach, Boca, Delray, Boynton, Jupiter, Wellington &amp; Palm Beach Gardens. It tiers into one review leader, a cluster of solid full-service shops, and a long low-polish tail. The single most important chart in this whole report is right below.</p>
+
+    <h3 class="blk">The review gap - the field's biggest tell</h3>
+    <div class="card">
+      <p style="font-size:14px;color:var(--muted);margin-top:0">Visible Google reviews on-site. One competitor dominates; almost everyone else shows <b>zero</b>. This is exactly the moat that's open.</p>
+      <div class="bars">
+        <div class="barrow"><div class="name">PBC Apostille &amp; Notary <small>the leader - multi-yr moat</small></div><div class="track"><div class="fill" data-w="100" style="background:linear-gradient(90deg,#0c2033,#26557d)">428+ ★ 5.0</div></div></div>
+        <div class="barrow"><div class="name">Christine Countywide <small>representative long tail</small></div><div class="track"><div class="fill" data-w="6" style="background:linear-gradient(90deg,#8a93a0,#aab2bd)">~13</div></div></div>
+        <div class="barrow"><div class="name">PB Notary Services <small>your benchmark</small></div><div class="track"><div class="fill" data-w="3" style="background:linear-gradient(90deg,#d1603d,#e0805f)">0 shown</div></div></div>
+        <div class="barrow"><div class="name">Most of the field <small>Southeast, TMF, Boca, Luxury, Dart…</small></div><div class="track"><div class="fill" data-w="3" style="background:linear-gradient(90deg,#b0b8c2,#c8ced6)">0 shown</div></div></div>
+        <div class="barrow"><div class="name">Coastal Crest (today) <small>not even listed</small></div><div class="track"><div class="fill" data-w="2" style="background:linear-gradient(90deg,#c0362c,#d1603d)">0 · no GBP</div></div></div>
+        <div class="barrow"><div class="name">Coastal Crest - target <small>clear #2 in ~3-6 mo</small></div><div class="track"><div class="fill" data-w="22" style="background:linear-gradient(90deg,#2e8b57,#3fae6c)">75-100 goal</div></div></div>
+      </div>
+    </div>
+
+    <h3 class="blk">The players, tiered</h3>
+    <div class="grid g2">
+      <div class="comp">
+        <span class="tier t-leader">Leader - beat #2, not #1</span>
+        <h4>Palm Beach County Apostille &amp; Notary</h4>
+        <div class="site">palmbeachcountyapostille.com · WPB</div>
+        <div class="stars">★★★★★ 428+ reviews · 5.0</div>
+        <ul><li>Bilingual EN/ES, 24/7 mobile, WPB office</li><li>Full stack: apostille + notary + Live Scan + translation (50+ languages)</li><li>Ranks at/near the top of nearly everything</li></ul>
+        <div class="gap">→ Don't try to out-review them this year. Take clear #2 and out-execute everyone else.</div>
+      </div>
+      <div class="comp">
+        <span class="tier t-strong">Your benchmark</span>
+        <h4>PB Notary &amp; Fingerprinting Services</h4>
+        <div class="site">pbnotaryservices.com · reg. 2021</div>
+        <div class="stars">★ breadth, but 0 reviews shown</div>
+        <ul><li>~20 topic pages: notary, ink + Live Scan, apostille ($130+), translation (65+ lang), immigration, closings, weddings ($499/$50)</li><li>Spanish <em>text line</em> (561-584-2138) on every footer</li><li>Online booking (Launch27), strong B2B/I-9 hook</li></ul>
+        <div class="gap">→ Weak spots: every page title is "| Mysite", zero city pages, hidden core pricing, Spanish only by text, no named owner.</div>
+      </div>
+      <div class="comp">
+        <span class="tier t-strong">Strong full-service</span>
+        <h4>Palm Beach Mobile Notary &amp; Fingerprinting</h4>
+        <div class="site">pbnotarypublic.com · WPB</div>
+        <ul><li>Mobile + RON, full fingerprinting (FBI/FDLE/FINRA), apostille, loan signing, DNA</li><li>Professional site, 24/7 by appointment</li></ul>
+        <div class="gap">→ No visible review count · no Spanish.</div>
+      </div>
+      <div class="comp">
+        <span class="tier t-strong">Strong full-service</span>
+        <h4>The Southeast Notary</h4>
+        <div class="site">thesoutheastnotary.com · WPB</div>
+        <ul><li>Broad stack + <b>$1M E&amp;O</b> insurance messaging, I-9, weddings, RON</li><li>24/7, evenings &amp; weekends</li></ul>
+        <div class="gap">→ No Spanish · no review count. (Match their $1M E&amp;O claim.)</div>
+      </div>
+      <div class="comp">
+        <span class="tier t-mid">South county</span>
+        <h4>TMF Notary · Boca Raton</h4>
+        <div class="site">tmfnotary.com</div>
+        <ul><li>Mobile + online, closings, estate planning, VIN</li></ul>
+        <div class="gap">→ Mon-Fri 9-6 only - a real 24/7/weekend gap in the south.</div>
+      </div>
+      <div class="comp">
+        <span class="tier t-mid">Transparent pricing</span>
+        <h4>Dart Mobile Notary · Palm Beach Gardens</h4>
+        <div class="site">dartmobilenotary.com</div>
+        <ul><li>Rare published pricing: apostille flat $295, ink prints $50</li></ul>
+        <div class="gap">→ Limited hours · buggy GoDaddy template. Beatable on polish.</div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--muted2);margin-top:16px;font-family:'Helvetica Neue',Arial,sans-serif">Also in the field: Boca Raton Mobile Notary, Luxury Notary Pros (Jupiter), Mobile Notary PBC, Nadidra Notary (a thin but real city-page SEO play), Beaches, JH Notary, Xpress, notarypb.com (Spanish). Aggregators (Yelp, Thumbtack, OneNotary, BBB) own the top of most searches because local operators cede the ground.</p>
+  </div>
+</section>
+
+<!-- BEATABLE -->
+<section id="beatable">
+  <div class="wrap">
+    <div class="sec-tag">Where the Leaders Are Exposed</div>
+    <h2 class="sec">Eight openings the whole field leaves wide open</h2>
+    <p class="sec-lede">These are the recurring weaknesses across competitors - each one is a lever Coastal Crest can pull from day one.</p>
+    <div class="grid g2">
+      <div class="card"><h3 class="blk" style="margin-top:0">① Review proof is a near-universal blind spot</h3><p style="font-size:14px;margin:0;color:#33414f">Outside the 428-review leader, almost every competitor shows <b>zero</b> visible reviews. 40+ makes a profile ~3× more likely to hit the top-3; 75-100 is domination. This is the fastest, cheapest moat to build.</p></div>
+      <div class="card"><h3 class="blk" style="margin-top:0">② "Heavy SEO" is half a myth</h3><p style="font-size:14px;margin:0;color:#33414f">PB Notary Services is a Wix build where every page title is the unedited default <b>"| Mysite."</b> Basic optimized titles beat it on-page.</p></div>
+      <div class="card"><h3 class="blk" style="margin-top:0">③ The city-page vacuum</h3><p style="font-size:14px;margin:0;color:#33414f">Nearly everyone only says "Palm Beach County." Almost no one has real <b>city landing pages</b>, so directories eat the "mobile notary [city]" searches. Wide open.</p></div>
+      <div class="card"><h3 class="blk" style="margin-top:0">④ Pricing is hidden</h3><p style="font-size:14px;margin:0;color:#33414f">Most rivals gate notary &amp; fingerprinting pricing behind quote forms. <b>Transparent travel-fee tiers</b> are an instant trust + conversion differentiator.</p></div>
+      <div class="card"><h3 class="blk" style="margin-top:0">⑤ Bilingual is shallow</h3><p style="font-size:14px;margin:0;color:#33414f">Only ~3 competitors market Spanish at all - and the strongest offers it only via a text line. A <b>truly bilingual site</b> (/es/) out-serves a ~540,000-person market.</p></div>
+      <div class="card"><h3 class="blk" style="margin-top:0">⑥ Nobody has a face</h3><p style="font-size:14px;margin:0;color:#33414f">No named, credentialed owner anywhere. A <b>real person</b> - headshot, bio, NNA-certified, bonded, $1M E&amp;O - reads as far more trustworthy for an in-home service.</p></div>
+      <div class="card"><h3 class="blk" style="margin-top:0">⑦ Availability is table stakes</h3><p style="font-size:14px;margin:0;color:#33414f">Everyone claims mobile + 24/7, so <b>don't lead with it.</b> Lead with proof and specialization; treat availability as a given.</p></div>
+      <div class="card"><h3 class="blk" style="margin-top:0">⑧ The paid-search lane is empty</h3><p style="font-size:14px;margin:0;color:#33414f">No evidence the field runs Google Ads. Note: Local Services Ads / "Google Guaranteed" is <b>not available to notaries</b> - so it's an organic + GBP + standard-PPC game the field is barely playing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TODAY -->
+<section id="today">
+  <div class="wrap">
+    <div class="sec-tag">Where Coastal Crest Stands Today</div>
+    <h2 class="sec">An honest audit of the current site</h2>
+    <p class="sec-lede">coastalcrestnotary.com is a true "nobody" - a digital business card, not a lead engine. That's not a criticism; it's the starting line, and it means every fix below is pure upside. Gaps in order of severity:</p>
+    <div class="gaps">
+      <div class="gi"><span class="x">✕</span><div><b>Zero discoverable presence.</b> No Google Business Profile, no reviews, no Yelp/BBB, no social. The brand name returns nothing - invisible in maps &amp; local search. <em>(The single biggest gap.)</em></div></div>
+      <div class="gi"><span class="x">✕</span><div><b>No social proof of any kind</b> - on-site or off - in a market where reviews are the #1 ranking &amp; trust lever.</div></div>
+      <div class="gi"><span class="x">✕</span><div><b>SEO is non-existent.</b> Title tag is just "Coastal Crest Notary"; meta description is "Coastal Crest Notary Website." No schema, no city pages.</div></div>
+      <div class="gi"><span class="x">✕</span><div><b>Missing every money service.</b> No loan signing, apostille, RON, fingerprinting, I-9, or wedding officiant - only commodity acts.</div></div>
+      <div class="gi"><span class="x">✕</span><div><b>No pricing or travel-fee disclosure</b> - the #1 buyer-friction point.</div></div>
+      <div class="gi"><span class="x">✕</span><div><b>No trust signals:</b> no NNA badge, E&amp;O amount, bonding, background-check status, or commission number.</div></div>
+      <div class="gi"><span class="x">✕</span><div><b>Anonymous.</b> No owner name, headshot, bio, or years of experience - fatal for an in-home service.</div></div>
+      <div class="gi"><span class="x">✕</span><div><b>No online booking</b> - only a static contact form with no instant confirmation.</div></div>
+      <div class="gi"><span class="x">✕</span><div><b>No Spanish / bilingual</b> anything, in a 34.2%-non-English county.</div></div>
+      <div class="gi"><span class="x">✕</span><div><b>No hours or availability</b> stated - buyers can't tell if same-day/after-hours exists.</div></div>
+    </div>
+    <div class="callout" style="background:#e9f4ee;border-color:#a9d6bd;color:#1c5a38">✅ <b>The upside:</b> one modern touch already works - click-to-call at 561-316-0749. Everything else is greenfield: no legacy reputation to protect, a low competitive bar, and the ability to build it correctly from day one instead of retrofitting.</div>
+  </div>
+</section>
+
+<!-- OPPORTUNITIES -->
+<section id="opps">
+  <div class="wrap">
+    <div class="sec-tag">Top Opportunities - Ranked by Impact vs. Effort</div>
+    <h2 class="sec">If you did these in order, you'd win</h2>
+    <p class="sec-lede">The prioritized sequence. The first three are near-free and move the needle fastest; the rest compound on top.</p>
+    <div class="oplist">
+      <div class="op"><div class="rank"></div><div class="body"><h4>Claim &amp; fully optimize a Google Business Profile</h4><p>The map pack is the lead engine notaries can't buy past - and Coastal Crest is absent from it entirely. Near-zero cost, highest ROI move on the board.</p></div><div class="tags"><span class="tg tg-impact">Impact: Massive</span><span class="tg tg-effort-l">Effort: Low</span></div></div>
+      <div class="op"><div class="rank"></div><div class="body"><h4>Launch a systematic review engine (SMS + QR within 24 hrs)</h4><p>40+ reviews ≈ 3× more likely to hit the top-3; most rivals show none. 50-100 reviews takes clear #2. Velocity &amp; recency beat raw volume.</p></div><div class="tags"><span class="tg tg-impact">Impact: Massive</span><span class="tg tg-effort-l">Effort: Low</span></div></div>
+      <div class="op"><div class="rank"></div><div class="body"><h4>Fix title tags + meta + add LocalBusiness/Notary schema</h4><p>Trivial effort, immediate findability. Beats PB's "| Mysite" defaults on-page.</p></div><div class="tags"><span class="tg tg-impact">Impact: High</span><span class="tg tg-effort-l">Effort: Low</span></div></div>
+      <div class="op"><div class="rank"></div><div class="body"><h4>Build city-specific landing pages</h4><p>WPB, Boca, Delray, Boynton, Jupiter, Wellington, Palm Beach Gardens, Lake Worth, Royal Palm Beach - capturing "mobile notary [city]" queries the whole field cedes to directories.</p></div><div class="tags"><span class="tg tg-impact">Impact: High</span><span class="tg tg-effort-m">Effort: Medium</span></div></div>
+      <div class="op"><div class="rank"></div><div class="body"><h4>Add loan signing (NSA) as a headline service</h4><p>Highest $/hour for a newcomer ($75-$200/closing) into a ~24,000-closing/yr market. Startup is just screening + E&amp;O + a course.</p></div><div class="tags"><span class="tg tg-impact">Impact: High</span><span class="tg tg-effort-m">Effort: Medium</span></div></div>
+      <div class="op"><div class="rank"></div><div class="body"><h4>Add apostille concierge + a definitive apostille content hub</h4><p>Strong margin over a $10-$20 state fee; high-intent, low-competition searches; 27.7% foreign-born guarantees demand.</p></div><div class="tags"><span class="tg tg-impact">Impact: High</span><span class="tg tg-effort-m">Effort: Medium</span></div></div>
+      <div class="op"><div class="rank"></div><div class="body"><h4>Go genuinely bilingual (full Spanish /es/ pages)</h4><p>~540,000 non-English speakers; durable, referral-driven stickiness competitors' text lines can't match.</p></div><div class="tags"><span class="tg tg-impact">Impact: High</span><span class="tg tg-effort-m">Effort: Medium</span></div></div>
+      <div class="op"><div class="rank"></div><div class="body"><h4>Publish transparent pricing / travel-fee tiers</h4><p>Removes the #1 friction and differentiates from opaque, quote-gated rivals.</p></div><div class="tags"><span class="tg tg-impact">Impact: Medium</span><span class="tg tg-effort-l">Effort: Low</span></div></div>
+      <div class="op"><div class="rank"></div><div class="body"><h4>Stand up RON + real online booking</h4><p>RON: $25/act, zero travel, scales to snowbirds. Booking (Calendly/Acuity/Square) with instant confirmation lifts conversion directly.</p></div><div class="tags"><span class="tg tg-impact">Impact: Medium</span><span class="tg tg-effort-m">Effort: Medium</span></div></div>
+      <div class="op"><div class="rank"></div><div class="body"><h4>B2B referral outreach (title/escrow, elder-law, HR/I-9)</h4><p>Higher effort, but the highest-value recurring channel - where loan-signing volume actually comes from.</p></div><div class="tags"><span class="tg tg-impact">Impact: High</span><span class="tg tg-effort-h">Effort: High</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ANGLE -->
+<section id="angle">
+  <div class="wrap">
+    <div class="sec-tag">The Recommended Angle</div>
+    <h2 class="sec">Find the wedge the leaders don't own</h2>
+    <p class="sec-lede">The leaders already claim breadth, Spanish (shallowly), and availability. The opening is a combination none of them assemble well - a trusted, visible, genuinely bilingual concierge with transparent pricing.</p>
+    <div class="angle-box">
+      <div class="cap">Positioning Statement</div>
+      <div class="q">"Palm Beach County's trusted, bilingual mobile notary &amp; loan-signing concierge - a real person you can see, name, and reach, who comes to your home, hospital, or closing table, same day."</div>
+    </div>
+    <div class="grid g4">
+      <div class="pillar"><div class="num">PILLAR 01</div><h4>A named, credentialed human</h4><p>Headshot, bio, years of experience, NNA-certified, bonded, $1M E&amp;O - against a field of anonymous LLCs.</p></div>
+      <div class="pillar"><div class="num">PILLAR 02</div><h4>Visible 5-star proof</h4><p>A live, embedded Google review widget with a real count - against a field showing zero.</p></div>
+      <div class="pillar"><div class="num">PILLAR 03</div><h4>Genuinely bilingual</h4><p>A full Spanish site &amp; "Se habla Español," not a buried text line - for a 34.2% non-English county.</p></div>
+      <div class="pillar"><div class="num">PILLAR 04</div><h4>Transparent concierge stack</h4><p>Notary + loan signing + apostille + RON + I-9 + weddings, with published travel-fee tiers - against opaque rivals.</p></div>
+    </div>
+    <div class="callout" style="margin-top:24px">🎗️ <b>Durable sub-angle to own:</b> <em>"Gentle, patient bedside &amp; at-home notarization for wills, POAs, and healthcare directives."</em> PBC's ~410,000 seniors make this a repeat, referral-rich niche (elder-law attorneys, assisted living, hospice) that national apps can never serve.</div>
+  </div>
+</section>
+
+<!-- WEBSITE -->
+<section id="website">
+  <div class="wrap">
+    <div class="sec-tag">The Website Blueprint</div>
+    <h2 class="sec">Exactly what the new site should have</h2>
+    <p class="sec-lede">Every page a winning notary site needs, and why. This is the build spec - hand it to whoever develops the site (or to Coastal Crest as the target to hold the build to).</p>
+    <div class="grid g3">
+      <div class="page"><h4>🏠 Home</h4><p class="pd">The conversion hub. Prove trust above the fold, route to services.</p><ul class="el"><li>H1: service + geography + differentiator</li><li>Click-to-call + "Book Now" + live star rating</li><li>Trust badge row: NNA · Bonded · $1M E&amp;O · Background-checked</li><li>Owner headshot + one-line credential</li><li>Service tiles · area map · "Se habla Español" toggle</li><li>Sticky mobile call/book bar</li></ul></div>
+      <div class="page"><h4>🧾 Service pages (one each)</h4><p class="pd">One high-intent page per line - its own title, pricing, FAQ, schema.</p><ul class="el"><li>Mobile/General Notary</li><li>Loan Signing Agent</li><li>Apostille</li><li>RON (Remote Online Notarization)</li><li>I-9 Verification · Wedding Officiant</li><li>POA / Estate · Hospital / Hospice / Senior</li><li>(Phase 2) Live Scan Fingerprinting</li></ul></div>
+      <div class="page"><h4>📍 City / service-area pages</h4><p class="pd">The field's biggest gap - unique, substantive pages, not one generic page.</p><ul class="el"><li>West Palm Beach · Boca Raton</li><li>Delray Beach · Boynton Beach</li><li>Jupiter · Palm Beach Gardens</li><li>Wellington · Lake Worth · Royal Palm Beach</li><li>Each: local content, map, testimonials, unique title/H1</li></ul></div>
+      <div class="page"><h4>👤 About / Trust</h4><p class="pd">Where anonymity dies. Make the human real.</p><ul class="el"><li>Owner name, photo, bio, years of experience</li><li>Commission number + expiration</li><li>NNA certification · bonding · $1M E&amp;O</li><li>Background-check / Snapdocs status</li></ul></div>
+      <div class="page"><h4>⭐ Reviews</h4><p class="pd">Social proof, front and center.</p><ul class="el"><li>Embedded live Google review widget</li><li>Aggregate rating displayed</li><li>Curated testimonials</li></ul></div>
+      <div class="page"><h4>💲 Pricing</h4><p class="pd">Transparency as a differentiator.</p><ul class="el"><li>$10 FL cap explained</li><li>Travel-fee tiers ($35-$75+)</li><li>After-hours / rush premiums</li><li>Loan signing · apostille · RON · I-9 · wedding</li></ul></div>
+      <div class="page"><h4>📅 Booking</h4><p class="pd">Convert the visitor while they're warm.</p><ul class="el"><li>Embedded scheduler (Calendly/Acuity/Square)</li><li>Instant confirmation</li><li>Same-day / after-hours / emergency messaging</li></ul></div>
+      <div class="page"><h4>✍️ Blog</h4><p class="pd">Long-tail authority the map pack can't cover.</p><ul class="el"><li>"How to get a document notarized"</li><li>"Apostille Florida: complete guide"</li><li>"What is a loan signing agent"</li><li>"RON in Florida" · "Notary for POA at a hospital"</li></ul></div>
+      <div class="page"><h4>🌐 Spanish version (/es/)</h4><p class="pd">Full bilingual pages, not a text line.</p><ul class="el"><li>Translated home + service pages</li><li>"Notario · Se habla Español"</li><li>Serves ~540K non-English residents</li></ul></div>
+    </div>
+
+    <h3 class="blk">Must-have features on every build</h3>
+    <div class="grid g3">
+      <div class="feat"><span class="ck">✓</span><span class="t">Click-to-call (tel:) links<small>Already present - the one modern touch to keep.</small></span></div>
+      <div class="feat"><span class="ck">✓</span><span class="t">Online scheduling<small>Instant confirmation, not a static form.</small></span></div>
+      <div class="feat"><span class="ck">✓</span><span class="t">Spanish toggle + /es/ pages<small>Genuine bilingual, not a buried number.</small></span></div>
+      <div class="feat"><span class="ck">✓</span><span class="t">Embedded Google review widget<small>Live star count as social proof.</small></span></div>
+      <div class="feat"><span class="ck">✓</span><span class="t">LocalBusiness/Notary + Service schema<small>With aggregateRating for rich results.</small></span></div>
+      <div class="feat"><span class="ck">✓</span><span class="t">Optimized title/meta on every page<small>Beats "| Mysite" instantly.</small></span></div>
+      <div class="feat"><span class="ck">✓</span><span class="t">Mobile-first, fast-loading<small>Most searches are on a phone, mid-task.</small></span></div>
+      <div class="feat"><span class="ck">✓</span><span class="t">Sticky call/book bar<small>One tap to convert on mobile.</small></span></div>
+      <div class="feat"><span class="ck">✓</span><span class="t">Hours + service-area map<small>Answers "will you come to me, now?"</small></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGINE -->
+<section id="engine">
+  <div class="wrap">
+    <div class="sec-tag">The Marketing Engine</div>
+    <h2 class="sec">The system that keeps the phone ringing</h2>
+    <p class="sec-lede">The website is the asset; this is the machine that drives traffic to it. Note the key constraint: Local Services Ads / "Google Guaranteed" is closed to notaries, so this is an <b>organic + GBP + reviews + targeted PPC + B2B</b> game - exactly the game the field is barely playing.</p>
+    <div class="grid g2">
+      <div class="eng"><h4><span class="ic">🗺️</span> SEO + Google Business Profile <span class="tagline">- the core engine</span></h4>
+        <ul>
+          <li>Primary category <b>"Notary Public"</b>; secondaries "Loan Signing Agent," "Mobile Notary Service," "Signing Service."</li>
+          <li>Hide the street address (service-area business); list up to ~20 city/ZIP service areas, ~30-mi radius - no stuffing.</li>
+          <li>Complete every field: services, booking link, keyword-rich description, hours, Q&amp;A.</li>
+          <li><b>Freshness routine:</b> a Google Post ≥2×/month (they expire after 7 days) + monthly photos (headshot, branded cover, vehicle signage).</li>
+          <li>NAP consistency across Google, Yelp, BBB, Facebook + notary directories (123notary, NotaryRotary, SigningAgent.com, Snapdocs, Thumbtack); audit quarterly.</li>
+          <li><em>Realistic timeline: meaningful map-pack movement ~4-8 weeks after full optimization; reviews move fastest.</em></li>
+        </ul>
+      </div>
+      <div class="eng"><h4><span class="ic">⭐</span> Review-generation automation <span class="tagline">- the fastest moat</span></h4>
+        <ul>
+          <li>Ask <b>within 24 hours</b> of every signing, via <b>SMS + a printed QR-code card</b> handed over at the appointment (SMS beats email for mobile jobs).</li>
+          <li>Tools: NiceJob, Podium, TrueReview, or GoHighLevel - automate the ask, route happy clients to Google, generate the QR.</li>
+          <li><b>Velocity &amp; recency beat volume:</b> aim ~3-6+/month steadily (73% of consumers trust only reviews from the last ~30 days).</li>
+          <li>Respond to <b>every</b> review with city/service keywords.</li>
+          <li>Targets: pass ~10-15 (visibility floor) → 40+ (3× top-3 odds) → 75-100 (domination).</li>
+        </ul>
+      </div>
+      <div class="eng"><h4><span class="ic">🎯</span> Paid ads <span class="tagline">- supplement, not engine</span></h4>
+        <ul>
+          <li><b>Google Search Ads</b> on high-intent terms - "apostille services Palm Beach," "same day notary," "loan signing agent [city]" - <em>not</em> generic "notary." FL CPC ~$6-$12; ~$14/lead benchmark; <b>$500-$800/mo → ~8-15 leads/mo.</b></li>
+          <li><b>Facebook/Instagram</b> local tests: $5-$10/day, 10-20-mi radius, after-hours/emergency positioning rivals under-serve.</li>
+          <li>Avoid over-investing in Thumbtack (~$16/lead, poor ROI for one-offs). Don't chase "Google Guaranteed" - notary is ineligible.</li>
+        </ul>
+      </div>
+      <div class="eng"><h4><span class="ic">📧</span> Drip / email + landing pages</h4>
+        <ul>
+          <li>Post-job thank-you + review ask; seasonal estate-planning nudges to senior/attorney segments; B2B check-ins to title/HR contacts; apostille/immigration nurture; past-client win-backs.</li>
+          <li>Segment consumer vs. B2B.</li>
+          <li><b>Dedicated landing pages</b> per paid campaign (apostille, loan signing, same-day) with one clear CTA + booking widget - never dump ad traffic on the home page.</li>
+        </ul>
+      </div>
+      <div class="eng" style="grid-column:1/-1"><h4><span class="ic">🤝</span> B2B referral outreach <span class="tagline">- highest-value recurring channel, ads can't reach it</span></h4>
+        <ul style="columns:2;column-gap:30px">
+          <li>List/rate on <b>Snapdocs, NotaryRotary, 123notary, SigningAgent.com</b> for loan-signing dispatch.</li>
+          <li>Direct outreach to <b>Palm Beach title/escrow companies &amp; mortgage loan officers</b> (direct = higher pay than signing-service cuts).</li>
+          <li><b>Elder-law/estate attorneys &amp; assisted-living/hospice facilities</b> for the senior at-home/bedside pipeline.</li>
+          <li><b>HR departments, medical offices &amp; corporations</b> for recurring I-9 &amp; group work (mirror the "mobile fee waived for groups of 10+" hook).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROLLOUT -->
+<section id="rollout">
+  <div class="wrap">
+    <div class="sec-tag">The 90-Day Rollout</div>
+    <h2 class="sec">From invisible to clear #2, in three phases</h2>
+    <p class="sec-lede">A sequenced plan so nothing gets skipped and the highest-ROI moves happen first.</p>
+    <div class="grid g3">
+      <div class="phase p1">
+        <div class="ph">Phase 1</div>
+        <h4>Foundation</h4>
+        <div class="days">Days 1-30</div>
+        <div class="goal">Become findable and trustworthy.</div>
+        <ul>
+          <li>Claim + fully optimize GBP (categories, service areas, photos, booking link)</li>
+          <li>Rewrite all titles/meta; add LocalBusiness/Notary + aggregateRating schema</li>
+          <li>Rebuild core site: Home, About/Trust, Reviews, Pricing, Booking, Contact</li>
+          <li>Add money-service pages: loan signing, apostille, RON, I-9, wedding, POA/estate, hospital</li>
+          <li>Complete NAP citations across Google, Yelp, BBB, FB + notary directories</li>
+          <li>Stand up the review engine (SMS + QR); ask within 24 hrs of every job</li>
+          <li>Confirm NSA background screen + E&amp;O; register for RON + platform</li>
+        </ul>
+      </div>
+      <div class="phase p2">
+        <div class="ph">Phase 2</div>
+        <h4>Growth</h4>
+        <div class="days">Days 31-60</div>
+        <div class="goal">Capture search and referrals.</div>
+        <ul>
+          <li>Publish the 9 city landing pages + Spanish /es/ pages</li>
+          <li>Launch the blog + apostille content hub (2-4 cornerstone posts)</li>
+          <li>Turn on Google Search Ads ($500-$800/mo) + dedicated landing pages; small FB/IG test</li>
+          <li>Begin B2B outreach: title/escrow, elder-law attorneys, senior facilities, HR/I-9</li>
+          <li>GBP freshness routine live (biweekly posts, monthly photos); respond to every review</li>
+          <li>Target: cross the 10-15-review floor, push toward 40+</li>
+        </ul>
+      </div>
+      <div class="phase p3">
+        <div class="ph">Phase 3</div>
+        <h4>Scale</h4>
+        <div class="days">Days 61-90</div>
+        <div class="goal">Widen the moat.</div>
+        <ul>
+          <li>Push reviews toward the 75-100 domination zone (~5+/mo velocity)</li>
+          <li>Add wedding-officiant marketing; formalize corporate/I-9 retainer packages</li>
+          <li>Expand city/blog content; scale winning ad terms, cut losers</li>
+          <li>Turn signing-service &amp; title relationships into repeat pipeline</li>
+          <li><b>Evaluate Live Scan fingerprinting</b> (FDLE vendor + certified device) now that cash flow supports it</li>
+          <li>Set quarterly NAP audits + a monthly review/rank scorecard</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h4>Coastal Crest Notary - Market Analysis &amp; Growth Blueprint</h4>
+    <p>Prepared for Gustavo · August 4, 2026 · Client site: coastalcrestnotary.com · Benchmark: pbnotaryservices.com &amp; the wider Palm Beach County field.</p>
+    <p style="margin-top:14px"><b style="color:#fff">Selected sources.</b></p>
+    <p class="src">Competitors &amp; field: palmbeachcountyapostille.com · pbnotaryservices.com (+ Sunbiz L21000363382) · pbnotarypublic.com · thesoutheastnotary.com · tmfnotary.com · bocaratonmobilenotary.com · luxurynotarypros.com · dartmobilenotary.com · mobilenotarypbc.com · nadidranotaryservice.com · Yelp / Thumbtack / OneNotary / BBB.
+    &nbsp; Demand &amp; demographics: census.gov QuickFacts (palmbeachcountyflorida) · edr.state.fl.us · miamirealtors.com (Nov 2025 report) · florida-demographics.com · datausa.io.
+    &nbsp; Service lines, fees &amp; rules: Fla. Stat. 117.05 / 117.275 / 117.045 · dos.fl.gov (RON &amp; apostille) · fdle.state.fl.us · notarypublicassociation.org · loansigningsystem.com · onlinefloridaapostille.com.
+    &nbsp; Ads / SEO / reviews: support.google.com/localservices · northdigitalagency.com · notarystyle.com · 123notary.com · signingagent.com · nicejob.com · searchengineland.com · spokk.io · localdominator.co.</p>
+    <p class="disclaimer">Prepared as a strategic marketing analysis using public web sources, competitor sites, and U.S. Census / Florida state data. Figures (review counts, prices, CPCs, demographics) reflect the best available data at time of research and should be re-verified before budgeting or public use. Not legal, tax, or financial advice - Florida notary rules, RON/apostille procedures, and FDLE Live Scan requirements should be confirmed with the relevant state agency before acting.</p>
+<a class="dv8-credit" href="https://dv8web.com" target="_blank" rel="noopener" aria-label="Dare to deviate - DV8 Web"><span>Dare to deviate</span><span class="dv8-orbit"><span class="r"></span><span class="c"></span><span class="s"><i></i></span></span><strong>DV8&nbsp;Web</strong></a>
+  </div>
+</footer>
+
+<script>
+  // Animate bars when scrolled into view
+  const fills = document.querySelectorAll('.fill');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const f = e.target;
+        f.style.width = (f.dataset.w) + '%';
+        io.unobserve(f);
+      }
+    });
+  },{threshold:.2});
+  fills.forEach(f=>io.observe(f));
+
+  // Active nav highlight
+  const secs = document.querySelectorAll('section[id]');
+  const navlinks = document.querySelectorAll('nav.top .links a');
+  const spy = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const id = e.target.getAttribute('id');
+        navlinks.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+id));
+      }
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(s=>spy.observe(s));
+</script>
+</body>
+</html>

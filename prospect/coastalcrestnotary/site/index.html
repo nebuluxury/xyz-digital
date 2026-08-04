@@ -301,20 +301,47 @@
         <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@email.com"></div>
         <div class="form-row">
           <div class="field"><label for="service">Service needed</label>
-            <select id="service" name="service">
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
               <option>General / mobile notary</option>
               <option>Power of attorney / estate</option>
               <option>Real estate / loan signing</option>
-              <option>Apostille</option>
-              <option>Fingerprinting</option>
-              <option>Remote online notary</option>
+              <option>Apostille &amp; authentication</option>
+              <option>Fingerprinting / Live Scan</option>
+              <option>Remote online notary (RON)</option>
+              <option>Multiple / bulk signing</option>
               <option>Not sure - please advise</option>
+            </select>
+          </div>
+          <div class="field"><label for="urgency">How soon?</label>
+            <select id="urgency" name="urgency">
+              <option value="" disabled selected>Choose timing</option>
+              <option>As soon as possible</option>
+              <option>Today</option>
+              <option>Within 2-3 days</option>
+              <option>This week</option>
+              <option>Just planning ahead / flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="place">Where should we meet you?</label>
+            <select id="place" name="meeting_place">
+              <option value="" disabled selected>Choose a location type</option>
+              <option>Your home</option>
+              <option>Office / business</option>
+              <option>Hospital or care facility</option>
+              <option>Assisted living / nursing home</option>
+              <option>Jail / correctional facility</option>
+              <option>Bank / title company</option>
+              <option>Public place (cafe, library)</option>
+              <option>Other (note below)</option>
             </select>
           </div>
           <div class="field"><label for="when">Preferred date / time</label><input id="when" name="preferred_time" type="text" placeholder="e.g. Fri afternoon"></div>
         </div>
-        <div class="field"><label for="location">Signing location</label><input id="location" name="location" type="text" placeholder="Address, hospital, city, etc."></div>
-        <div class="field"><label for="message">Details</label><textarea id="message" name="message" placeholder="Tell us about the document(s) and anything we should know."></textarea></div>
+        <div class="field"><label for="location">Signing address / city</label><input id="location" name="location" type="text" placeholder="Street address, facility name, or city"></div>
+        <div class="field"><label for="message">Details</label><textarea id="message" name="message" placeholder="Tell us about the document(s), number of signers, and anything we should know."></textarea></div>
         <button type="submit" class="btn btn-teal btn-block btn-lg">Send Request</button>
         <p class="form-note">By submitting you agree to be contacted about your request. We never share your information.</p>
         <p class="form-status" id="formStatus"></p>
